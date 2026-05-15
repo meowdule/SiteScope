@@ -138,6 +138,15 @@ export function AnalyzeForm() {
         </button>
       </div>
 
+      {!hasDispatchToken() && (
+        <p className="rounded-lg border border-amber-500/30 bg-amber-500/10 px-4 py-3 text-sm text-amber-100">
+          A GitHub tab may open — click <strong>Submit new issue</strong> once to
+          start analysis. For one-click Analyze, add the{" "}
+          <code className="font-mono text-xs">QUEUE_DISPATCH_TOKEN</code> secret
+          and redeploy Pages.
+        </p>
+      )}
+
       {error && (
         <div className="rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-100">
           {error}
