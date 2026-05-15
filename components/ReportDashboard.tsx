@@ -1,0 +1,288 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import type { ReportJson } from "@/lib/types";
+import { fetchReport } from "@/lib/pollReport";
+import { assetUrl } from "@/lib/paths";
+import Link from "next/link";
+
+type Props = { reportId: string };
+
+export function ReportDashboard({ reportId }: Props) {
+  const [report, setReport] = useState<ReportJson | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      try {
+        const data = await fetchReport(reportId);
+        if (!cancelled) {
+          if (!data) setError("Report not found yet.");
+          else setReport(data);
+        }
+      } catch (e) {
+        if (!cancelled) {
+          setError(e instanceof Error ? e.message : "Failed to load report.");
+        }
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [reportId]);
+
+  if (error) {
+    return (
+      <div className="mx-auto max-w-3xl px-4 py-16 text-center">
+        <p className="text-red-300">{error}</p>
+        <Link href={assetUrl("/")} className="mt-4 inline-block text-accent">
+          Back home
+        </Link>
+      </div>
+    );
+  }
+
+  if (!report) {
+    return (
+      <div className="mx-auto max-w-3xl px-4 py-16 text-center text-slate-400">
+        Loading report…
+      </div>
+    );
+  }
+
+  const { summary, pages, quick, targetUrl, brokenLinks } = report;
+
+  return (
+    <div className="mx-auto max-w-6xl px-4 pb-20 pt-10 sm:px-6">
+      <Link
+        href={assetUrl("/")}
+        className="text-sm text-accent hover:underline"
+      >
+        ← New analysis
+      </Link>
+      <header className="mt-4 border-b border-surface-border pb-8">
+        <p className="text-xs uppercase tracking-widest text-accent">
+          SiteScope report
+        </p>
+        <h1 className="mt-2 break-all text-2xl font-semibold text-white sm:text-3xl">
+          {targetUrl}
+        </h1>
+        <p className="mt-2 font-mono text-xs text-slate-500">{reportId}</p>
+      </header>
+
+      <section className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <MetricTile label="Health score" value={String(summary.healthScore)} />
+        <MetricTile
+          label="Avg Lighthouse performance"
+          value={
+            summary.avgLighthousePerformance != null
+              ? String(summary.avgLighthousePerformance)
+              : "—"
+          }
+        />
+        <MetricTile
+          label="Accessibility (avg nodes / page)"
+          value={String(summary.avgAxeIssuesPerPage)}
+        />
+        <MetricTile
+          label="Console errors"
+          value={String(summary.totalConsoleErrors)}
+        />
+      </section>
+
+      {summary.mobileWarnings.length > 0 && (
+        <section className="mt-8 rounded-xl border border-amber-500/30 bg-amber-500/10 p-5">
+          <h2 className="text-sm font-semibold text-amber-100">
+            Mobile responsiveness warnings
+          </h2>
+          <ul className="mt-3 list-inside list-disc space-y-1 text-sm text-amber-50/90">
+            {summary.mobileWarnings.map((w) => (
+              <li key={w}>{w}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <section className="mt-10">
+        <h2 className="text-lg font-semibold text-white">Quick signals</h2>
+        <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <Signal label="DNS" ok={quick.dnsOk} detail={quick.dnsMessage} />
+          <Signal
+            label="HTTP"
+            ok={quick.httpOk}
+            detail={
+              quick.httpStatus != null ? `Status ${quick.httpStatus}` : undefined
+            }
+          />
+          <Signal label="TLS" ok={quick.sslOk} detail={quick.sslMessage} />
+          <Signal
+            label="Response time"
+            detail={
+              quick.responseTimeMs != null
+                ? `${quick.responseTimeMs} ms`
+                : undefined
+            }
+          />
+          <Signal
+            label="Internal links (home)"
+            detail={
+              quick.internalLinkCount != null
+                ? String(quick.internalLinkCount)
+                : undefined
+            }
+          />
+        </div>
+        {quick.screenshotRelativePath && (
+          <div className="mt-4">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={assetUrl(`/${quick.screenshotRelativePath}`)}
+              alt="Homepage"
+              className="max-h-72 rounded-lg border border-surface-border"
+            />
+          </div>
+        )}
+      </section>
+
+      <section className="mt-12 overflow-x-auto">
+        <h2 className="text-lg font-semibold text-white">Pages crawled</h2>
+        <table className="mt-4 w-full min-w-[640px] border-collapse text-left text-sm">
+          <thead>
+            <tr className="border-b border-surface-border text-slate-400">
+              <th className="py-2 pr-4">URL</th>
+              <th className="py-2 pr-4">Status</th>
+              <th className="py-2 pr-4">LH perf</th>
+              <th className="py-2 pr-4">Axe</th>
+              <th className="py-2 pr-4">Console</th>
+              <th className="py-2">Failed net</th>
+            </tr>
+          </thead>
+          <tbody>
+            {pages.map((p) => (
+              <tr
+                key={p.url}
+                className="border-b border-surface-border/60 text-slate-200"
+              >
+                <td className="max-w-xs truncate py-3 pr-4 font-mono text-xs">
+                  {p.url}
+                </td>
+                <td className="py-3 pr-4">{p.statusCode ?? "—"}</td>
+                <td className="py-3 pr-4">
+                  {p.lighthouse?.performance ?? "—"}
+                </td>
+                <td className="py-3 pr-4">
+                  {(p.axeViolations || []).reduce((s, v) => s + v.nodes, 0)}
+                </td>
+                <td className="py-3 pr-4">{p.consoleErrors?.length ?? 0}</td>
+                <td className="py-3">{p.failedRequests?.length ?? 0}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+
+      {brokenLinks.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-lg font-semibold text-white">Broken links</h2>
+          <ul className="mt-4 space-y-2 text-sm text-slate-300">
+            {brokenLinks.slice(0, 50).map((b) => (
+              <li
+                key={`${b.from}-${b.to}`}
+                className="rounded-lg border border-surface-border bg-surface-raised px-4 py-3"
+              >
+                <span className="font-mono text-xs text-slate-500">{b.from}</span>
+                <span className="mx-2 text-slate-600">→</span>
+                <span className="font-mono text-xs">{b.to}</span>
+                <p className="mt-1 text-xs text-amber-200">{b.reason}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <section className="mt-12 space-y-8">
+        <h2 className="text-lg font-semibold text-white">Screenshots & UI issues</h2>
+        {pages.map((p) => (
+          <article
+            key={p.url}
+            className="rounded-xl border border-surface-border bg-surface-raised p-5"
+          >
+            <h3 className="break-all font-mono text-sm text-slate-200">{p.url}</h3>
+            <div className="mt-4 flex flex-wrap gap-3">
+              {(["mobile", "tablet", "desktop"] as const).map((vp) => {
+                const rel = p.screenshotPaths?.[vp];
+                if (!rel) return null;
+                return (
+                  <div key={vp}>
+                    <p className="mb-1 text-xs uppercase text-slate-500">{vp}</p>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={assetUrl(`/reports/${reportId}/${rel}`)}
+                      alt={`${vp} screenshot`}
+                      className="h-40 w-auto rounded border border-surface-border object-cover"
+                    />
+                  </div>
+                );
+              })}
+            </div>
+            {(p.uiIssues?.length ?? 0) > 0 && (
+              <ul className="mt-4 space-y-1 text-xs text-slate-400">
+                {p.uiIssues.slice(0, 12).map((i) => (
+                  <li key={i.id}>
+                    [{i.viewport}] {i.type}: {i.message}
+                  </li>
+                ))}
+              </ul>
+            )}
+            {(p.consoleErrors?.length ?? 0) > 0 && (
+              <details className="mt-3">
+                <summary className="cursor-pointer text-xs text-slate-400">
+                  Console errors ({p.consoleErrors.length})
+                </summary>
+                <pre className="mt-2 max-h-40 overflow-auto rounded bg-black/40 p-2 text-xs text-red-200">
+                  {p.consoleErrors.join("\n")}
+                </pre>
+              </details>
+            )}
+          </article>
+        ))}
+      </section>
+    </div>
+  );
+}
+
+function MetricTile({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="rounded-xl border border-surface-border bg-surface-raised p-5">
+      <p className="text-xs uppercase tracking-wide text-slate-400">{label}</p>
+      <p className="mt-2 text-3xl font-semibold text-white">{value}</p>
+    </div>
+  );
+}
+
+function Signal({
+  label,
+  ok,
+  detail,
+}: {
+  label: string;
+  ok?: boolean;
+  detail?: string;
+}) {
+  return (
+    <div className="rounded-lg border border-surface-border/80 bg-surface/60 px-4 py-3">
+      <div className="flex justify-between gap-2">
+        <span className="text-sm text-slate-200">{label}</span>
+        {ok === undefined ? (
+          <span className="text-xs text-slate-500">—</span>
+        ) : ok ? (
+          <span className="text-xs text-emerald-400">OK</span>
+        ) : (
+          <span className="text-xs text-amber-300">Issue</span>
+        )}
+      </div>
+      {detail && <p className="mt-1 text-xs text-slate-400">{detail}</p>}
+    </div>
+  );
+}
