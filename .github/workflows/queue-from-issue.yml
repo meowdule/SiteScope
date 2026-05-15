@@ -1,0 +1,99 @@
+name: Queue SiteScope analysis from issue
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+
+jobs:
+  queue:
+    if: contains(github.event.issue.title, '[SiteScope]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_PAT || github.token }}
+
+      - name: Parse issue payload
+        id: meta
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = context.payload.issue.title || '';
+            const body = context.payload.issue.body || '';
+            const reportId = title.replace(/^\[SiteScope\]\s*/i, '').trim();
+            if (!reportId) {
+              core.setFailed('Missing report id in issue title.');
+              return;
+            }
+            let targetUrl = '';
+            const fence = body.match(/```json\s*([\s\S]*?)```/);
+            if (fence) {
+              try {
+                const data = JSON.parse(fence[1]);
+                targetUrl = data.targetUrl || '';
+              } catch (e) {
+                core.warning('Could not parse JSON code block in issue body.');
+              }
+            }
+            if (!targetUrl) {
+              const plain = body.match(/"targetUrl"\s*:\s*"([^"]+)"/);
+              if (plain) targetUrl = plain[1];
+            }
+            if (!targetUrl) {
+              core.setFailed('Missing targetUrl in issue body.');
+              return;
+            }
+            core.setOutput('report_id', reportId);
+            core.setOutput('target_url', targetUrl);
+
+      - name: Create request and initial status
+        shell: bash
+        env:
+          REPORT_ID: ${{ steps.meta.outputs.report_id }}
+          TARGET_URL: ${{ steps.meta.outputs.target_url }}
+        run: |
+          set -euo pipefail
+          NOW="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          mkdir -p "requests" "public/reports/${REPORT_ID}/screenshots"
+          printf '%s\n' "{" \
+            "  \"reportId\": \"${REPORT_ID}\"," \
+            "  \"targetUrl\": \"${TARGET_URL}\"," \
+            "  \"createdAt\": \"${NOW}\"" \
+            "}" > "requests/${REPORT_ID}.json"
+          printf '%s\n' "{" \
+            "  \"reportId\": \"${REPORT_ID}\"," \
+            "  \"targetUrl\": \"${TARGET_URL}\"," \
+            "  \"phase\": \"queued\"," \
+            "  \"updatedAt\": \"${NOW}\"" \
+            "}" > "public/reports/${REPORT_ID}/status.json"
+
+      - name: Commit and push queue files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "requests/${{ steps.meta.outputs.report_id }}.json" \
+            "public/reports/${{ steps.meta.outputs.report_id }}/status.json"
+          if git diff --staged --quiet; then
+            echo "Queue files already exist."
+            exit 0
+          fi
+          git commit -m "chore: queue SiteScope analysis ${{ steps.meta.outputs.report_id }}"
+          git push
+
+      - name: Close queue issue
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_PAT || github.token }}
+          script: |
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              state: 'closed',
+              state_reason: 'completed',
+            });

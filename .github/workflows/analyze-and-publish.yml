@@ -24,6 +24,7 @@ concurrency:
 env:
   NEXT_PUBLIC_GITHUB_REPO: ${{ vars.NEXT_PUBLIC_GITHUB_REPO || github.repository }}
   NEXT_PUBLIC_BASE_PATH: ${{ vars.NEXT_PUBLIC_BASE_PATH || format('/{0}', github.event.repository.name) }}
+  NEXT_PUBLIC_QUEUE_DISPATCH_TOKEN: ${{ secrets.QUEUE_DISPATCH_TOKEN }}
 
 jobs:
   build:
@@ -32,6 +33,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
+          token: ${{ secrets.GH_PAT || github.token }}
 
       - uses: actions/setup-node@v4
         with:
@@ -93,6 +95,8 @@ jobs:
             git commit -m "chore: add SiteScope report artifacts"
             git push
           fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT || github.token }}
 
       - uses: actions/configure-pages@v5
 

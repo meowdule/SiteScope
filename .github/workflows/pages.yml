@@ -19,6 +19,9 @@ concurrency:
 env:
   NEXT_PUBLIC_GITHUB_REPO: ${{ vars.NEXT_PUBLIC_GITHUB_REPO || github.repository }}
   NEXT_PUBLIC_BASE_PATH: ${{ vars.NEXT_PUBLIC_BASE_PATH || format('/{0}', github.event.repository.name) }}
+  # Fine-grained PAT with repo scope (or classic PAT) — triggers repository_dispatch only.
+  # Not GH_PAT; never entered by users in the UI.
+  NEXT_PUBLIC_QUEUE_DISPATCH_TOKEN: ${{ secrets.QUEUE_DISPATCH_TOKEN }}
 
 jobs:
   build:

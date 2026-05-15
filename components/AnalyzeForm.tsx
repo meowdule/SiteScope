@@ -4,10 +4,7 @@ import { useCallback, useMemo, useState } from "react";
 import { validateHttpUrl } from "@/lib/validateUrl";
 import { checkDns } from "@/lib/dnsCheck";
 import type { QuickCheckResult, ReportPhase } from "@/lib/types";
-import {
-  createRequestFile,
-  getAutomationToken,
-} from "@/lib/queueRequest";
+import { hasDispatchToken, startAnalysis } from "@/lib/startAnalysis";
 import { fetchReport, fetchStatus } from "@/lib/pollReport";
 import { assetUrl } from "@/lib/paths";
 
@@ -18,11 +15,7 @@ function newReportId(): string {
   return `r-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
 }
 
-type Props = {
-  automationConfigured: boolean;
-};
-
-export function AnalyzeForm({ automationConfigured }: Props) {
+export function AnalyzeForm() {
   const [urlInput, setUrlInput] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -60,7 +53,9 @@ export function AnalyzeForm({ automationConfigured }: Props) {
           if (status.phase === "complete") {
             const report = await fetchReport(id);
             if (report) {
-              window.location.href = assetUrl(`/report?id=${encodeURIComponent(id)}`);
+              window.location.href = assetUrl(
+                `/report?id=${encodeURIComponent(id)}`,
+              );
               return;
             }
           }
@@ -86,37 +81,24 @@ export function AnalyzeForm({ automationConfigured }: Props) {
       setError(v.error || "Invalid URL");
       return;
     }
-    setBusy(true);
-    setQuick({ validUrl: true });
-    await runInstantChecks(v.normalized);
-
-    const token = getAutomationToken();
-
-    if (!automationConfigured || !token) {
-      setError(
-        "Automation is not configured yet. Open Settings and add a personal access token with repository write access.",
-      );
-      setBusy(false);
-      return;
-    }
 
     const id = newReportId();
     setReportId(id);
+    setBusy(true);
+    setPhase("queued");
+    setQuick({ validUrl: true });
+
+    await runInstantChecks(v.normalized);
 
     try {
-      await createRequestFile({
-        reportId: id,
-        targetUrl: v.normalized,
-        token,
-      });
-      setPhase("queued");
+      await startAnalysis(id, v.normalized);
       void pollLoop(id);
     } catch (e) {
-      const msg = e instanceof Error ? e.message : "Could not queue analysis.";
+      const msg = e instanceof Error ? e.message : "Could not start analysis.";
       setError(msg);
       setBusy(false);
     }
-  }, [automationConfigured, pollLoop, runInstantChecks, urlInput]);
+  }, [pollLoop, runInstantChecks, urlInput]);
 
   const phaseLabel = useMemo(() => {
     if (!phase) return null;
@@ -155,13 +137,6 @@ export function AnalyzeForm({ automationConfigured }: Props) {
           {busy ? "Working…" : "Analyze"}
         </button>
       </div>
-
-        {!automationConfigured && (
-        <p className="rounded-lg border border-amber-500/30 bg-amber-500/10 px-4 py-3 text-sm text-amber-100">
-          Open Settings and add an automation token to queue analyses. The target
-          repository is configured when the site is built.
-        </p>
-      )}
 
       {error && (
         <div className="rounded-lg border border-red-500/30 bg-red-500/10 px-4 py-3 text-sm text-red-100">
