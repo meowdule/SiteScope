@@ -33,18 +33,34 @@ export type ReportStatusFile = {
 
 export type ViewportName = "mobile" | "tablet" | "desktop";
 
+export type UiIssueType =
+  | "horizontal_scroll"
+  | "broken_image"
+  | "overlap"
+  | "outside_viewport"
+  | "hidden_overflow"
+  | "modal_or_drawer";
+
 export type UiIssue = {
   id: string;
-  type:
-    | "horizontal_scroll"
-    | "broken_image"
-    | "overlap"
-    | "outside_viewport"
-    | "hidden_overflow";
+  type: UiIssueType;
   message: string;
+  title?: string;
+  friendlyMessage?: string;
+  userImpact?: string;
+  category?: "ux" | "performance" | "accessibility" | "seo";
   selector?: string;
   viewport: ViewportName;
   severity: "info" | "warn" | "error";
+};
+
+export type InteractionEvent = {
+  action: string;
+  label: string;
+  urlBefore?: string;
+  urlAfter?: string;
+  linksFound?: number;
+  newLinks?: number;
 };
 
 export type PageReport = {
@@ -64,12 +80,23 @@ export type PageReport = {
     cls?: number | null;
     tbt?: number | null;
     si?: number | null;
+    collected?: boolean;
+    fallback?: boolean;
+    lighthouseError?: string;
   };
   axeViolations: { id: string; impact?: string; description: string; nodes: number }[];
   brokenImages: { src: string; alt?: string }[];
   uiIssues: UiIssue[];
   screenshotPaths: Partial<Record<ViewportName, string>>;
+  interactionLog?: InteractionEvent[];
   crawledAt: string;
+};
+
+export type CategoryScores = {
+  performance: number | null;
+  accessibility: number | null;
+  ux: number | null;
+  seo: number | null;
 };
 
 export type ReportJson = {
@@ -80,6 +107,10 @@ export type ReportJson = {
   quick: QuickCheckResult;
   pages: PageReport[];
   brokenLinks: { from: string; to: string; reason: string }[];
+  crawlMeta?: {
+    mode?: string;
+    interactions?: InteractionEvent[];
+  };
   summary: {
     healthScore: number;
     avgLighthousePerformance: number | null;
@@ -87,5 +118,7 @@ export type ReportJson = {
     totalConsoleErrors: number;
     totalFailedRequests: number;
     mobileWarnings: string[];
+    categoryScores?: CategoryScores;
+    statusLabel?: "Good" | "Warning" | "Critical";
   };
 };

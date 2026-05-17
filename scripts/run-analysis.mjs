@@ -7,7 +7,10 @@ import { chromium } from "playwright";
 import { reportsDir, writeJson, readJson } from "./analysis/fs-utils.mjs";
 import { writeStatus } from "./analysis/status.mjs";
 import { nodeQuickProbe } from "./analysis/node-quick-probe.mjs";
-import { discoverUrls, extractInternalLinks } from "./analysis/crawler.mjs";
+import { discoverUrls } from "./analysis/crawler.mjs";
+import { extractAllLinks } from "./analysis/link-extract.mjs";
+import { explorePageInteractions } from "./analysis/interaction-crawl.mjs";
+import { waitForSpaReady } from "./analysis/spa-wait.mjs";
 import { analyzePage } from "./analysis/page-analyzer.mjs";
 import { buildSummary } from "./analysis/report-summary.mjs";
 import { renderReportHtml } from "./analysis/report-html.mjs";
@@ -45,20 +48,17 @@ async function runQuickHome({ browser, targetUrl, reportId, absDir }) {
     let redirectChain = nodeProbe.redirectChain;
     try {
       const resp = await page.goto(targetUrl, {
-        waitUntil: "networkidle",
+        waitUntil: "domcontentloaded",
         timeout: 90000,
       });
       httpStatus = resp?.status() ?? httpStatus;
       httpOk = !!httpStatus && httpStatus < 400;
       finalUrl = page.url();
-      await page.evaluate(async () => {
-        window.scrollTo(0, document.body.scrollHeight);
-        await new Promise((r) => setTimeout(r, 500));
-        window.scrollTo(0, 0);
+      await waitForSpaReady(page, { short: true });
+      const explored = await explorePageInteractions(page, finalUrl, targetUrl, {
+        maxInteractions: 6,
       });
-      await new Promise((r) => setTimeout(r, 600));
-      const links = await extractInternalLinks(page, finalUrl, targetUrl);
-      internalLinkCount = links.length;
+      internalLinkCount = explored.links.length;
       const shotRel = `reports/${reportId}/screenshots/quick-home.png`;
       const shotAbs = path.join(absDir, "screenshots", "quick-home.png");
       await fs.mkdir(path.dirname(shotAbs), { recursive: true });
@@ -147,11 +147,12 @@ async function main() {
       quick,
     });
 
-    const urls = await discoverUrls({
+    const { urls, crawlMeta } = await discoverUrls({
       browser,
       startUrl: targetUrl,
       maxPages: 30,
       maxDepth: 2,
+      interactionMode: true,
     });
 
     await writeStatus(reportId, {
@@ -195,6 +196,7 @@ async function main() {
       pages,
       brokenLinks: dedupBroken.slice(0, 200),
       summary,
+      crawlMeta,
     };
 
     await writeJson(path.join(absDir, "report.json"), report);

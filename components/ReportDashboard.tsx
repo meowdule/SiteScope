@@ -5,6 +5,8 @@ import type { ReportJson } from "@/lib/types";
 import { fetchReport } from "@/lib/pollReport";
 import { assetUrl } from "@/lib/paths";
 import Link from "next/link";
+import { DonutChart, ProgressBar, StatusBadge } from "@/components/ReportCharts";
+import { ISSUE_COPY, severityBadge } from "@/lib/issueLabels";
 
 type Props = { reportId: string };
 
@@ -51,7 +53,8 @@ export function ReportDashboard({ reportId }: Props) {
     );
   }
 
-  const { summary, pages, quick, targetUrl, brokenLinks } = report;
+  const { summary, pages, quick, targetUrl, brokenLinks, crawlMeta } = report;
+  const cats = summary.categoryScores;
 
   return (
     <div className="mx-auto max-w-6xl px-4 pb-20 pt-10 sm:px-6">
@@ -71,22 +74,52 @@ export function ReportDashboard({ reportId }: Props) {
         <p className="mt-2 font-mono text-xs text-slate-500">{reportId}</p>
       </header>
 
+      <section className="mt-8 flex flex-wrap items-center gap-4">
+        <DonutChart value={summary.healthScore} label="종합 건강 점수" size={112} />
+        {summary.statusLabel && <StatusBadge status={summary.statusLabel} />}
+        {crawlMeta?.mode === "interaction" && (
+          <span className="rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs text-accent">
+            Interaction Crawl 모드
+          </span>
+        )}
+      </section>
+
+      {cats && (
+        <section className="mt-8 grid gap-6 lg:grid-cols-2">
+          <div className="rounded-xl border border-surface-border bg-surface-raised p-5">
+            <h2 className="text-sm font-semibold text-white">카테고리별 점수</h2>
+            <div className="mt-4 grid gap-4">
+              <ProgressBar value={cats.performance} label="성능 (Performance)" />
+              <ProgressBar value={cats.accessibility} label="접근성 (Accessibility)" />
+              <ProgressBar value={cats.ux} label="사용성 (UX)" />
+              <ProgressBar value={cats.seo} label="검색·공유 (SEO)" />
+            </div>
+          </div>
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-2">
+            <DonutChart value={cats.performance} label="성능" />
+            <DonutChart value={cats.accessibility} label="접근성" />
+            <DonutChart value={cats.ux} label="UX" />
+            <DonutChart value={cats.seo} label="SEO" />
+          </div>
+        </section>
+      )}
+
       <section className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <MetricTile label="Health score" value={String(summary.healthScore)} />
+        <MetricTile label="탐색한 페이지" value={String(pages.length)} />
         <MetricTile
-          label="Avg Lighthouse performance"
+          label="홈페이지 내부 링크"
           value={
-            summary.avgLighthousePerformance != null
-              ? String(summary.avgLighthousePerformance)
+            quick.internalLinkCount != null
+              ? String(quick.internalLinkCount)
               : "—"
           }
         />
         <MetricTile
-          label="Accessibility (avg nodes / page)"
+          label="접근성 이슈 (페이지당)"
           value={String(summary.avgAxeIssuesPerPage)}
         />
         <MetricTile
-          label="Console errors"
+          label="콘솔 오류"
           value={String(summary.totalConsoleErrors)}
         />
       </section>
@@ -125,10 +158,10 @@ export function ReportDashboard({ reportId }: Props) {
             }
           />
           <Signal
-            label="Internal links (home)"
+            label="내부 링크·경로 (인터랙션 스캔)"
             detail={
               quick.internalLinkCount != null
-                ? String(quick.internalLinkCount)
+                ? `${quick.internalLinkCount}개 발견`
                 : undefined
             }
           />
@@ -227,13 +260,52 @@ export function ReportDashboard({ reportId }: Props) {
               })}
             </div>
             {(p.uiIssues?.length ?? 0) > 0 && (
-              <ul className="mt-4 space-y-1 text-xs text-slate-400">
-                {p.uiIssues.slice(0, 12).map((i) => (
-                  <li key={i.id}>
-                    [{i.viewport}] {i.type}: {i.message}
-                  </li>
-                ))}
+              <ul className="mt-4 space-y-3">
+                {p.uiIssues.slice(0, 12).map((i) => {
+                  const copy = ISSUE_COPY[i.type];
+                  const badge = severityBadge(i.severity);
+                  return (
+                    <li
+                      key={i.id}
+                      className="rounded-lg border border-surface-border/80 bg-surface/50 px-3 py-2 text-sm"
+                    >
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="font-medium text-slate-200">
+                          {i.title || copy?.title || i.type}
+                        </span>
+                        <span className="text-xs text-slate-500">({i.viewport})</span>
+                        <StatusBadge status={badge} />
+                      </div>
+                      <p className="mt-1 text-slate-300">
+                        {i.friendlyMessage || copy?.message || i.message}
+                      </p>
+                      <p className="mt-1 text-xs text-slate-500">
+                        {i.userImpact || copy?.impact}
+                      </p>
+                    </li>
+                  );
+                })}
               </ul>
+            )}
+            {p.lighthouse?.lighthouseError && (
+              <p className="mt-3 text-xs text-amber-200">{p.lighthouse.lighthouseError}</p>
+            )}
+            {(p.interactionLog?.length ?? 0) > 0 && (
+              <details className="mt-3">
+                <summary className="cursor-pointer text-xs text-slate-400">
+                  인터랙션 탐색 로그 ({p.interactionLog!.length})
+                </summary>
+                <ul className="mt-2 space-y-1 text-xs text-slate-400">
+                  {p.interactionLog!.slice(0, 8).map((ev, idx) => (
+                    <li key={idx}>
+                      {ev.label} — {ev.action}
+                      {ev.newLinks != null && ev.newLinks > 0
+                        ? ` (+${ev.newLinks} 링크)`
+                        : ""}
+                    </li>
+                  ))}
+                </ul>
+              </details>
             )}
             {(p.consoleErrors?.length ?? 0) > 0 && (
               <details className="mt-3">

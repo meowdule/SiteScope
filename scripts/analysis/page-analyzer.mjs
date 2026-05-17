@@ -3,8 +3,11 @@ import crypto from "node:crypto";
 import fs from "node:fs/promises";
 import { AxeBuilder } from "@axe-core/playwright";
 import { VIEWPORTS, collectUiSignals } from "./ui-detect.mjs";
-import { normalizeUrl, sameRegistrableDomain, isHttp } from "./url-utils.mjs";
-import { runLighthouseForUrl } from "./lighthouse-runner.mjs";
+import { runLighthouseOnPage } from "./lighthouse-runner.mjs";
+import { waitForSpaReady } from "./spa-wait.mjs";
+import { explorePageInteractions } from "./interaction-crawl.mjs";
+import { extractAllLinks } from "./link-extract.mjs";
+import { enrichUiIssue } from "./issue-labels.mjs";
 
 function redirectChainFromResponse(response) {
   const chain = [];
@@ -17,42 +20,6 @@ function redirectChainFromResponse(response) {
     req = req.redirectedFrom();
   }
   return chain.reverse();
-}
-
-async function probeInternalLinks(page, pageUrl, startUrl, limit = 18) {
-  const hrefs = await page.evaluate((base) => {
-    const out = [];
-    document.querySelectorAll("a[href]").forEach((a) => {
-      try {
-        const abs = new URL(a.getAttribute("href"), base).toString();
-        out.push(abs);
-      } catch {
-        /* ignore */
-      }
-    });
-    return out;
-  }, pageUrl);
-  const broken = [];
-  const unique = [...new Set(hrefs)].filter((h) => {
-    const n = normalizeUrl(h, pageUrl);
-    return n && isHttp(n) && sameRegistrableDomain(n, startUrl);
-  });
-  for (const href of unique.slice(0, limit)) {
-    try {
-      const r = await page.request.head(href, { timeout: 12000 });
-      const st = r.status();
-      if (st >= 400) {
-        broken.push({ from: pageUrl, to: href, reason: `HTTP ${st}` });
-      }
-    } catch (e) {
-      broken.push({
-        from: pageUrl,
-        to: href,
-        reason: e instanceof Error ? e.message : "Request failed",
-      });
-    }
-  }
-  return broken;
 }
 
 export async function analyzePage({
@@ -102,7 +69,7 @@ export async function analyzePage({
   let gotoOk = false;
   try {
     const response = await page.goto(url, {
-      waitUntil: "networkidle",
+      waitUntil: "domcontentloaded",
       timeout: 90000,
     });
     statusCode = response?.status() ?? null;
@@ -114,23 +81,31 @@ export async function analyzePage({
 
   const screenshotPaths = {};
   const uiIssues = [];
+  const interactionLog = [];
   const shotDir = path.join(reportsAbsDir, "screenshots");
   await fs.mkdir(shotDir, { recursive: true });
 
   if (gotoOk) {
+    await waitForSpaReady(page);
+    const explored = await explorePageInteractions(page, page.url(), startUrl, {
+      maxInteractions: 8,
+    });
+    interactionLog.push(...explored.interactions);
+    for (const ch of explored.uiStateChanges || []) {
+      uiIssues.push(
+        enrichUiIssue({
+          id: `modal-${uiIssues.length}`,
+          type: "modal_or_drawer",
+          message: ch.message,
+          viewport: "desktop",
+          severity: "info",
+        }),
+      );
+    }
+
     for (const vp of VIEWPORTS) {
       await page.setViewportSize({ width: vp.width, height: vp.height });
-      try {
-        await page.reload({ waitUntil: "networkidle", timeout: 90000 });
-      } catch {
-        /* continue with partial state */
-      }
-      await page.evaluate(async () => {
-        window.scrollTo(0, document.body.scrollHeight);
-        await new Promise((r) => setTimeout(r, 500));
-        window.scrollTo(0, 0);
-      });
-      await new Promise((r) => setTimeout(r, 400));
+      await waitForSpaReady(page, { short: true });
 
       const file = `${crypto.randomUUID()}-${vp.name}.png`;
       const abs = path.join(shotDir, file);
@@ -146,7 +121,7 @@ export async function analyzePage({
   if (gotoOk) {
     try {
       await page.setViewportSize({ width: 1440, height: 900 });
-      await page.reload({ waitUntil: "networkidle", timeout: 90000 });
+      await waitForSpaReady(page, { short: true });
       const results = await new AxeBuilder({ page }).analyze();
       axeViolations = (results.violations || []).map((v) => ({
         id: v.id,
@@ -161,7 +136,7 @@ export async function analyzePage({
 
   let lighthouse = null;
   if (gotoOk) {
-    lighthouse = await runLighthouseForUrl(url, { timeoutMs: 110000 });
+    lighthouse = await runLighthouseOnPage(page, { timeoutMs: 150000 });
   }
 
   const brokenImages = gotoOk
@@ -178,7 +153,7 @@ export async function analyzePage({
     : [];
 
   const brokenLinks = gotoOk
-    ? await probeInternalLinks(page, url, startUrl)
+    ? await probeInternalLinksFromExtract(page, url, startUrl)
     : [];
 
   await page.close();
@@ -197,8 +172,29 @@ export async function analyzePage({
     uiIssues: dedupeUi(uiIssues),
     screenshotPaths,
     brokenLinks,
+    interactionLog: interactionLog.slice(0, 30),
     crawledAt: new Date().toISOString(),
   };
+}
+
+async function probeInternalLinksFromExtract(page, pageUrl, startUrl) {
+  const hrefs = await extractAllLinks(page, pageUrl, startUrl);
+  const broken = [];
+  for (const href of hrefs.slice(0, 24)) {
+    try {
+      const r = await page.request.head(href, { timeout: 12000 });
+      if (r.status() >= 400) {
+        broken.push({ from: pageUrl, to: href, reason: `HTTP ${r.status()}` });
+      }
+    } catch (e) {
+      broken.push({
+        from: pageUrl,
+        to: href,
+        reason: e instanceof Error ? e.message : "Request failed",
+      });
+    }
+  }
+  return broken;
 }
 
 function dedupeFailed(items) {
