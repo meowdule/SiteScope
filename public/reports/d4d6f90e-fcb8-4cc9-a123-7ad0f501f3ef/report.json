@@ -1,0 +1,222 @@
+{
+  "reportId": "d4d6f90e-fcb8-4cc9-a123-7ad0f501f3ef",
+  "targetUrl": "https://m.getcha.kr/home",
+  "createdAt": "2026-05-17T23:06:35.814Z",
+  "completedAt": "2026-05-17T23:06:35.814Z",
+  "quick": {
+    "validUrl": true,
+    "dnsOk": true,
+    "dnsMessage": "DNS resolves.",
+    "httpStatus": 200,
+    "httpOk": true,
+    "finalUrl": "https://m.getcha.kr/home",
+    "redirectChain": [
+      "https://m.getcha.kr/home"
+    ],
+    "sslOk": true,
+    "sslMessage": "HTTPS in use.",
+    "responseTimeMs": 794,
+    "internalLinkCount": 0,
+    "screenshotRelativePath": "reports/d4d6f90e-fcb8-4cc9-a123-7ad0f501f3ef/screenshots/quick-home.png"
+  },
+  "pages": [
+    {
+      "url": "https://m.getcha.kr/home",
+      "statusCode": 200,
+      "redirects": [
+        "https://m.getcha.kr/home"
+      ],
+      "consoleErrors": [],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059155638&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAAC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&_prs=gs&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=11&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=0~115938465~115938469&sid=1779059155&sct=1&seg=0&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20-%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%20%ED%95%84%EC%88%98%20%EC%95%B1!%20%EB%B0%9C%ED%92%88%20%EC%97%86%EC%9D%B4%20%EC%9E%90%EB%8F%99%EC%B0%A8%20%EA%B2%AC%EC%A0%81%20%EB%B3%B4%EA%B8%B0&en=page_view&_fv=1&_nsi=1&_ss=2&_c=1&_ee=1&ep.origin=firebase&tfd=2461",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059155638&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=11&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=2&tag_exp=0~115938465~115938469&uid=&sid=1779059155&sct=1&seg=0&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&en=home_view&_ee=1&ep.origin=firebase&ep.screen_name=GNB%20%3E%20%ED%99%88&_et=434&up.device_id=1wOkYW2EWcXIyDnw59WgodBfSPDI&tfd=2903",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059155638&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&_prs=gs&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=11&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=3&tag_exp=0~115938465~115938469&dl=RecommandTabContainer&dt=%ED%99%88&sid=1779059155&sct=1&seg=1&en=page_view&_c=1&_ee=1&ep.origin=firebase&tfd=2903",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059155638&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=11&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=4&tag_exp=0~115938465~115938469&uid=&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&en=home_ads_view&_ee=1&ep.origin=firebase&ep.ads_title=%EA%B2%9F%EC%B0%A8%20X%20%EC%98%A4%ED%86%A0%EB%B2%A8%20%EB%82%B4%20%EC%B0%A8%20%ED%8C%94%EA%B8%B0&ep.section=home_bottom_banner&ep.screen_name=gnb_%ED%99%88&_et=387&tfd=4659",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://sentry.getcha.io/api/10/envelope/?sentry_key=2041cc02d9db40af95c7662ba1d72125&sentry_version=7&sentry_client=sentry.javascript.react%2F7.80.1",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059155638&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=11&sr=375x812&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=5&tag_exp=0~115938465~115938469&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&en=user_engagement&ep.origin=firebase&_et=1361&tfd=4660",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059158320&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&_prs=gs&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=0&sr=375x812&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=0~115616985~115938465~115938469&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20-%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%20%ED%95%84%EC%88%98%20%EC%95%B1!%20%EB%B0%9C%ED%92%88%20%EC%97%86%EC%9D%B4%20%EC%9E%90%EB%8F%99%EC%B0%A8%20%EA%B2%AC%EC%A0%81%20%EB%B3%B4%EA%B8%B0&en=page_view&_c=1&_ee=1&ep.origin=firebase&tfd=463",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059158320&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=0&sr=375x812&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=2&tag_exp=0~115616985~115938465~115938469&uid=&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&en=home_view&_ee=1&ep.origin=firebase&ep.screen_name=GNB%20%3E%20%ED%99%88&_et=293&up.device_id=1wOkYW2EWcXIyDnw59WgodBfSPDI&tfd=763",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059158320&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&_prs=gs&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=0&sr=375x812&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=3&tag_exp=0~115616985~115938465~115938469&dl=RecommandTabContainer&dt=%ED%99%88&sid=1779059155&sct=1&seg=1&en=page_view&_c=1&_ee=1&ep.origin=firebase&tfd=764",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059158320&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=0&sr=375x812&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=4&tag_exp=0~115616985~115938465~115938469&uid=&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&en=home_ads_view&_ee=1&ep.origin=firebase&ep.ads_title=%EA%B2%9F%EC%B0%A8%20X%20%EC%98%A4%ED%86%A0%EB%B2%A8%20%EB%82%B4%20%EC%B0%A8%20%ED%8C%94%EA%B8%B0&ep.section=home_bottom_banner&ep.screen_name=gnb_%ED%99%88&_et=251&tfd=3398",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059158320&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=0&sr=768x1024&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=5&tag_exp=0~115616985~115938465~115938469&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&en=user_engagement&ep.origin=firebase&_et=2377&tfd=3399",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059161430&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&_prs=gs&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=17&sr=768x1024&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=0~115938465~115938469~118168306&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20-%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%20%ED%95%84%EC%88%98%20%EC%95%B1!%20%EB%B0%9C%ED%92%88%20%EC%97%86%EC%9D%B4%20%EC%9E%90%EB%8F%99%EC%B0%A8%20%EA%B2%AC%EC%A0%81%20%EB%B3%B4%EA%B8%B0&en=page_view&_c=1&_ee=1&ep.origin=firebase&tfd=328",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059161430&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=17&sr=768x1024&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=2&tag_exp=0~115938465~115938469~118168306&uid=&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&en=home_view&_ee=1&ep.origin=firebase&ep.screen_name=GNB%20%3E%20%ED%99%88&_et=194&up.device_id=1wOkYW2EWcXIyDnw59WgodBfSPDI&tfd=529",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059161430&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&_prs=gs&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=17&sr=768x1024&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=3&tag_exp=0~115938465~115938469~118168306&dl=RecommandTabContainer&dt=%ED%99%88&sid=1779059155&sct=1&seg=1&en=page_view&_c=1&_ee=1&ep.origin=firebase&_et=1&tfd=530",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059161430&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=17&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=5&tag_exp=0~115938465~115938469~118168306&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&en=user_engagement&ep.origin=firebase&_et=2561&tfd=3285",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059161430&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=17&sr=768x1024&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=4&tag_exp=0~115938465~115938469~118168306&uid=&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&en=home_ads_view&_ee=1&ep.origin=firebase&ep.ads_title=%EA%B2%9F%EC%B0%A8%20X%20%EC%98%A4%ED%86%A0%EB%B2%A8%20%EB%82%B4%20%EC%B0%A8%20%ED%8C%94%EA%B8%B0&ep.section=home_bottom_banner&ep.screen_name=gnb_%ED%99%88&_et=188&tfd=3284",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059164589&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&_prs=gs&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=16&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=0~115616985~115938465~115938469&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20-%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%20%ED%95%84%EC%88%98%20%EC%95%B1!%20%EB%B0%9C%ED%92%88%20%EC%97%86%EC%9D%B4%20%EC%9E%90%EB%8F%99%EC%B0%A8%20%EA%B2%AC%EC%A0%81%20%EB%B3%B4%EA%B8%B0&en=page_view&_c=1&_ee=1&ep.origin=firebase&tfd=360",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059164589&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&_prs=gs&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=16&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=3&tag_exp=0~115616985~115938465~115938469&dl=RecommandTabContainer&dt=%ED%99%88&sid=1779059155&sct=1&seg=1&en=page_view&_c=1&_ee=1&ep.origin=firebase&_et=1&tfd=618",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059164589&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=16&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=2&tag_exp=0~115616985~115938465~115938469&uid=&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&en=home_view&_ee=1&ep.origin=firebase&ep.screen_name=GNB%20%3E%20%ED%99%88&_et=248&up.device_id=1wOkYW2EWcXIyDnw59WgodBfSPDI&tfd=618",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059164589&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=16&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&tag_exp=0~115616985~115938465~115938469&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&_s=4&tfd=3237",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059167640&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&_prs=gs&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=2&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=0~115938466~115938469&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20-%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%20%ED%95%84%EC%88%98%20%EC%95%B1!%20%EB%B0%9C%ED%92%88%20%EC%97%86%EC%9D%B4%20%EC%9E%90%EB%8F%99%EC%B0%A8%20%EA%B2%AC%EC%A0%81%20%EB%B3%B4%EA%B8%B0&en=page_view&_c=1&_ee=1&ep.origin=firebase&tfd=339",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059167640&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&_prs=gs&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=2&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=3&tag_exp=0~115938466~115938469&dl=RecommandTabContainer&dt=%ED%99%88&sid=1779059155&sct=1&seg=1&en=page_view&_c=1&_ee=1&ep.origin=firebase&_et=1&tfd=539",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059167640&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=2&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=2&tag_exp=0~115938466~115938469&uid=&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&en=home_view&_ee=1&ep.origin=firebase&ep.screen_name=GNB%20%3E%20%ED%99%88&_et=191&up.device_id=1wOkYW2EWcXIyDnw59WgodBfSPDI&tfd=539",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059167640&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=2&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&tag_exp=0~115938466~115938469&uid=&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&_s=4&tfd=5806",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059167640&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=2&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&tag_exp=0~115938466~115938469&uid=&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&_s=5&tfd=14671",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0h1v9201903299za200zd9201903299&_p=1779059167640&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=ckJQPWCB6GbzQ-DtX2xYcA&are=1&cid=354393053.1779059156&frm=0&pscdl=noapi&rcb=2&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&tag_exp=0~115938466~115938469&uid=&sid=1779059155&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&_s=6&tfd=22773",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "axeViolations": [
+        {
+          "id": "aria-hidden-focus",
+          "impact": "serious",
+          "description": "ARIA hidden element must not be focusable or contain focusable elements",
+          "nodes": 8
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "description": "Elements must only use permitted ARIA attributes",
+          "nodes": 6
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 16
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "meta-viewport",
+          "impact": "moderate",
+          "description": "Zooming and scaling must not be disabled",
+          "nodes": 1
+        },
+        {
+          "id": "page-has-heading-one",
+          "impact": "moderate",
+          "description": "Page should contain a level-one heading",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 10
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "off-mobile-10",
+          "type": "outside_viewport",
+          "message": "Large element mostly sits outside the viewport.",
+          "viewport": "mobile",
+          "severity": "info"
+        },
+        {
+          "id": "off-tablet-10",
+          "type": "outside_viewport",
+          "message": "Large element mostly sits outside the viewport.",
+          "viewport": "tablet",
+          "severity": "info"
+        },
+        {
+          "id": "off-desktop-19",
+          "type": "outside_viewport",
+          "message": "Large element mostly sits outside the viewport.",
+          "viewport": "desktop",
+          "severity": "info"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/cdceca49-f3ab-46a6-9d9c-c03532e510dc-mobile.png",
+        "tablet": "screenshots/76bbaeff-bab3-43d3-a703-81acf9acc645-tablet.png",
+        "desktop": "screenshots/2a788210-4f25-4679-be1f-ed6d4888fc88-desktop.png"
+      },
+      "crawledAt": "2026-05-17T23:06:35.813Z"
+    }
+  ],
+  "brokenLinks": [],
+  "summary": {
+    "healthScore": 26,
+    "avgLighthousePerformance": null,
+    "avgAxeIssuesPerPage": 43,
+    "totalConsoleErrors": 0,
+    "totalFailedRequests": 26,
+    "mobileWarnings": []
+  }
+}
