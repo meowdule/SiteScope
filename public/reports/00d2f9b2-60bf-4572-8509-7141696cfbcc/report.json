@@ -1,0 +1,176 @@
+{
+  "reportId": "00d2f9b2-60bf-4572-8509-7141696cfbcc",
+  "targetUrl": "https://m.getcha.kr/home",
+  "createdAt": "2026-05-17T23:41:03.325Z",
+  "completedAt": "2026-05-17T23:41:03.325Z",
+  "quick": {
+    "validUrl": true,
+    "dnsOk": true,
+    "dnsMessage": "DNS resolves.",
+    "httpStatus": 200,
+    "httpOk": true,
+    "finalUrl": "https://m.getcha.kr/home",
+    "redirectChain": [
+      "https://m.getcha.kr/home"
+    ],
+    "sslOk": true,
+    "sslMessage": "HTTPS in use.",
+    "responseTimeMs": 860,
+    "internalLinkCount": 1,
+    "screenshotRelativePath": "reports/00d2f9b2-60bf-4572-8509-7141696cfbcc/screenshots/quick-home.png"
+  },
+  "pages": [
+    {
+      "url": "https://m.getcha.kr/home",
+      "statusCode": 200,
+      "redirects": [
+        "https://m.getcha.kr/home"
+      ],
+      "consoleErrors": [],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779061204325&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAAC&_fid=daWqFKG-kKgFjGGnsR3xRA&_prs=gs&are=1&cid=1524400350.1779061205&frm=0&pscdl=noapi&rcb=15&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=0~115616986~115938466~115938468&sid=1779061204&sct=1&seg=0&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20-%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%20%ED%95%84%EC%88%98%20%EC%95%B1!%20%EB%B0%9C%ED%92%88%20%EC%97%86%EC%9D%B4%20%EC%9E%90%EB%8F%99%EC%B0%A8%20%EA%B2%AC%EC%A0%81%20%EB%B3%B4%EA%B8%B0&en=page_view&_fv=1&_nsi=1&_ss=2&_c=1&_ee=1&ep.origin=firebase&tfd=2793",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779061204325&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=daWqFKG-kKgFjGGnsR3xRA&are=1&cid=1524400350.1779061205&frm=0&pscdl=noapi&rcb=15&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=2&tag_exp=0~115616986~115938466~115938468&uid=&sid=1779061204&sct=1&seg=0&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&en=home_view&_ee=1&ep.origin=firebase&ep.screen_name=GNB%20%3E%20%ED%99%88&_et=572&up.device_id=1wOl5Y31RLPcrJjlCAOrhychwPDI&tfd=3376",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779061204325&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=daWqFKG-kKgFjGGnsR3xRA&_prs=gs&are=1&cid=1524400350.1779061205&frm=0&pscdl=noapi&rcb=15&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=3&tag_exp=0~115616986~115938466~115938468&dl=RecommandTabContainer&dt=%ED%99%88&sid=1779061204&sct=1&seg=1&en=page_view&_c=1&_ee=1&ep.origin=firebase&_et=1&tfd=3377",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://m.getcha.kr/static/media/banner_skeleton.0dc89aee.jpg",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779061204325&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=daWqFKG-kKgFjGGnsR3xRA&are=1&cid=1524400350.1779061205&frm=0&pscdl=noapi&rcb=15&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&tag_exp=0~115616986~115938466~115938468&uid=&sid=1779061204&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&_s=4&tfd=8933",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779061204325&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=daWqFKG-kKgFjGGnsR3xRA&are=1&cid=1524400350.1779061205&frm=0&pscdl=noapi&rcb=15&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&tag_exp=0~115616986~115938466~115938468&uid=&sid=1779061204&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&_s=5&tfd=28728",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779061204325&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=daWqFKG-kKgFjGGnsR3xRA&are=1&cid=1524400350.1779061205&frm=0&pscdl=noapi&rcb=15&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&tag_exp=0~115616986~115938466~115938468&uid=&sid=1779061204&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&_s=6&tfd=36827",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779061204325&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=daWqFKG-kKgFjGGnsR3xRA&are=1&cid=1524400350.1779061205&frm=0&pscdl=noapi&rcb=15&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&tag_exp=0~115616986~115938466~115938468&uid=&sid=1779061204&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&_s=7&tfd=44934",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779061204325&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=daWqFKG-kKgFjGGnsR3xRA&are=1&cid=1524400350.1779061205&frm=0&pscdl=noapi&rcb=15&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&tag_exp=0~115616986~115938466~115938468&uid=&sid=1779061204&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&_s=8&tfd=53030",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779061204325&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=daWqFKG-kKgFjGGnsR3xRA&are=1&cid=1524400350.1779061205&frm=0&pscdl=noapi&rcb=15&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&tag_exp=0~115616986~115938466~115938468&uid=&sid=1779061204&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&_s=9&tfd=61128",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "lighthouse": {
+        "performance": 27,
+        "accessibility": 74,
+        "bestPractices": 75,
+        "seo": 100,
+        "fcp": 12051.0665,
+        "lcp": 18994.320499999998,
+        "cls": 0,
+        "tbt": 2669.9999999999964,
+        "si": 12051.0665,
+        "collected": true
+      },
+      "axeViolations": [
+        {
+          "id": "aria-hidden-focus",
+          "impact": "serious",
+          "description": "ARIA hidden element must not be focusable or contain focusable elements",
+          "nodes": 8
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "description": "Elements must only use permitted ARIA attributes",
+          "nodes": 6
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 16
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "meta-viewport",
+          "impact": "moderate",
+          "description": "Zooming and scaling must not be disabled",
+          "nodes": 1
+        },
+        {
+          "id": "page-has-heading-one",
+          "impact": "moderate",
+          "description": "Page should contain a level-one heading",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 10
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [],
+      "screenshotPaths": {
+        "mobile": "screenshots/48c7a52c-2ab4-4289-8736-251eb6a080a6-mobile.png",
+        "tablet": "screenshots/623c2013-c080-4804-889b-9b6330f763a7-tablet.png",
+        "desktop": "screenshots/fa3a4c96-8402-4175-b8c8-81066db28810-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://m.getcha.kr/home",
+          "linksFound": 1
+        }
+      ],
+      "crawledAt": "2026-05-17T23:41:03.325Z"
+    }
+  ],
+  "brokenLinks": [],
+  "summary": {
+    "healthScore": 5,
+    "avgLighthousePerformance": 27,
+    "avgAxeIssuesPerPage": 43,
+    "totalConsoleErrors": 0,
+    "totalFailedRequests": 10,
+    "mobileWarnings": [
+      "1개 페이지의 성능 점수가 50점 미만입니다."
+    ],
+    "categoryScores": {
+      "performance": 27,
+      "accessibility": 74,
+      "seo": 100,
+      "ux": 100
+    },
+    "statusLabel": "Critical"
+  },
+  "crawlMeta": {
+    "interactions": [
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드 후 스캔",
+        "urlAfter": "https://m.getcha.kr/home",
+        "linksFound": 1
+      }
+    ],
+    "mode": "interaction"
+  }
+}
