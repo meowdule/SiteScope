@@ -33,9 +33,14 @@ jobs:
           if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
             REPORT_ID="${{ github.event.inputs.report_id }}"
             TARGET_URL="${{ github.event.inputs.target_url }}"
+            DEVICE_PROFILE="desktop"
           else
             REPORT_ID="${{ github.event.client_payload.reportId }}"
             TARGET_URL="${{ github.event.client_payload.targetUrl }}"
+            DEVICE_PROFILE="${{ github.event.client_payload.deviceProfile }}"
+          fi
+          if [[ "${DEVICE_PROFILE}" != "mobile" ]]; then
+            DEVICE_PROFILE="desktop"
           fi
           if [[ -z "${REPORT_ID}" || -z "${TARGET_URL}" ]]; then
             echo "Missing reportId or targetUrl in dispatch payload."
@@ -43,12 +48,14 @@ jobs:
           fi
           echo "report_id=${REPORT_ID}" >> "$GITHUB_OUTPUT"
           echo "target_url=${TARGET_URL}" >> "$GITHUB_OUTPUT"
+          echo "device_profile=${DEVICE_PROFILE}" >> "$GITHUB_OUTPUT"
 
       - name: Create request and initial status
         shell: bash
         env:
           REPORT_ID: ${{ steps.meta.outputs.report_id }}
           TARGET_URL: ${{ steps.meta.outputs.target_url }}
+          DEVICE_PROFILE: ${{ steps.meta.outputs.device_profile }}
         run: |
           set -euo pipefail
           NOW="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
@@ -56,6 +63,7 @@ jobs:
           printf '%s\n' "{" \
             "  \"reportId\": \"${REPORT_ID}\"," \
             "  \"targetUrl\": \"${TARGET_URL}\"," \
+            "  \"deviceProfile\": \"${DEVICE_PROFILE}\"," \
             "  \"createdAt\": \"${NOW}\"" \
             "}" > "requests/${REPORT_ID}.json"
           printf '%s\n' "{" \

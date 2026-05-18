@@ -1,10 +1,17 @@
 import { waitForSpaReady } from "./spa-wait.mjs";
-import { extractAllLinks } from "./link-extract.mjs";
+import { extractAllLinks, extractOutboundLinks } from "./link-extract.mjs";
 import {
   isInCrawlScope,
+  isOutboundUrl,
+  isHttp,
   formatRouteLabel,
   sameLogicalRoute,
 } from "./url-utils.mjs";
+import { createRouteCollector } from "./route-collector.mjs";
+import {
+  applyDeviceViewport,
+  getDeviceProfile,
+} from "./viewport-profile.mjs";
 import { ANALYSIS_CONFIG, getInteractionProfile } from "./analysis-config.mjs";
 import {
   installSpaHooks,
@@ -31,13 +38,17 @@ export async function explorePageInteractions(
 ) {
   const profileName = options.profile || "subpage";
   const P = { ...getInteractionProfile(profileName), ...options };
+  const deviceProfile =
+    options.deviceProfile || ANALYSIS_CONFIG.deviceProfile || "desktop";
   const debug = options.debug ?? ANALYSIS_CONFIG.interaction.debug;
+  const routeCollector = createRouteCollector(startUrl);
 
   const crawlStartedAt = Date.now();
   const deadline = crawlStartedAt + P.maxRuntimeMs;
   const isTimedOut = () => Date.now() >= deadline;
 
   const discovered = new Set();
+  const outboundDiscovered = new Set();
   const interactions = [];
   const uiStateChanges = [];
   const skipped = [];
@@ -50,11 +61,15 @@ export async function explorePageInteractions(
       : "Page";
   const flowRoot = createFlowRoot(pageLabel);
 
-  if (P.mobileViewport) {
-    await page.setViewportSize({ width: 390, height: 844 });
-  }
+  await applyDeviceViewport(page, deviceProfile);
 
   await installSpaHooks(page);
+
+  page.on("framenavigated", (frame) => {
+    if (frame === page.mainFrame()) {
+      routeCollector.add(frame.url(), startUrl);
+    }
+  });
 
   const networkEvents = [];
   const onRequest = (req) => {
@@ -93,10 +108,21 @@ export async function explorePageInteractions(
   };
 
   const collect = async () => {
+    routeCollector.add(page.url(), startUrl);
     const links = await extractAllLinks(page, pageUrl, startUrl);
+    const outbound = await extractOutboundLinks(page, pageUrl, startUrl);
+    routeCollector.addMany(links, pageUrl);
+    routeCollector.addMany(outbound, pageUrl);
     const before = discovered.size;
-    links.forEach((l) => discovered.add(l));
-    return { links, newCount: discovered.size - before };
+    for (const l of links) discovered.add(l);
+    for (const o of outbound) outboundDiscovered.add(o);
+    routeCollector.mergeIntoSet(discovered);
+    routeCollector.mergeOutboundIntoSet(outboundDiscovered);
+    return {
+      links: [...discovered],
+      outbound: [...outboundDiscovered],
+      newCount: discovered.size - before,
+    };
   };
 
   const mergeCandidates = (existing, incoming) => {
@@ -111,9 +137,12 @@ export async function explorePageInteractions(
     return existing.slice(0, P.maxCandidates);
   };
 
+  routeCollector.add(pageUrl, startUrl);
+
   await scrollToReveal(page, {
     passes: P.scrollPasses,
     quick: profileName !== "homepage",
+    deviceProfile,
   });
   await waitForSpaReady(page, { fast: profileName !== "homepage" });
   await rescanAfterHydration(page, true);
@@ -206,18 +235,43 @@ export async function explorePageInteractions(
         .catch(() => {});
 
       const afterUrl = page.url();
-      if (!isInCrawlScope(afterUrl, startUrl)) {
+      const crawlableAfter = isInCrawlScope(afterUrl, startUrl);
+      if (!crawlableAfter) {
+        const routeBefore = formatRouteLabel(beforeUrl, startUrl);
+        const routeAfter = formatRouteLabel(afterUrl, startUrl);
+        if (isHttp(afterUrl) && isOutboundUrl(afterUrl, startUrl)) {
+          outboundDiscovered.add(afterUrl);
+          routeCollector.add(afterUrl, startUrl);
+          const extEv = {
+            action: "external_navigation",
+            label: cand.label,
+            targetHint: cand.hint,
+            urlBefore: beforeUrl,
+            urlAfter: afterUrl,
+            routeBefore,
+            routeAfter,
+            outbound: true,
+            success: true,
+            meaningful: true,
+          };
+          interactions.push(extEv);
+          addInteractionNode(flowRoot, extEv);
+          meaningfulCount++;
+        } else {
+          recordSkip("out_of_scope", cand.label);
+        }
         await page
           .goBack({ waitUntil: "domcontentloaded", timeout: 10_000 })
           .catch(() => {});
         await waitForSpaReady(page, { short: true, fast: true });
-        recordSkip("out_of_scope", cand.label);
         continue;
       }
 
       const afterSnap = await takeDomSnapshot(page);
       const domDiff = diffSnapshots(beforeSnap, afterSnap);
       const spaNav = await readNavLog(page);
+      routeCollector.add(afterUrl, startUrl);
+      routeCollector.addFromSpaNav(spaNav);
       const fetchDelta = await readNetworkDelta(page);
       const netSession = drainNetwork();
       const { links, newCount } = await collect();
@@ -312,45 +366,24 @@ export async function explorePageInteractions(
         continue;
       }
 
-      let leftSeedDocument = false;
-      try {
-        const bu = new URL(beforeUrl);
-        const au = new URL(afterUrl);
-        leftSeedDocument =
-          classified.routeChanged &&
-          !sameLogicalRoute(beforeUrl, afterUrl, startUrl) &&
-          bu.pathname !== au.pathname;
-      } catch {
-        leftSeedDocument =
-          classified.routeChanged && afterUrl !== beforeUrl;
-      }
-
-      if (leftSeedDocument) {
+      if (
+        classified.routeChanged &&
+        !sameLogicalRoute(beforeUrl, afterUrl, startUrl)
+      ) {
+        await collect();
         await page
-          .goBack({ waitUntil: "domcontentloaded", timeout: 10_000 })
+          .goBack({ waitUntil: "domcontentloaded", timeout: 12_000 })
           .catch(() => {});
         await waitForSpaReady(page, { short: true, fast: true });
         pageUrl = page.url();
         if (!isTimedOut()) {
           const fresh = await findAndTagCandidates(
             page,
-            Math.min(P.maxCandidates, 35),
+            Math.min(P.maxCandidates, 40),
             P.richHeuristics,
           );
           candidates = mergeCandidates(candidates, fresh);
         }
-      } else if (
-        classified.routeChanged &&
-        !sameLogicalRoute(beforeUrl, afterUrl, startUrl)
-      ) {
-        await page
-          .evaluate((hash) => {
-            if (hash) location.hash = hash;
-            else history.back();
-          }, beforeSnap.hash || "")
-          .catch(() => {});
-        await waitForSpaReady(page, { short: true, fast: true });
-        pageUrl = page.url();
       } else if (domDiff.deltaOverlays > 0) {
         await page.keyboard.press("Escape").catch(() => {});
         await page.waitForTimeout(250);
@@ -374,16 +407,21 @@ export async function explorePageInteractions(
 
   return {
     links: [...discovered],
+    outboundLinks: [...outboundDiscovered],
     interactions,
     uiStateChanges,
     interactionFlow,
     flowRoot,
     discoveryStats: {
       profile: profileName,
+      deviceProfile,
+      runtimeRoutes: routeCollector.size(),
+      outboundRoutes: routeCollector.outboundSize(),
       candidatesFound: candidates.length,
       clicksAttempted: attempts,
       clicksRecorded: meaningfulCount,
       linksDiscovered: finalLinks.links.length,
+      outboundDiscovered: outboundDiscovered.size,
       stoppedEarly: isTimedOut() || noChangeStreak >= P.consecutiveNoChangeStop,
       runtimeMs: Date.now() - crawlStartedAt,
       skippedByReason,
@@ -542,10 +580,14 @@ async function scrollDiscoverCandidates(
   return candidates;
 }
 
-async function scrollToReveal(page, { passes = 3, quick = false } = {}) {
-  await page.evaluate(async ({ passes, quick }) => {
+async function scrollToReveal(
+  page,
+  { passes = 3, quick = false, deviceProfile = "desktop" } = {},
+) {
+  const vp = getDeviceProfile(deviceProfile);
+  await page.evaluate(async ({ passes, quick, vh }) => {
     const delay = (ms) => new Promise((r) => setTimeout(r, ms));
-    const step = Math.max(220, window.innerHeight * 0.75);
+    const step = Math.max(220, (vh || window.innerHeight) * 0.75);
     const max = Math.min(document.documentElement.scrollHeight, quick ? 5000 : 8000);
     const maxSteps = Math.min(passes + 1, quick ? 3 : 6);
     let y = 0;
@@ -558,7 +600,7 @@ async function scrollToReveal(page, { passes = 3, quick = false } = {}) {
     }
     window.scrollTo(0, 0);
     await delay(100);
-  }, { passes, quick });
+  }, { passes, quick, vh: vp.height });
 }
 
 async function rescanAfterHydration(page, fast = false) {

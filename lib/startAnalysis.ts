@@ -1,10 +1,12 @@
 import { getConfiguredRepo } from "@/lib/config";
 
 export type StartMode = "dispatch" | "issue";
+export type DeviceProfile = "mobile" | "desktop";
 
 async function dispatchAnalysis(
   reportId: string,
   targetUrl: string,
+  deviceProfile: DeviceProfile,
   token: string,
 ): Promise<void> {
   const repo = getConfiguredRepo();
@@ -28,6 +30,7 @@ async function dispatchAnalysis(
         client_payload: {
           reportId,
           targetUrl,
+          deviceProfile,
           createdAt: new Date().toISOString(),
         },
       }),
@@ -43,7 +46,11 @@ async function dispatchAnalysis(
 }
 
 /** Opens GitHub issue form when dispatch token is not configured at build time. */
-export function openAnalysisIssue(reportId: string, targetUrl: string): void {
+export function openAnalysisIssue(
+  reportId: string,
+  targetUrl: string,
+  deviceProfile: DeviceProfile = "desktop",
+): void {
   const repo = getConfiguredRepo();
   const [owner, name] = repo.split("/");
   if (!owner || !name) {
@@ -51,7 +58,12 @@ export function openAnalysisIssue(reportId: string, targetUrl: string): void {
   }
 
   const payload = JSON.stringify(
-    { reportId, targetUrl, createdAt: new Date().toISOString() },
+    {
+      reportId,
+      targetUrl,
+      deviceProfile,
+      createdAt: new Date().toISOString(),
+    },
     null,
     2,
   );
@@ -79,13 +91,14 @@ export function openAnalysisIssue(reportId: string, targetUrl: string): void {
 export async function startAnalysis(
   reportId: string,
   targetUrl: string,
+  deviceProfile: DeviceProfile = "desktop",
 ): Promise<StartMode> {
   const token = process.env.NEXT_PUBLIC_QUEUE_DISPATCH_TOKEN?.trim();
   if (token) {
-    await dispatchAnalysis(reportId, targetUrl, token);
+    await dispatchAnalysis(reportId, targetUrl, deviceProfile, token);
     return "dispatch";
   }
-  openAnalysisIssue(reportId, targetUrl);
+  openAnalysisIssue(reportId, targetUrl, deviceProfile);
   return "issue";
 }
 

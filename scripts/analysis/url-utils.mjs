@@ -3,6 +3,19 @@ export function isAppHashRoute(hash) {
   return /^#!?\//.test(hash || "");
 }
 
+/** GitHub/GitLab Pages style deploy under a subpath — strict path prefix crawl. */
+export function isSubpathDeployment(startUrl) {
+  try {
+    const u = new URL(startUrl);
+    const host = u.hostname.toLowerCase();
+    if (host.endsWith(".github.io") || host.endsWith(".gitlab.io")) return true;
+    const segments = u.pathname.split("/").filter(Boolean);
+    return segments.length >= 2;
+  } catch {
+    return false;
+  }
+}
+
 /** Human-readable route for logs (pathname + hash route when present). */
 export function formatRouteLabel(urlOrHref, baseUrl) {
   try {
@@ -16,7 +29,6 @@ export function formatRouteLabel(urlOrHref, baseUrl) {
   }
 }
 
-/** True when page URL is the same entry as start (post-redirect tolerant on pathname). */
 export function isHomepageUrl(pageUrl, startUrl) {
   const a = normalizeUrl(pageUrl, startUrl);
   const b = normalizeUrl(startUrl, startUrl);
@@ -57,9 +69,6 @@ function normalizedPathname(url) {
   return p || "/";
 }
 
-/**
- * Path prefix for crawl scope derived from seed URL (pathname only; hash routes stay on page).
- */
 export function getSeedPathPrefix(startUrl) {
   try {
     const start = new URL(startUrl);
@@ -77,30 +86,10 @@ export function getSeedScope(startUrl) {
     return {
       origin: start.origin,
       pathPrefix: getSeedPathPrefix(startUrl),
+      mode: isSubpathDeployment(startUrl) ? "path_prefix" : "origin",
     };
   } catch {
-    return { origin: null, pathPrefix: null };
-  }
-}
-
-/**
- * Same origin + under seed pathname prefix.
- * Hash routes (#/pages/plans) on the seed HTML page are in scope.
- */
-export function isInCrawlScope(url, startUrl) {
-  try {
-    const u = new URL(url);
-    const start = new URL(startUrl);
-    if (u.protocol !== "http:" && u.protocol !== "https:") return false;
-    if (u.origin !== start.origin) return false;
-
-    const prefix = getSeedPathPrefix(startUrl);
-    if (!prefix) return true;
-
-    const path = normalizedPathname(u);
-    return path === prefix || path.startsWith(`${prefix}/`);
-  } catch {
-    return false;
+    return { origin: null, pathPrefix: null, mode: "origin" };
   }
 }
 
@@ -116,6 +105,43 @@ export function sameRegistrableDomain(a, b) {
     const hb = new URL(b).hostname;
     if (ha === hb) return true;
     return registrableRoot(ha) === registrableRoot(hb);
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Pages we actually crawl — must stay on the seed origin (and subpath when deployed under one).
+ * e.g. m.getcha.kr/web/https%3A%2F%2Fwww... is in-scope; www.getcha.kr/... is not.
+ */
+export function isInCrawlScope(url, startUrl) {
+  try {
+    const u = new URL(url);
+    const start = new URL(startUrl);
+    if (u.protocol !== "http:" && u.protocol !== "https:") return false;
+    if (u.origin !== start.origin) return false;
+
+    if (isSubpathDeployment(startUrl)) {
+      const prefix = getSeedPathPrefix(startUrl);
+      if (!prefix) return true;
+      const path = normalizedPathname(u);
+      if (path === prefix || path.startsWith(`${prefix}/`)) return true;
+      if (path === prefix && isAppHashRoute(u.hash)) return true;
+      return false;
+    }
+
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/** HTTP(S) link that leaves the crawl scope (record navigation, do not crawl). */
+export function isOutboundUrl(url, startUrl) {
+  try {
+    const u = new URL(url);
+    if (u.protocol !== "http:" && u.protocol !== "https:") return false;
+    return !isInCrawlScope(url, startUrl);
   } catch {
     return false;
   }
@@ -144,7 +170,6 @@ export function filterUrlsInScope(urls, startUrl) {
   return [...out];
 }
 
-/** True if two URLs represent the same logical route (pathname + hash + search). */
 export function sameLogicalRoute(a, b, baseUrl) {
   try {
     const ua = new URL(a, baseUrl);

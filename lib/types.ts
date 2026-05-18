@@ -153,9 +153,12 @@ export type TimingReport = {
   totalSeconds?: number;
 };
 
+export type DeviceProfile = "mobile" | "desktop";
+
 export type ReportJson = {
   reportId: string;
   targetUrl: string;
+  deviceProfile?: DeviceProfile;
   createdAt: string;
   completedAt?: string;
   quick: QuickCheckResult;
@@ -164,13 +167,17 @@ export type ReportJson = {
   timing?: TimingReport;
   crawlMeta?: {
     mode?: string;
-    seedScope?: { origin?: string; pathPrefix?: string | null };
+    seedScope?: { origin?: string; pathPrefix?: string | null; mode?: string };
+    deviceProfile?: DeviceProfile;
     interactions?: InteractionEvent[];
     interactionFlow?: string;
+    outboundLinks?: string[];
     discoveryStats?: {
       candidatesFound?: number;
       clicksRecorded?: number;
       linksDiscovered?: number;
+      outboundDiscovered?: number;
+      runtimeRoutes?: number;
       profile?: string;
       skippedByReason?: Record<string, number>;
     };

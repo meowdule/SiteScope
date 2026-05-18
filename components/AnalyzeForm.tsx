@@ -4,7 +4,11 @@ import { useCallback, useMemo, useState } from "react";
 import { validateHttpUrl } from "@/lib/validateUrl";
 import { checkDns } from "@/lib/dnsCheck";
 import type { QuickCheckResult, ReportPhase } from "@/lib/types";
-import { hasDispatchToken, startAnalysis } from "@/lib/startAnalysis";
+import {
+  hasDispatchToken,
+  startAnalysis,
+  type DeviceProfile,
+} from "@/lib/startAnalysis";
 import { fetchReport, fetchStatus } from "@/lib/pollReport";
 import { assetUrl } from "@/lib/paths";
 
@@ -17,6 +21,7 @@ function newReportId(): string {
 
 export function AnalyzeForm() {
   const [urlInput, setUrlInput] = useState("");
+  const [deviceProfile, setDeviceProfile] = useState<DeviceProfile>("desktop");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [reportId, setReportId] = useState<string | null>(null);
@@ -91,14 +96,14 @@ export function AnalyzeForm() {
     await runInstantChecks(v.normalized);
 
     try {
-      await startAnalysis(id, v.normalized);
+      await startAnalysis(id, v.normalized, deviceProfile);
       void pollLoop(id);
     } catch (e) {
       const msg = e instanceof Error ? e.message : "Could not start analysis.";
       setError(msg);
       setBusy(false);
     }
-  }, [pollLoop, runInstantChecks, urlInput]);
+  }, [deviceProfile, pollLoop, runInstantChecks, urlInput]);
 
   const phaseLabel = useMemo(() => {
     if (!phase) return null;
@@ -136,6 +141,34 @@ export function AnalyzeForm() {
         >
           {busy ? "Working…" : "Analyze"}
         </button>
+      </div>
+
+      <div className="flex flex-wrap items-center gap-4 text-sm text-slate-300">
+        <span className="text-slate-400">분석 화면 크기</span>
+        <label className="flex cursor-pointer items-center gap-2">
+          <input
+            type="radio"
+            name="deviceProfile"
+            value="desktop"
+            checked={deviceProfile === "desktop"}
+            disabled={busy}
+            onChange={() => setDeviceProfile("desktop")}
+            className="accent-accent"
+          />
+          데스크톱 (1440px)
+        </label>
+        <label className="flex cursor-pointer items-center gap-2">
+          <input
+            type="radio"
+            name="deviceProfile"
+            value="mobile"
+            checked={deviceProfile === "mobile"}
+            disabled={busy}
+            onChange={() => setDeviceProfile("mobile")}
+            className="accent-accent"
+          />
+          모바일 (390px)
+        </label>
       </div>
 
       {!hasDispatchToken() && (

@@ -14,34 +14,36 @@ import { waitForSpaReady } from "./analysis/spa-wait.mjs";
 import { analyzePage } from "./analysis/page-analyzer.mjs";
 import { buildSummary } from "./analysis/report-summary.mjs";
 import { renderReportHtml } from "./analysis/report-html.mjs";
-import { ANALYSIS_CONFIG } from "./analysis/analysis-config.mjs";
+import {
+  ANALYSIS_CONFIG,
+  setRuntimeDeviceProfile,
+} from "./analysis/analysis-config.mjs";
+import { playwrightContextOptions } from "./analysis/viewport-profile.mjs";
 import { AnalysisTimer } from "./analysis/timing.mjs";
 import { captureViewportScreenshot } from "./analysis/screenshot.mjs";
 
 async function readRequest({ requestFile, reportId, targetUrl }) {
   if (requestFile) {
     const data = await readJson(path.resolve(requestFile));
+    const deviceProfile =
+      data.deviceProfile === "mobile" ? "mobile" : "desktop";
     return {
       reportId: data.reportId,
       targetUrl: data.targetUrl,
+      deviceProfile,
     };
   }
   if (reportId && targetUrl) {
-    return { reportId, targetUrl };
+    return { reportId, targetUrl, deviceProfile: "desktop" };
   }
   throw new Error(
     "Provide --request-file=... or both --report-id and --target-url",
   );
 }
 
-async function runQuickHome({ browser, targetUrl, reportId, absDir }) {
+async function runQuickHome({ browser, targetUrl, reportId, absDir, deviceProfile }) {
   const nodeProbe = await nodeQuickProbe(targetUrl);
-  const ctx = await browser.newContext({
-    viewport: { width: 1440, height: 900 },
-    ignoreHTTPSErrors: true,
-    userAgent:
-      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 SiteScope/0.1",
-  });
+  const ctx = await browser.newContext(playwrightContextOptions(deviceProfile));
   try {
     const page = await ctx.newPage();
     let internalLinkCount = 0;
@@ -58,9 +60,9 @@ async function runQuickHome({ browser, targetUrl, reportId, absDir }) {
       httpOk = !!httpStatus && httpStatus < 400;
       finalUrl = page.url();
       await waitForSpaReady(page, { short: true, fast: true });
-      await page.setViewportSize({ width: 390, height: 844 });
       const explored = await explorePageInteractions(page, finalUrl, targetUrl, {
         profile: "homepage",
+        deviceProfile,
       });
       internalLinkCount = explored.links.length;
       const shotRel = `reports/${reportId}/screenshots/quick-home.jpg`;
@@ -102,7 +104,15 @@ async function runQuickHome({ browser, targetUrl, reportId, absDir }) {
   }
 }
 
-async function analyzePagesParallel({ browser, urls, reportId, absDir, targetUrl, timer }) {
+async function analyzePagesParallel({
+  browser,
+  urls,
+  reportId,
+  absDir,
+  targetUrl,
+  timer,
+  deviceProfile,
+}) {
   const concurrency = ANALYSIS_CONFIG.parallel.pageConcurrency;
   const pages = [];
   const brokenLinks = [];
@@ -119,6 +129,7 @@ async function analyzePagesParallel({ browser, urls, reportId, absDir, targetUrl
           reportsAbsDir: absDir,
           startUrl: targetUrl,
           isHomepage: index === 0,
+          deviceProfile,
           runFullLighthouse:
             index === 0 && ANALYSIS_CONFIG.lighthouse.fullOnFirstPageOnly,
           analysisTimer: timer,
@@ -150,11 +161,13 @@ async function main() {
   const reportIdArg = process.env.REPORT_ID || values["report-id"];
   const targetArg = process.env.TARGET_URL || values["target-url"];
 
-  const { reportId, targetUrl } = await readRequest({
+  const { reportId, targetUrl, deviceProfile } = await readRequest({
     requestFile,
     reportId: reportIdArg,
     targetUrl: targetArg,
   });
+
+  setRuntimeDeviceProfile(deviceProfile);
 
   const absDir = reportsDir(reportId);
   await fs.mkdir(absDir, { recursive: true });
@@ -177,7 +190,13 @@ async function main() {
 
   try {
     timer.start("quick_scan");
-    const quick = await runQuickHome({ browser, targetUrl, reportId, absDir });
+    const quick = await runQuickHome({
+      browser,
+      targetUrl,
+      reportId,
+      absDir,
+      deviceProfile,
+    });
     timer.end("quick_scan");
 
     await writeStatus(reportId, {
@@ -198,6 +217,7 @@ async function main() {
       startUrl: targetUrl,
       maxPages: ANALYSIS_CONFIG.crawl.maxPages,
       maxDepth: ANALYSIS_CONFIG.crawl.maxDepth,
+      deviceProfile,
     });
     urls = urls.filter((u) => isInCrawlScope(u, targetUrl));
     if (urls.length === 0) {
@@ -220,6 +240,7 @@ async function main() {
       absDir,
       targetUrl,
       timer,
+      deviceProfile,
     });
     timer.end("page_analysis");
 
@@ -260,6 +281,7 @@ async function main() {
     const report = {
       reportId,
       targetUrl,
+      deviceProfile,
       createdAt: completedAt,
       completedAt,
       quick,

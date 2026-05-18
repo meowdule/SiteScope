@@ -18,6 +18,7 @@ import {
   screenshotViewports,
 } from "./screenshot.mjs";
 import { createPageTimer } from "./timing.mjs";
+import { playwrightContextOptions } from "./viewport-profile.mjs";
 
 function redirectChainFromResponse(response) {
   const chain = [];
@@ -40,6 +41,7 @@ export async function analyzePage({
   startUrl,
   runFullLighthouse = false,
   isHomepage = false,
+  deviceProfile = "desktop",
   analysisTimer = null,
 }) {
   const pageTimer = analysisTimer
@@ -50,12 +52,9 @@ export async function analyzePage({
   const jsExceptions = [];
   const failedRequests = [];
 
-  const context = await browser.newContext({
-    viewport: { width: 1440, height: 900 },
-    ignoreHTTPSErrors: true,
-    userAgent:
-      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 SiteScope/0.1",
-  });
+  const context = await browser.newContext(
+    playwrightContextOptions(deviceProfile),
+  );
 
   const page = await context.newPage();
 
@@ -113,6 +112,7 @@ export async function analyzePage({
     pageTimer?.start("interaction_crawl");
     const explored = await explorePageInteractions(page, page.url(), startUrl, {
       profile: homepage ? "homepage" : "subpage",
+      deviceProfile,
     });
     pageTimer?.end("interaction_crawl");
 

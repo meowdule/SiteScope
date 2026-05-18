@@ -1,8 +1,25 @@
 /** Central tuning for CI/runtime — override via env where noted. */
 const fast = process.env.SITE_SCOPE_FAST === "1";
 
+/** @type {'mobile' | 'desktop'} */
+let runtimeDeviceProfile =
+  process.env.SITE_SCOPE_DEVICE === "mobile" ? "mobile" : "desktop";
+
+export function setRuntimeDeviceProfile(profile) {
+  if (profile === "mobile" || profile === "desktop") {
+    runtimeDeviceProfile = profile;
+  }
+}
+
+export function getRuntimeDeviceProfile() {
+  return runtimeDeviceProfile;
+}
+
 export const ANALYSIS_CONFIG = {
   fast,
+  get deviceProfile() {
+    return runtimeDeviceProfile;
+  },
 
   spa: {
     networkSettleMs: fast ? 1800 : 3500,
@@ -23,7 +40,6 @@ export const ANALYSIS_CONFIG = {
         maxCandidates: fast ? 50 : 60,
         consecutiveNoChangeStop: 5,
         scrollPasses: fast ? 3 : 4,
-        mobileViewport: true,
         richHeuristics: true,
       },
       subpage: {
@@ -32,16 +48,14 @@ export const ANALYSIS_CONFIG = {
         maxCandidates: fast ? 22 : 28,
         consecutiveNoChangeStop: 2,
         scrollPasses: 1,
-        mobileViewport: false,
         richHeuristics: false,
       },
       crawlSeed: {
-        maxInteractions: 4,
-        maxRuntimeMs: 18_000,
-        maxCandidates: 35,
-        consecutiveNoChangeStop: 2,
-        scrollPasses: 2,
-        mobileViewport: true,
+        maxInteractions: fast ? 14 : 18,
+        maxRuntimeMs: fast ? 50_000 : 65_000,
+        maxCandidates: fast ? 55 : 65,
+        consecutiveNoChangeStop: 4,
+        scrollPasses: fast ? 3 : 4,
         richHeuristics: true,
       },
     },
@@ -66,12 +80,17 @@ export const ANALYSIS_CONFIG = {
   },
 
   screenshots: {
-    viewports: fast
-      ? [{ name: "mobile", width: 375, height: 812 }]
-      : [
-          { name: "mobile", width: 375, height: 812 },
-          { name: "desktop", width: 1440, height: 900 },
-        ],
+    get viewports() {
+      if (runtimeDeviceProfile === "mobile") {
+        return [{ name: "mobile", width: 390, height: 844 }];
+      }
+      return fast
+        ? [{ name: "desktop", width: 1440, height: 900 }]
+        : [
+            { name: "desktop", width: 1440, height: 900 },
+            { name: "mobile", width: 390, height: 844 },
+          ];
+    },
     type: "jpeg",
     quality: 72,
   },

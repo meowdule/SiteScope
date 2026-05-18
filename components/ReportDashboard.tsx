@@ -102,6 +102,13 @@ export function ReportDashboard({ reportId }: Props) {
             </div>
           )}
         </div>
+        {(report.deviceProfile || crawlMeta?.deviceProfile) && (
+          <span className="rounded-full border border-surface-border px-3 py-1 text-xs text-slate-300">
+            {(report.deviceProfile || crawlMeta?.deviceProfile) === "mobile"
+              ? "모바일 분석"
+              : "데스크톱 분석"}
+          </span>
+        )}
         {(crawlMeta?.mode?.includes("interaction") ||
           crawlMeta?.mode?.includes("homepage") ||
           crawlMeta?.mode === "hybrid_crawl") && (
@@ -144,15 +151,25 @@ export function ReportDashboard({ reportId }: Props) {
         </section>
       )}
 
-      <section className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <section className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         <MetricTile label="탐색한 페이지" value={String(pages.length)} />
         <MetricTile
-          label="발견한 내부 경로"
+          label="크롤 대상 (시드에서 이동 가능)"
           value={
             crawlMeta?.discoveryStats?.linksDiscovered != null
               ? String(crawlMeta.discoveryStats.linksDiscovered)
               : quick.internalLinkCount != null
                 ? String(quick.internalLinkCount)
+                : "—"
+          }
+        />
+        <MetricTile
+          label="외부 링크 (기록만)"
+          value={
+            crawlMeta?.discoveryStats?.outboundDiscovered != null
+              ? String(crawlMeta.discoveryStats.outboundDiscovered)
+              : crawlMeta?.outboundLinks?.length != null
+                ? String(crawlMeta.outboundLinks.length)
                 : "—"
           }
         />
@@ -190,11 +207,27 @@ export function ReportDashboard({ reportId }: Props) {
           </section>
         )}
 
+      {(crawlMeta?.outboundLinks?.length ?? 0) > 0 && (
+        <section className="mt-8 rounded-xl border border-surface-border bg-surface-raised p-5">
+          <h2 className="text-sm font-semibold text-white">외부 이동 (크롤하지 않음)</h2>
+          <p className="mt-1 text-xs text-slate-500">
+            시드 사이트에서 클릭·링크로 나갈 수 있는 다른 도메인입니다.
+          </p>
+          <ul className="mt-3 max-h-40 space-y-1 overflow-y-auto font-mono text-xs text-slate-400">
+            {crawlMeta!.outboundLinks!.slice(0, 12).map((u) => (
+              <li key={u} className="truncate">
+                {u}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {crawlMeta?.interactionFlow && (
         <section className="mt-8 rounded-xl border border-accent/20 bg-accent/5 p-5">
           <h2 className="text-sm font-semibold text-white">사용자 흐름 (홈)</h2>
           <p className="mt-1 text-xs text-slate-500">
-            사람이 눌러볼 만한 요소를 우선 탐색한 결과입니다.
+            시드 페이지에서 눌러 이동·노출된 경로입니다. 외부 사이트는 분석하지 않습니다.
           </p>
           <pre className="mt-4 max-h-80 overflow-auto whitespace-pre-wrap font-mono text-xs leading-relaxed text-slate-200">
             {crawlMeta.interactionFlow}

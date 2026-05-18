@@ -2,6 +2,7 @@ import {
   normalizeUrl,
   isHttp,
   isInternalToSite,
+  isOutboundUrl,
   isAppHashRoute,
 } from "./url-utils.mjs";
 
@@ -51,7 +52,7 @@ function candidateFromElement(el, base) {
 export function filterInternalUrls(rawUrls, pageUrl, startUrl) {
   const out = new Set();
   for (const href of rawUrls) {
-    for (const expanded of expandUrlCandidates(href, pageUrl)) {
+    for (const expanded of expandUrlCandidates(href, pageUrl, startUrl)) {
       const n = normalizeUrl(expanded, pageUrl);
       if (!n || !isHttp(n)) continue;
       if (!isInternalToSite(n, startUrl, pageUrl)) continue;
@@ -61,16 +62,39 @@ export function filterInternalUrls(rawUrls, pageUrl, startUrl) {
   return [...out];
 }
 
-export function expandUrlCandidates(href, baseUrl) {
+export function filterOutboundUrls(rawUrls, pageUrl, startUrl) {
+  const out = new Set();
+  for (const href of rawUrls) {
+    for (const expanded of expandUrlCandidates(href, pageUrl, startUrl)) {
+      const n = normalizeUrl(expanded, pageUrl);
+      if (!n || !isHttp(n)) continue;
+      if (!isOutboundUrl(n, startUrl)) continue;
+      out.add(n);
+    }
+  }
+  return [...out];
+}
+
+/** @param {string} href @param {string} baseUrl @param {string} [startUrl] seed for scope when unwrapping /web/… */
+export function expandUrlCandidates(href, baseUrl, startUrl) {
   const results = new Set();
+  const scopeBase = startUrl || baseUrl;
   try {
     const abs = new URL(href, baseUrl).toString();
     results.add(abs);
     const u = new URL(abs);
+    const seedOrigin = new URL(scopeBase).origin;
     for (const decoded of decodeSpaWebPath(u.pathname)) {
-      results.add(decoded);
-      const dn = normalizeUrl(decoded, baseUrl);
-      if (dn) results.add(dn);
+      try {
+        const inner = new URL(decoded);
+        if (inner.origin === seedOrigin) {
+          results.add(decoded);
+          const dn = normalizeUrl(decoded, baseUrl);
+          if (dn) results.add(dn);
+        }
+      } catch {
+        /* ignore */
+      }
     }
     if (isAppHashRoute(u.hash)) {
       results.add(u.toString());
@@ -176,4 +200,37 @@ export async function extractAllLinks(page, pageUrl, startUrl) {
   }, pageUrl);
 
   return filterInternalUrls([...raw, ...fromDom], pageUrl, startUrl);
+}
+
+/** External destinations visible on the page (App Store, etc.) — not crawled. */
+export async function extractOutboundLinks(page, pageUrl, startUrl) {
+  const raw = await page.evaluate((base) => {
+    const urls = new Set();
+    const add = (href) => {
+      if (!href) return;
+      const t = String(href).trim();
+      if (
+        !t ||
+        t.startsWith("mailto:") ||
+        t.startsWith("tel:") ||
+        t.startsWith("javascript:")
+      )
+        return;
+      try {
+        urls.add(new URL(t, base).toString());
+      } catch {
+        /* ignore */
+      }
+    };
+    document.querySelectorAll("a[href], area[href]").forEach((el) => {
+      add(el.getAttribute("href"));
+    });
+    for (const name of ["data-href", "data-url", "data-link"]) {
+      document.querySelectorAll(`[${name}]`).forEach((el) => {
+        add(el.getAttribute(name));
+      });
+    }
+    return Array.from(urls);
+  }, pageUrl);
+  return filterOutboundUrls(raw, pageUrl, startUrl);
 }

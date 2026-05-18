@@ -37,6 +37,7 @@ function formatInteractionLabel(ev) {
     carousel: "슬라이드",
     scroll_reveal: "스크롤 노출",
     initial_scan: "초기 스캔",
+    external_navigation: "외부 이동 (크롤 제외)",
   };
   const act = actionLabels[ev.action] || "클릭";
   return `${ev.label}${hint} — ${act}`;
@@ -45,7 +46,13 @@ function formatInteractionLabel(ev) {
 function buildEffectChildren(ev) {
   const out = [];
   if (ev.spaNavigation) out.push(`SPA 경로 변경 (${ev.spaNavigation})`);
-  if (ev.routeAfter && ev.routeBefore !== ev.routeAfter) {
+  if (ev.outbound && ev.urlAfter) {
+    try {
+      out.push(`외부 → ${new URL(ev.urlAfter).hostname}`);
+    } catch {
+      out.push("외부 사이트로 이동");
+    }
+  } else if (ev.routeAfter && ev.routeBefore !== ev.routeAfter) {
     out.push(`경로 → ${ev.routeAfter}`);
   } else if (ev.hashAfter && ev.hashBefore !== ev.hashAfter) {
     out.push(`해시 경로 → ${ev.hashAfter}`);
