@@ -1,5 +1,6 @@
 import { waitForSpaReady } from "./spa-wait.mjs";
 import { extractAllLinks } from "./link-extract.mjs";
+import { isInCrawlScope } from "./url-utils.mjs";
 import { ANALYSIS_CONFIG, getInteractionProfile } from "./analysis-config.mjs";
 import {
   installSpaHooks,
@@ -193,6 +194,15 @@ export async function explorePageInteractions(
       await rescanAfterHydration(page, true);
 
       const afterUrl = page.url();
+      if (!isInCrawlScope(afterUrl, startUrl)) {
+        await page
+          .goBack({ waitUntil: "domcontentloaded", timeout: 10_000 })
+          .catch(() => {});
+        await waitForSpaReady(page, { short: true, fast: true });
+        recordSkip("out_of_scope", cand.label);
+        continue;
+      }
+
       const afterSnap = await takeDomSnapshot(page);
       const domDiff = diffSnapshots(beforeSnap, afterSnap);
       const spaNav = await readNavLog(page);

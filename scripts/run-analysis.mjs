@@ -8,6 +8,7 @@ import { reportsDir, writeJson, readJson } from "./analysis/fs-utils.mjs";
 import { writeStatus } from "./analysis/status.mjs";
 import { nodeQuickProbe } from "./analysis/node-quick-probe.mjs";
 import { discoverUrls } from "./analysis/crawler.mjs";
+import { isInCrawlScope, normalizeUrl } from "./analysis/url-utils.mjs";
 import { explorePageInteractions } from "./analysis/interaction-crawl.mjs";
 import { waitForSpaReady } from "./analysis/spa-wait.mjs";
 import { analyzePage } from "./analysis/page-analyzer.mjs";
@@ -192,12 +193,17 @@ async function main() {
     });
 
     timer.start("crawl");
-    const { urls, crawlMeta } = await discoverUrls({
+    let { urls, crawlMeta } = await discoverUrls({
       browser,
       startUrl: targetUrl,
       maxPages: ANALYSIS_CONFIG.crawl.maxPages,
       maxDepth: ANALYSIS_CONFIG.crawl.maxDepth,
     });
+    urls = urls.filter((u) => isInCrawlScope(u, targetUrl));
+    if (urls.length === 0) {
+      const seed = normalizeUrl(targetUrl, targetUrl);
+      if (seed) urls = [seed];
+    }
     timer.end("crawl");
 
     await writeStatus(reportId, {

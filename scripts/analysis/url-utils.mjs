@@ -26,6 +26,60 @@ export function normalizeUrl(href, baseUrl) {
   }
 }
 
+function normalizedPathname(url) {
+  const p = url.pathname.replace(/\/+$/, "");
+  return p || "/";
+}
+
+/**
+ * Path prefix for crawl scope derived from seed URL.
+ * e.g. https://host/SEO-TESTING-HTML/ → /SEO-TESTING-HTML
+ * Root seed https://host/ → null (entire origin allowed).
+ */
+export function getSeedPathPrefix(startUrl) {
+  try {
+    const start = new URL(startUrl);
+    const path = normalizedPathname(start);
+    if (path === "/") return null;
+    return path;
+  } catch {
+    return null;
+  }
+}
+
+export function getSeedScope(startUrl) {
+  try {
+    const start = new URL(startUrl);
+    return {
+      origin: start.origin,
+      pathPrefix: getSeedPathPrefix(startUrl),
+    };
+  } catch {
+    return { origin: null, pathPrefix: null };
+  }
+}
+
+/**
+ * URL is allowed when it stays under the seed URL path (same origin + prefix).
+ * Prevents /SEO-TESTING-HTML/ seed from crawling /pages/* on the same host.
+ */
+export function isInCrawlScope(url, startUrl) {
+  try {
+    const u = new URL(url);
+    const start = new URL(startUrl);
+    if (u.protocol !== "http:" && u.protocol !== "https:") return false;
+    if (u.origin !== start.origin) return false;
+
+    const prefix = getSeedPathPrefix(startUrl);
+    if (!prefix) return true;
+
+    const path = normalizedPathname(u);
+    return path === prefix || path.startsWith(`${prefix}/`);
+  } catch {
+    return false;
+  }
+}
+
 function registrableRoot(hostname) {
   const parts = hostname.split(".").filter(Boolean);
   if (parts.length <= 2) return hostname;
@@ -43,20 +97,9 @@ export function sameRegistrableDomain(a, b) {
   }
 }
 
-/** Internal if same site as start or current page origin / registrable domain. */
-export function isInternalToSite(url, startUrl, pageUrl) {
-  try {
-    const u = new URL(url);
-    const start = new URL(startUrl);
-    const page = new URL(pageUrl);
-    if (u.origin === start.origin || u.origin === page.origin) return true;
-    return (
-      sameRegistrableDomain(u.href, start.href) ||
-      sameRegistrableDomain(u.href, page.href)
-    );
-  } catch {
-    return false;
-  }
+/** @deprecated Use isInCrawlScope — kept for callers; now enforces seed path prefix. */
+export function isInternalToSite(url, startUrl, _pageUrl) {
+  return isInCrawlScope(url, startUrl);
 }
 
 export function isHttp(s) {
@@ -66,4 +109,10 @@ export function isHttp(s) {
   } catch {
     return false;
   }
+}
+
+export function filterUrlsInScope(urls, startUrl) {
+  return urls
+    .map((u) => normalizeUrl(u, startUrl))
+    .filter((u) => u && isInCrawlScope(u, startUrl));
 }

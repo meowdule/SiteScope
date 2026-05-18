@@ -1,4 +1,4 @@
-import { normalizeUrl } from "./url-utils.mjs";
+import { normalizeUrl, isInCrawlScope, getSeedScope } from "./url-utils.mjs";
 import { waitForSpaReady } from "./spa-wait.mjs";
 import { explorePageInteractions } from "./interaction-crawl.mjs";
 import { SPA_HOOKS_INIT } from "./spa-hooks.mjs";
@@ -24,6 +24,7 @@ export async function discoverUrls({
   const crawlMeta = {
     interactions: [],
     mode: "hybrid_crawl",
+    seedScope: getSeedScope(startUrl),
     discoveryStats: { candidatesFound: 0, clicksRecorded: 0, linksDiscovered: 0 },
     interactionFlow: "",
   };
@@ -43,7 +44,7 @@ export async function discoverUrls({
       if (frame === page.mainFrame()) {
         try {
           const u = normalizeUrl(frame.url(), startUrl);
-          if (u) spaRoutes.add(u);
+          if (u && isInCrawlScope(u, startUrl)) spaRoutes.add(u);
         } catch {
           /* ignore */
         }
@@ -89,8 +90,10 @@ export async function discoverUrls({
         }
 
         for (const route of spaRoutes) {
-          links.push(route);
+          if (isInCrawlScope(route, startUrl)) links.push(route);
         }
+
+        links = links.filter((l) => isInCrawlScope(l, startUrl));
 
         crawlMeta.discoveryStats.linksDiscovered = Math.max(
           crawlMeta.discoveryStats.linksDiscovered,
@@ -99,7 +102,7 @@ export async function discoverUrls({
 
         for (const link of links) {
           const n = normalizeUrl(link, url);
-          if (!n) continue;
+          if (!n || !isInCrawlScope(n, startUrl)) continue;
           if (visited.has(n)) continue;
           if (enqueued.has(n)) continue;
           enqueued.add(n);

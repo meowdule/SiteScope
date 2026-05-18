@@ -160,6 +160,7 @@ export type ReportJson = {
   timing?: TimingReport;
   crawlMeta?: {
     mode?: string;
+    seedScope?: { origin?: string; pathPrefix?: string | null };
     interactions?: InteractionEvent[];
     interactionFlow?: string;
     discoveryStats?: {
