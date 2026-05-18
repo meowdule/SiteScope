@@ -45,13 +45,12 @@ function formatInteractionLabel(ev) {
 function buildEffectChildren(ev) {
   const out = [];
   if (ev.spaNavigation) out.push(`SPA 경로 변경 (${ev.spaNavigation})`);
-  if (ev.urlBefore && ev.urlAfter && ev.urlBefore !== ev.urlAfter) {
-    try {
-      const path = new URL(ev.urlAfter).pathname;
-      out.push(`경로 → ${path}`);
-    } catch {
-      out.push("화면 주소 변경");
-    }
+  if (ev.routeAfter && ev.routeBefore !== ev.routeAfter) {
+    out.push(`경로 → ${ev.routeAfter}`);
+  } else if (ev.hashAfter && ev.hashBefore !== ev.hashAfter) {
+    out.push(`해시 경로 → ${ev.hashAfter}`);
+  } else if (ev.urlBefore && ev.urlAfter && ev.urlBefore !== ev.urlAfter) {
+    out.push(`주소 변경`);
   }
   if (ev.domDiff && ev.domDiff !== "눈에 띄는 화면 변화는 없었습니다") {
     out.push(ev.domDiff);

@@ -1,6 +1,10 @@
 import { waitForSpaReady } from "./spa-wait.mjs";
 import { extractAllLinks } from "./link-extract.mjs";
-import { isInCrawlScope } from "./url-utils.mjs";
+import {
+  isInCrawlScope,
+  formatRouteLabel,
+  sameLogicalRoute,
+} from "./url-utils.mjs";
 import { ANALYSIS_CONFIG, getInteractionProfile } from "./analysis-config.mjs";
 import {
   installSpaHooks,
@@ -193,6 +197,14 @@ export async function explorePageInteractions(
       await waitForSpaReady(page, { short: true, fast: true });
       await rescanAfterHydration(page, true);
 
+      await page
+        .waitForFunction(
+          (before) => location.href !== before,
+          beforeUrl,
+          { timeout: 2500 },
+        )
+        .catch(() => {});
+
       const afterUrl = page.url();
       if (!isInCrawlScope(afterUrl, startUrl)) {
         await page
@@ -222,6 +234,9 @@ export async function explorePageInteractions(
         newLinks: newCount,
       });
 
+      const routeBefore = formatRouteLabel(beforeUrl, startUrl);
+      const routeAfter = formatRouteLabel(afterUrl, startUrl);
+
       const ev = {
         action: classified.action,
         label: cand.label,
@@ -229,6 +244,10 @@ export async function explorePageInteractions(
         score: cand.score,
         urlBefore: beforeUrl,
         urlAfter: afterUrl,
+        routeBefore,
+        routeAfter,
+        hashBefore: beforeSnap.hash || "",
+        hashAfter: afterSnap.hash || "",
         linksFound: links.length,
         newLinks: newCount,
         domDiff: domDiff.friendlySummary,
@@ -239,7 +258,12 @@ export async function explorePageInteractions(
           interactive: afterSnap.interactive - beforeSnap.interactive,
         },
         spaNavigation: spaNav.length
-          ? spaNav.map((n) => n.type).join(", ")
+          ? spaNav
+              .map((n) => {
+                const h = n.hash && n.hash.length > 1 ? n.hash : "";
+                return h ? `${n.type} ${h}` : n.type;
+              })
+              .join(", ")
           : undefined,
         networkSummary: classified.networkSummary,
         apiCallCount: classified.apiCallCount,
@@ -288,7 +312,20 @@ export async function explorePageInteractions(
         continue;
       }
 
-      if (classified.routeChanged && afterUrl !== beforeUrl) {
+      let leftSeedDocument = false;
+      try {
+        const bu = new URL(beforeUrl);
+        const au = new URL(afterUrl);
+        leftSeedDocument =
+          classified.routeChanged &&
+          !sameLogicalRoute(beforeUrl, afterUrl, startUrl) &&
+          bu.pathname !== au.pathname;
+      } catch {
+        leftSeedDocument =
+          classified.routeChanged && afterUrl !== beforeUrl;
+      }
+
+      if (leftSeedDocument) {
         await page
           .goBack({ waitUntil: "domcontentloaded", timeout: 10_000 })
           .catch(() => {});
@@ -302,6 +339,18 @@ export async function explorePageInteractions(
           );
           candidates = mergeCandidates(candidates, fresh);
         }
+      } else if (
+        classified.routeChanged &&
+        !sameLogicalRoute(beforeUrl, afterUrl, startUrl)
+      ) {
+        await page
+          .evaluate((hash) => {
+            if (hash) location.hash = hash;
+            else history.back();
+          }, beforeSnap.hash || "")
+          .catch(() => {});
+        await waitForSpaReady(page, { short: true, fast: true });
+        pageUrl = page.url();
       } else if (domDiff.deltaOverlays > 0) {
         await page.keyboard.press("Escape").catch(() => {});
         await page.waitForTimeout(250);
@@ -374,8 +423,12 @@ function classifyInteraction({
   const reqCount = netSession.filter((e) => e.phase === "request").length;
   const apiCallCount = reqCount + fetchDelta.length;
   const networkBurst = apiCallCount > netBefore || fetchDelta.length > 0;
+  const hashChanged = (beforeSnap.hash || "") !== (afterSnap.hash || "");
   const routeChanged =
-    domDiff.urlChanged || spaNav.length > 0 || beforeSnap.pathname !== afterSnap.pathname;
+    domDiff.urlChanged ||
+    spaNav.length > 0 ||
+    beforeSnap.pathname !== afterSnap.pathname ||
+    hashChanged;
 
   const networkSummary =
     reqCount > 0

@@ -1,3 +1,5 @@
+import { formatRouteLabel } from "./url-utils.mjs";
+
 /** Lightweight DOM / UI state fingerprint for before/after interaction diffs. */
 export async function takeDomSnapshot(page) {
   return page.evaluate(() => {
@@ -79,10 +81,15 @@ export function diffSnapshots(before, after) {
     before.href !== after.href;
 
   if (urlChanged) {
-    parts.push({
-      type: "navigation",
-      message: `화면 주소가 변경되었습니다 (${before.pathname} → ${after.pathname})`,
-    });
+    const from = formatRouteLabel(before.href);
+    const to = formatRouteLabel(after.href);
+    const msg =
+      from === to
+        ? before.hash !== after.hash
+          ? `화면 내 경로가 변경되었습니다 (${before.hash || "(없음)"} → ${after.hash || "(없음)"})`
+          : `화면 주소가 변경되었습니다`
+        : `화면 경로가 변경되었습니다 (${from} → ${to})`;
+    parts.push({ type: "navigation", message: msg });
   }
   if (dOverlay > 0) {
     parts.push({

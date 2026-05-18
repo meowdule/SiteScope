@@ -2,6 +2,7 @@ import {
   normalizeUrl,
   isHttp,
   isInternalToSite,
+  isAppHashRoute,
 } from "./url-utils.mjs";
 
 function decodeSpaWebPath(pathname) {
@@ -71,9 +72,8 @@ export function expandUrlCandidates(href, baseUrl) {
       const dn = normalizeUrl(decoded, baseUrl);
       if (dn) results.add(dn);
     }
-    if (u.hash?.startsWith("#/")) {
-      const hashPath = u.hash.slice(1);
-      results.add(new URL(hashPath, baseUrl).toString());
+    if (isAppHashRoute(u.hash)) {
+      results.add(u.toString());
     }
   } catch {
     /* ignore */

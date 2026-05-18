@@ -65,6 +65,10 @@ export type InteractionEvent = {
   domSummary?: string;
   networkSummary?: string;
   spaNavigation?: string;
+  routeBefore?: string;
+  routeAfter?: string;
+  hashBefore?: string;
+  hashAfter?: string;
   targetHint?: string;
   score?: number;
   success?: boolean;
