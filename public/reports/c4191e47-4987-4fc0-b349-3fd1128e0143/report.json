@@ -1,0 +1,746 @@
+{
+  "reportId": "c4191e47-4987-4fc0-b349-3fd1128e0143",
+  "targetUrl": "https://m.getcha.kr/home",
+  "createdAt": "2026-05-18T02:20:17.278Z",
+  "completedAt": "2026-05-18T02:20:17.278Z",
+  "quick": {
+    "validUrl": true,
+    "dnsOk": true,
+    "dnsMessage": "DNS resolves.",
+    "httpStatus": 200,
+    "httpOk": true,
+    "finalUrl": "https://m.getcha.kr/home",
+    "redirectChain": [
+      "https://m.getcha.kr/home"
+    ],
+    "sslOk": true,
+    "sslMessage": "HTTPS in use.",
+    "responseTimeMs": 992,
+    "internalLinkCount": 1,
+    "screenshotRelativePath": "reports/c4191e47-4987-4fc0-b349-3fd1128e0143/screenshots/quick-home.jpg"
+  },
+  "pages": [
+    {
+      "url": "https://m.getcha.kr/home",
+      "statusCode": 200,
+      "redirects": [
+        "https://m.getcha.kr/home"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 503 ()"
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779070735475&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAAC&_fid=cSXh6ECS0j_YMUzz7mQl0c&_prs=gs&are=1&cid=1237529637.1779070736&frm=0&pscdl=noapi&rcb=6&sr=1440x900&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=1&tag_exp=0~115938465~115938468&sid=1779070735&sct=1&seg=0&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20-%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%20%ED%95%84%EC%88%98%20%EC%95%B1!%20%EB%B0%9C%ED%92%88%20%EC%97%86%EC%9D%B4%20%EC%9E%90%EB%8F%99%EC%B0%A8%20%EA%B2%AC%EC%A0%81%20%EB%B3%B4%EA%B8%B0&en=page_view&_fv=1&_nsi=1&_ss=2&_c=1&_ee=1&ep.origin=firebase&tfd=2987",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779070735475&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=cSXh6ECS0j_YMUzz7mQl0c&are=1&cid=1237529637.1779070736&frm=0&pscdl=noapi&rcb=6&sr=390x844&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=2&tag_exp=0~115938465~115938468&uid=&sid=1779070735&sct=1&seg=0&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&en=home_view&_ee=1&ep.origin=firebase&ep.screen_name=GNB%20%3E%20%ED%99%88&_et=785&up.device_id=1wOnZI2HD6b2TrjlCAOrAXc4DPDI&tfd=3780",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779070735475&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=cSXh6ECS0j_YMUzz7mQl0c&_prs=gs&are=1&cid=1237529637.1779070736&frm=0&pscdl=noapi&rcb=6&sr=390x844&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=3&tag_exp=0~115938465~115938468&dl=RecommandTabContainer&dt=%ED%99%88&sid=1779070735&sct=1&seg=1&en=page_view&_c=1&_ee=1&ep.origin=firebase&_et=1&tfd=3780",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://m.getcha.kr/static/media/banner_skeleton.0dc89aee.jpg",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779070735475&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=cSXh6ECS0j_YMUzz7mQl0c&are=1&cid=1237529637.1779070736&frm=0&pscdl=noapi&rcb=6&sr=390x844&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&tag_exp=0~115938465~115938468&uid=&sid=1779070735&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&_s=4&tfd=9250",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779070735475&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=cSXh6ECS0j_YMUzz7mQl0c&are=1&cid=1237529637.1779070736&frm=0&pscdl=noapi&rcb=6&sr=390x844&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&tag_exp=0~115938465~115938468&uid=&sid=1779070735&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&_s=5&tfd=12082",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779070735475&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=cSXh6ECS0j_YMUzz7mQl0c&_prs=gs&are=1&cid=1237529637.1779070736&frm=0&pscdl=noapi&rcb=6&sr=390x844&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&_s=6&tag_exp=0~115938465~115938468&dl=MyPageTabContainer&dt=%EB%A7%88%EC%9D%B4%ED%8E%98%EC%9D%B4%EC%A7%80&sid=1779070735&sct=1&seg=1&en=page_view&_c=1&_ee=1&ep.origin=firebase&_et=1&tfd=12083",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779070735475&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=cSXh6ECS0j_YMUzz7mQl0c&are=1&cid=1237529637.1779070736&frm=0&pscdl=noapi&rcb=6&sr=390x844&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&tag_exp=0~115938465~115938468&uid=&sid=1779070735&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fkeyword-search%3Ffrom%3Dpurchase&dt=%EC%B0%A8%EB%9F%89%20%EA%B2%80%EC%83%89%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&_s=7&tfd=18126",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://analytics.google.com/g/collect?v=2&tid=G-W0D5V9V50N&gtm=45je65d0v9120366748za20g&_p=1779070752952&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=2022860468&_eu=EAAIAGAC&_prs=ok&are=1&cid=1237529637.1779070736&ec_mode=a&frm=2&ir=1&pscdl=noapi&rcb=17&sr=390x844&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=0~115938465~115938469&sid=1779070753&sct=1&seg=0&dl=https%3A%2F%2Fwww.getcha.kr%2Fads%2Fpromotion%2Fbmw-m-cash-installment%3Ftitle%3D%25EA%25B2%259F%25EC%25B0%25A8%26header_hidden%3Dtrue%26from%3DhomeQuick&dr=https%3A%2F%2Fm.getcha.kr%2F&dt=&en=page_view&_fv=2&_ss=2&_c=1&tfd=806",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google.com/measurement/1p-conversion/?random=90987493&cv=11&tid=G-W0D5V9V50N&fst=1779070753351&fmt=8&en=page_view&gtm=45je65d0v9120366748za20gxec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469&u_w=390&u_h=844&url=https%3A%2F%2Fwww.getcha.kr%2Fads%2Fpromotion%2Fbmw-m-cash-installment%3Ftitle%3D%25EA%25B2%259F%25EC%25B0%25A8%26header_hidden%3Dtrue%26from%3DhomeQuick&ref=https%3A%2F%2Fm.getcha.kr%2F&top=https%3A%2F%2Fm.getcha.kr%2F&gacid=1237529637.1779070736&frm=2&npa=0&pscdl=noapi&auid=578750370.1779070753&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&rcb=17&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCKG4sQIIscGxAgiwwbECCLHDsQIIisWxAgjCybECCLTGsQIIk9qxAgjb3LECCIfbsQII08WxAgjrzLECCO3OsQII1c-xAgj02rECCJfUsQIIyduxAgix4bECCLPhsQIIpt2xAgiw3rECCIDbsQI&fsk=ChAI8M6l0AYQ9sujgtfo9eEwEiwAgSYLc7cwBCL6s9gwbBBESlhDNBgDu-AzONlOL-ZuZW7qg47K77yWnze1HBoCJKk&pscrd=IhMIvf-kguPBlAMVIdkYAh0_GCZqMgwIA2IICAAQABgAIAAyDAgEYggIABAAGAAgADIMCAdiCAgAEAAYACAAMgwICGIICAAQABgAIAAyDAgJYggIABAAGAAgADIMCApiCAgAEAAYACAAMgwIAmIICAAQABgAIAAyDAgLYggIABAAGAAgADIMCBViCAgAEAAYACAAMgwIH2IICAAQABgAIAAyDAgTYggIABAAGAAgADIMCBJiCAgAEAAYACAAOhZodHRwczovL3d3dy5nZXRjaGEua3IvQldDaEVJOE02bDBBWVE4Y2Z5MHRpUW04RERBUklzQUFtU2o1WnNudEc1TEVERGNnU1EwZVBtcHpoT3NqUjlWaDdsMnFJZU4tVHUxM1dHWWRabXRkOFJoODB6DAgJYggIABAAGAAgAA",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google.com/measurement/1p-conversion/?random=1264396888&cv=11&tid=G-W0D5V9V50N&fst=1779070753351&fmt=8&en=first_visit&gtm=45je65d0v9120366748za20gxec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469&u_w=390&u_h=844&url=https%3A%2F%2Fwww.getcha.kr%2Fads%2Fpromotion%2Fbmw-m-cash-installment%3Ftitle%3D%25EA%25B2%259F%25EC%25B0%25A8%26header_hidden%3Dtrue%26from%3DhomeQuick&ref=https%3A%2F%2Fm.getcha.kr%2F&top=https%3A%2F%2Fm.getcha.kr%2F&gacid=1237529637.1779070736&frm=2&npa=0&pscdl=noapi&auid=578750370.1779070753&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&rcb=17&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCKG4sQIIscGxAgiwwbECCLHDsQIIisWxAgjCybECCLTGsQIIk9qxAgjb3LECCIfbsQII08WxAgjrzLECCO3OsQII1c-xAgj02rECCJfUsQIIyduxAgix4bECCLPhsQIIpt2xAgiw3rECCIDbsQI&fsk=ChAI8M6l0AYQ9sujgtfo9eEwEiwAgSYLcz8aKccT60xKQKTxCpeI5Quh6G9Y2qklwFZ5t4FKZgo7Ad24djdqORoCeZ0&pscrd=IhMIpY2lguPBlAMVXbymBB1QnASTMgwIA2IICAAQABgAIAAyDAgEYggIABAAGAAgADIMCAdiCAgAEAAYACAAMgwICGIICAAQABgAIAAyDAgJYggIABAAGAAgADIMCApiCAgAEAAYACAAMgwIAmIICAAQABgAIAAyDAgLYggIABAAGAAgADIMCBViCAgAEAAYACAAMgwIH2IICAAQABgAIAAyDAgTYggIABAAGAAgADIMCBJiCAgAEAAYACAAOhZodHRwczovL3d3dy5nZXRjaGEua3IvQldDaEVJOE02bDBBWVE4Y2Z5MHRpUW04RERBUklzQUFtU2o1YWpEaE1TQjE4OGJtX3hrN0FFd2JLU0R0b1p0eTVMUXd1T3BDdTl5ck8tbGlBSnpPNWlCWDB6DAgJYggIABAAGAAgAA",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google.com/measurement/1p-conversion/?random=2052165997&cv=11&tid=G-W0D5V9V50N&fst=1779070753351&fmt=8&en=session_start&gtm=45je65d0v9120366748za20gxec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469&u_w=390&u_h=844&url=https%3A%2F%2Fwww.getcha.kr%2Fads%2Fpromotion%2Fbmw-m-cash-installment%3Ftitle%3D%25EA%25B2%259F%25EC%25B0%25A8%26header_hidden%3Dtrue%26from%3DhomeQuick&ref=https%3A%2F%2Fm.getcha.kr%2F&top=https%3A%2F%2Fm.getcha.kr%2F&gacid=1237529637.1779070736&frm=2&npa=0&pscdl=noapi&auid=578750370.1779070753&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&rcb=17&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCKG4sQIIscGxAgiwwbECCLHDsQIIisWxAgjCybECCLTGsQIIk9qxAgjb3LECCIfbsQII08WxAgjrzLECCO3OsQII1c-xAgj02rECCJfUsQIIyduxAgix4bECCLPhsQIIpt2xAgiw3rECCIDbsQI&fsk=ChAI8M6l0AYQ9sujgtfo9eEwEiwAgSYLc6DO0LSVTmeHBzVGwUjmcOGbYf-rU5-TqYjR7hzWwfuC90ClCeFDnBoC0Sg&pscrd=IhMI_aelguPBlAMVEotyAB3fNh85MgwIA2IICAAQABgAIAAyDAgEYggIABAAGAAgADIMCAdiCAgAEAAYACAAMgwICGIICAAQABgAIAAyDAgJYggIABAAGAAgADIMCApiCAgAEAAYACAAMgwIAmIICAAQABgAIAAyDAgLYggIABAAGAAgADIMCBViCAgAEAAYACAAMgwIH2IICAAQABgAIAAyDAgTYggIABAAGAAgADIMCBJiCAgAEAAYACAAOhZodHRwczovL3d3dy5nZXRjaGEua3IvQldDaEVJOE02bDBBWVE4Y2Z5MHRpUW04RERBUklzQUFtU2o1WlNxbmNfdnBmV01DV2xjY2R3THUtVnhNaVBFc1FKQjVPeTJRV2tFVFFEaWR1Q3VObnF2SE16DAgJYggIABAAGAAgAA",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://asia.creativecdn.com/tags/v2?type=json",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://sentry.getcha.io/api/6/envelope/?sentry_key=62904128ceaf4c6fb2cbb63323b40144&sentry_version=7&sentry_client=sentry.javascript.nextjs%2F7.75.0",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://analytics.google.com/g/collect?v=2&tid=G-W0D5V9V50N&gtm=45je65d0v9120366748za20g&_p=1779070754919&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=2022860468&_eu=EAAIAGQC&_prs=ok&are=1&cid=1237529637.1779070736&ec_mode=a&frm=2&ir=1&pscdl=noapi&rcb=8&sr=390x844&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=0~115938465~115938468&sid=1779070753&sct=1&seg=1&dl=https%3A%2F%2Fwww.getcha.kr%2Fads%2Fpromotion%2Flease-benz-3%3Ftitle%3D%25EA%25B2%259F%25EC%25B0%25A8%26header_hidden%3Dtrue%26from%3DhomeQuick&dr=https%3A%2F%2Fm.getcha.kr%2F&dt=&en=page_view&_c=1&tfd=295",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google.com/measurement/1p-conversion/?random=170358837&cv=11&tid=G-W0D5V9V50N&fst=1779070754951&fmt=8&en=page_view&gtm=45je65d0v9120366748za20gxec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938468&u_w=390&u_h=844&url=https%3A%2F%2Fwww.getcha.kr%2Fads%2Fpromotion%2Flease-benz-3%3Ftitle%3D%25EA%25B2%259F%25EC%25B0%25A8%26header_hidden%3Dtrue%26from%3DhomeQuick&ref=https%3A%2F%2Fm.getcha.kr%2F&top=https%3A%2F%2Fm.getcha.kr%2F&gacid=1237529637.1779070736&frm=2&npa=0&pscdl=noapi&auid=578750370.1779070753&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&rcb=8&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCKG4sQIIscGxAgiwwbECCLHDsQIIisWxAgjCybECCLTGsQIIk9qxAgjb3LECCIfbsQII08WxAgjrzLECCO3OsQII1c-xAgj02rECCJfUsQIIyduxAgix4bECCLPhsQIIpt2xAgiw3rECCIDbsQI&fsk=ChAI8M6l0AYQ9sujgtfo9eEwEiwAgSYLc4Ns9Y26WnrNOFsYXpOTDhAHchdc-FrsxKluwv6dlUKy_Cx0Tl1OPhoC_QI&pscrd=IhMInqSGg-PBlAMVRUkJCR1qazByMgwIA2IICAAQABgAIAAyDAgEYggIABAAGAAgADIMCAdiCAgAEAAYACAAMgwICGIICAAQABgAIAAyDAgJYggIABAAGAAgADIMCApiCAgAEAAYACAAMgwIAmIICAAQABgAIAAyDAgLYggIABAAGAAgADIMCBViCAgAEAAYACAAMgwIH2IICAAQABgAIAAyDAgTYggIABAAGAAgADIMCBJiCAgAEAAYACAAOhZodHRwczovL3d3dy5nZXRjaGEua3IvQldDaEVJOE02bDBBWVE4Y2Z5MHRpUW04RERBUklzQUFtU2o1Wlc1bnVrTm9nZTdINkJrU3Ffd1Q2R1dtdVQwUk1TYlpBMFhkaGlCdWhraGx6QzZ0dnc4WHd6DAgJYggIABAAGAAgAA",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://asia.creativecdn.com/tags/v2?type=json&tc=1",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://cloud.getcha.io/file/promotion/lease-benz-3/hero/mobile/live/20260416/17763017777401v.png",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779070735475&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=cSXh6ECS0j_YMUzz7mQl0c&are=1&cid=1237529637.1779070736&frm=0&pscdl=noapi&rcb=6&sr=390x844&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&tag_exp=0~115938465~115938468&uid=&sid=1779070735&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fweb%2Fhttps%3A%2F%2Fwww.getcha.kr%2Fads%2Fpromotion%2Flease-benz-3%2F%EA%B2%9F%EC%B0%A8%3Fheader_hidden%3Dtrue%26from%3DhomeQuick&dt=%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&_s=8&tfd=24074",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://analytics.google.com/g/collect?v=2&tid=G-W0D5V9V50N&gtm=45je65d0v9120366748za20g&_p=1779070756935&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=2022860468&_eu=EAAIAGQC&_prs=ok&are=1&cid=1237529637.1779070736&ec_mode=a&frm=2&ir=1&pscdl=noapi&rcb=1&sr=390x844&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=0~115938466~115938468&sid=1779070753&sct=1&seg=1&dl=https%3A%2F%2Fwww.getcha.kr%2Fads%2Fpromotion%2Flease-audi-1%3Ftitle%3D%25EA%25B2%259F%25EC%25B0%25A8%26header_hidden%3Dtrue%26from%3DhomeQuick&dr=https%3A%2F%2Fm.getcha.kr%2F&dt=&en=page_view&_c=1&tfd=269",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google.com/measurement/1p-conversion/?random=2068787371&cv=11&tid=G-W0D5V9V50N&fst=1779070756959&fmt=8&en=page_view&gtm=45je65d0v9120366748za20gxec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938466~115938468&u_w=390&u_h=844&url=https%3A%2F%2Fwww.getcha.kr%2Fads%2Fpromotion%2Flease-audi-1%3Ftitle%3D%25EA%25B2%259F%25EC%25B0%25A8%26header_hidden%3Dtrue%26from%3DhomeQuick&ref=https%3A%2F%2Fm.getcha.kr%2F&top=https%3A%2F%2Fm.getcha.kr%2F&gacid=1237529637.1779070736&frm=2&npa=0&pscdl=noapi&auid=578750370.1779070753&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&rcb=1&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCKG4sQIIscGxAgiwwbECCLHDsQIIisWxAgjCybECCLTGsQIIk9qxAgjb3LECCIfbsQII08WxAgjrzLECCO3OsQII1c-xAgj02rECCJfUsQIIyduxAgix4bECCLPhsQIIpt2xAgiw3rECCIDbsQI&fsk=ChAI8M6l0AYQ9sujgtfo9eEwEiwAgSYLc-lhaANSDh4Io9qlCEZEtzm9aewwfjuZ3h4xl_B5t0-liWX7kkznSBoCvpI&pscrd=IhMIzISAhOPBlAMVW_AYAh32ZxeAMgwIA2IICAAQABgAIAAyDAgEYggIABAAGAAgADIMCAdiCAgAEAAYACAAMgwICGIICAAQABgAIAAyDAgJYggIABAAGAAgADIMCApiCAgAEAAYACAAMgwIAmIICAAQABgAIAAyDAgLYggIABAAGAAgADIMCBViCAgAEAAYACAAMgwIH2IICAAQABgAIAAyDAgTYggIABAAGAAgADIMCBJiCAgAEAAYACAAOhZodHRwczovL3d3dy5nZXRjaGEua3IvQldDaEVJOE02bDBBWVE4Y2Z5MHRpUW04RERBUklzQUFtU2o1WTl3MkZBR3IzVjVsWktSVWttbl8zNm5BZlkzckRNbXNqMjd0ZU5KUFNBT1d1Wm5PbjhZWXd6DAgJYggIABAAGAAgAA",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://cloud.getcha.io/file/promotion/lease-audi-1/hero/pc/live/20260421/1776727635273WI.png",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://analytics.google.com/g/collect?v=2&tid=G-W0D5V9V50N&gtm=45je65d0v9120366748za20g&_p=1779070759103&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=2022860468&_eu=EAAIAGQC&_prs=ok&are=1&cid=1237529637.1779070736&ec_mode=a&frm=2&ir=1&pscdl=noapi&rcb=15&sr=390x844&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=0~115616985~115938466~115938469&sid=1779070753&sct=1&seg=1&dl=https%3A%2F%2Fwww.getcha.kr%2Fads%2Fpromotion%2Ftesla-1%3Ftitle%3D%25EA%25B2%259F%25EC%25B0%25A8%26header_hidden%3Dtrue%26from%3DhomeQuick&dr=https%3A%2F%2Fm.getcha.kr%2F&dt=&en=page_view&_c=1&tfd=420",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google.com/measurement/1p-conversion/?random=1863510820&cv=11&tid=G-W0D5V9V50N&fst=1779070759122&fmt=8&en=page_view&gtm=45je65d0v9120366748za20gxec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616985~115938466~115938469&u_w=390&u_h=844&url=https%3A%2F%2Fwww.getcha.kr%2Fads%2Fpromotion%2Ftesla-1%3Ftitle%3D%25EA%25B2%259F%25EC%25B0%25A8%26header_hidden%3Dtrue%26from%3DhomeQuick&ref=https%3A%2F%2Fm.getcha.kr%2F&top=https%3A%2F%2Fm.getcha.kr%2F&gacid=1237529637.1779070736&frm=2&npa=0&pscdl=noapi&auid=578750370.1779070753&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&rcb=15&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCKG4sQIIscGxAgiwwbECCLHDsQIIisWxAgjCybECCLTGsQIIk9qxAgjb3LECCIfbsQII08WxAgjrzLECCO3OsQII1c-xAgj02rECCJfUsQIIyduxAgix4bECCLPhsQIIpt2xAgiw3rECCIDbsQI&fsk=ChAI8M6l0AYQ9sujgtfo9eEwEiwAgSYLc1rkoAYbrYVbaMEe80-xTtpKRfgbLmcHpb3QqWoL_rfDpuExCk-orRoCPtg&pscrd=IhMIq4aEhePBlAMVlYumBB2NRy4zMgwIA2IICAAQABgAIAAyDAgEYggIABAAGAAgADIMCAdiCAgAEAAYACAAMgwICGIICAAQABgAIAAyDAgJYggIABAAGAAgADIMCApiCAgAEAAYACAAMgwIAmIICAAQABgAIAAyDAgLYggIABAAGAAgADIMCBViCAgAEAAYACAAMgwIH2IICAAQABgAIAAyDAgTYggIABAAGAAgADIMCBJiCAgAEAAYACAAOhZodHRwczovL3d3dy5nZXRjaGEua3IvQldDaEVJOE02bDBBWVE4Y2Z5MHRpUW04RERBUklzQUFtU2o1WjBvOGxSQ0RwcHZ1VTJ3QXJrRkZ3aHVvRnA0bWlrWDNyUG5GcTlscm5OREFqMlczWUlacEl6DAgJYggIABAAGAAgAA",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.getcha.kr/static/assets/direction-arrow-right.svg",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779070735475&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=cSXh6ECS0j_YMUzz7mQl0c&are=1&cid=1237529637.1779070736&frm=0&pscdl=noapi&rcb=6&sr=390x844&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&tag_exp=0~115938465~115938468&uid=&sid=1779070735&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&_s=9&tfd=30070",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://analytics.google.com/g/collect?v=2&tid=G-W0D5V9V50N&gtm=45je65d0v9120366748za20g&_p=1779070767440&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=2022860468&_eu=EAAIAGQC&_prs=ok&are=1&cid=1237529637.1779070736&ec_mode=a&frm=2&ir=1&pscdl=noapi&rcb=8&sr=390x844&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=0~115938465~115938469~118128923&sid=1779070753&sct=1&seg=1&dl=https%3A%2F%2Fwww.getcha.kr%2Fads%2Fpromotion%2Fbusiness-only%3Ftitle%3D%25EA%25B2%259F%25EC%25B0%25A8%26header_hidden%3Dtrue&dr=https%3A%2F%2Fm.getcha.kr%2F&dt=&en=page_view&_c=1&tfd=1064",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.getcha.kr/static/airbridge.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google.com/measurement/conversion?random=1779070767462&cv=11&tid=G-W0D5V9V50N&fst=1779070767462&fmt=8&en=page_view&gtm=45je65d0v9120366748za20gxec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938469~118128923&u_w=390&u_h=844&url=https%3A%2F%2Fwww.getcha.kr%2Fads%2Fpromotion%2Fbusiness-only%3Ftitle%3D%25EA%25B2%259F%25EC%25B0%25A8%26header_hidden%3Dtrue&ref=https%3A%2F%2Fm.getcha.kr%2F&top=https%3A%2F%2Fm.getcha.kr%2F&gacid=1237529637.1779070736&frm=2&npa=0&pscdl=noapi&auid=578750370.1779070753&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&rcb=8",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://analytics.google.com/g/collect?v=2&tid=G-W0D5V9V50N&gtm=45je65d0v9120366748za20g&_p=1779070768868&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=2022860468&_eu=EAAIAGQC&_prs=ok&are=1&cid=1237529637.1779070736&ec_mode=a&frm=2&ir=1&pscdl=noapi&rcb=6&sr=390x844&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=0~115616986~115938466~115938468&sid=1779070753&sct=1&seg=1&dl=https%3A%2F%2Fwww.getcha.kr%2Fads%2Fauto-cashback%2Fcalculator%3Ftoken%3Dnull%26referrer%3Dpurchase&dr=https%3A%2F%2Fm.getcha.kr%2F&dt=&en=page_view&_c=1&tfd=617",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google.com/measurement/1p-conversion/?random=781169104&cv=11&tid=G-W0D5V9V50N&fst=1779070768886&fmt=8&en=page_view&gtm=45je65d0v9120366748za20gxec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616986~115938466~115938468&u_w=390&u_h=844&url=https%3A%2F%2Fwww.getcha.kr%2Fads%2Fauto-cashback%2Fcalculator%3Ftoken%3Dnull%26referrer%3Dpurchase&ref=https%3A%2F%2Fm.getcha.kr%2F&top=https%3A%2F%2Fm.getcha.kr%2F&gacid=1237529637.1779070736&frm=2&npa=0&pscdl=noapi&auid=578750370.1779070753&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&rcb=6&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCKG4sQIIscGxAgiwwbECCLHDsQIIisWxAgjCybECCLTGsQIIk9qxAgjb3LECCIfbsQII08WxAgjrzLECCO3OsQII1c-xAgj02rECCJfUsQIIyduxAgix4bECCLPhsQIIpt2xAgiw3rECCIDbsQI&fsk=ChAI8M6l0AYQ9sujgtfo9eEwEiwAgSYLcyVLliOzVcVcvbD6sH5_IGcFwesusti1OMGHx492oMcRlDPBaeLOHRoCfW0&pscrd=IhMI_PvXiePBlAMVcVMJCR3M6iJ9MgwIA2IICAAQABgAIAAyDAgEYggIABAAGAAgADIMCAdiCAgAEAAYACAAMgwICGIICAAQABgAIAAyDAgJYggIABAAGAAgADIMCApiCAgAEAAYACAAMgwIAmIICAAQABgAIAAyDAgLYggIABAAGAAgADIMCBViCAgAEAAYACAAMgwIH2IICAAQABgAIAAyDAgTYggIABAAGAAgADIMCBJiCAgAEAAYACAAOhZodHRwczovL3d3dy5nZXRjaGEua3IvQldDaEVJOE02bDBBWVE4Y2Z5MHRpUW04RERBUklzQUFtU2o1YUxKOU1ENXBoXzdobngxbW5IaUhEMTZTTWJudHBseHhsSDdpa3ZWNm93NVFqRl8tWnkyamt6DAgJYggIABAAGAAgAA",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.getcha.kr/_next/static/chunks/pages/ads/auto-cashback/calculator-e293c6311141d570.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://act.ds.kakao.com/match?d=113&uid=zyGNd3tSFy-EmWdP2EPU0JWpUGElQUGhdWsj4eByM_g",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-6M2S5J9GZY&gtm=45je65d0v9201903299za200zd9201903299&_p=1779070735475&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQC&_fid=cSXh6ECS0j_YMUzz7mQl0c&are=1&cid=1237529637.1779070736&frm=0&pscdl=noapi&rcb=6&sr=390x844&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&tag_exp=0~115938465~115938468&uid=&sid=1779070735&sct=1&seg=1&dl=https%3A%2F%2Fm.getcha.kr%2Fhome&dt=%EA%B2%9F%EC%B0%A8%20%7C%20%EC%8B%A0%EC%B0%A8%20%EA%B5%AC%EB%A7%A4%EB%8A%94%20%EA%B2%9F%EC%B0%A8&_s=10&tfd=36919",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://analytics.google.com/g/collect?v=2&tid=G-W0D5V9V50N&gtm=45je65d0v9120366748za20g&_p=1779070771210&gcd=13l3l3l3l1l1&npa=0&dma=0&ecid=2022860468&_eu=EAAIAGQC&_prs=ok&are=1&cid=1237529637.1779070736&ec_mode=a&frm=2&ir=1&pscdl=noapi&rcb=17&sr=390x844&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uam=&uamb=0&uap=Windows&uapv=10.0&uaw=0&ul=en-us&gaf=2&_s=1&tag_exp=0~115616986~115938465~115938469&sid=1779070753&sct=1&seg=1&dl=https%3A%2F%2Fwww.getcha.kr%2Ffast-release%3Ftitle%3D%25EA%25B2%259F%25EC%25B0%25A8%26header_hidden%3Dtrue&dr=https%3A%2F%2Fm.getcha.kr%2F&dt=&en=page_view&_c=1&tfd=978",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google.com/measurement/1p-conversion/?random=2085023910&cv=11&tid=G-W0D5V9V50N&fst=1779070771228&fmt=8&en=page_view&gtm=45je65d0v9120366748za20gxec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616986~115938465~115938469&u_w=390&u_h=844&url=https%3A%2F%2Fwww.getcha.kr%2Ffast-release%3Ftitle%3D%25EA%25B2%259F%25EC%25B0%25A8%26header_hidden%3Dtrue&ref=https%3A%2F%2Fm.getcha.kr%2F&top=https%3A%2F%2Fm.getcha.kr%2F&gacid=1237529637.1779070736&frm=2&npa=0&pscdl=noapi&auid=578750370.1779070753&uaa=x86&uab=64&uafvl=Chromium%3B148.0.7778.96%7CHeadlessChrome%3B148.0.7778.96%7CNot%252FA)Brand%3B99.0.0.0&uamb=0&uam=&uap=Windows&uapv=10.0&uaw=0&rcb=17&ct_cookie_present=false&crd=CLTesQII8t-xAgit4bECCKG4sQIIscGxAgiwwbECCLHDsQIIisWxAgjCybECCLTGsQIIk9qxAgjb3LECCIfbsQII08WxAgjrzLECCO3OsQII1c-xAgj02rECCJfUsQIIyduxAgix4bECCLPhsQIIpt2xAgiw3rECCIDbsQI&fsk=ChAI8M6l0AYQ9sujgtfo9eEwEiwAgSYLc5Y1iB3YMb-7fjPNT7fWFG37PEXLHrmjbrx52bCOmAqDAK5MfK3npxoC4pc&pscrd=IhMIyIHniuPBlAMVCKWmBB1oCwH2MgwIA2IICAAQABgAIAAyDAgEYggIABAAGAAgADIMCAdiCAgAEAAYACAAMgwICGIICAAQABgAIAAyDAgJYggIABAAGAAgADIMCApiCAgAEAAYACAAMgwIAmIICAAQABgAIAAyDAgLYggIABAAGAAgADIMCBViCAgAEAAYACAAMgwIH2IICAAQABgAIAAyDAgTYggIABAAGAAgADIMCBJiCAgAEAAYACAAOhZodHRwczovL3d3dy5nZXRjaGEua3IvQldDaEVJOE02bDBBWVE4Y2Z5MHRpUW04RERBUklzQUFtU2o1WnVIXzZoeVNqUVNRVUxyR2M0ZkZZYmdiUllidXNYQXBZc3RSSGZtQUY3aHJDSzdvZDV4eE16DAgJYggIABAAGAAgAA",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://id.abr.ge/api/v2/third-party-cookie/identifier.html?requestID=653369301",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.getcha.kr/_next/static/chunks/30-14836ddecfca573a.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://sdk.airbridge.io/data/1.11.8/getcha",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.getcha.kr/_next/static/chunks/pages/fast-release-423847e2f02cb13a.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.getcha.kr/_next/static/chunks/6330-e29eea3b350275d0.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://sync.teads.tv/um?eid=167&uid=zyGNd3tSFy-EmWdP2EPU0JWpUGElQUGhdWsj4eByM_g",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/55226b3f17312418c07361dc3b4421dbfbb490e0.290e7c4868f7d843400c.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/runtime/main-2871b1fbc99b54798a3e.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/js/customerBehaviorAnalysis.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/89ef2720dc7dfb9daf98b4bc09fb113509828268.23eb976cee3bada20651.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/ixSOG7NNdd6CD_NbHGjjr/pages/sellcar/channel/%5BplatformPage%5D.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/7be994c110c18ff467bf24e7b307e6b69f1c2494.71afc8f52fee8541a115.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/7abb74c317309b5591d0f41838fc750ccc08119c.847af6c8b6bf2a6014fe.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/abde10c291796e8bd60b59ea3cf486768891af09.1d95d49e428b7a176c09.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/a75e2eda5cedb4ea3bacbf808e690f78b62c7d5f.97eb6749cc61b53e0278.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/ixSOG7NNdd6CD_NbHGjjr/_buildManifest.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/29107295.55d015bb1d8d4554d627.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/6182c13e825650e62d26c587565b75eb03285785.caf012401bb2805fa43b.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/ea88be26.4835c2102f33076f589a.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/6b65cd02ed24845d30ea1b05e6ba677004c858d8.133516c668f5db78f73d.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/731e2cff889ba30ec3f6d720d79ef87682b9b856.d594fdf394493c390283.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://static.nid.naver.com/js/naveridlogin_js_sdk_2.0.2.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/cc036146f5cb6ab7c064f14de60af1d858db49d9.bb35c065fe8a418b9591.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/4091aecf05aa7e7e6e098b337f8ae9ef69d60b9c.789de68530fa4d13ccde.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/5a0032c2ce4ba900b225af2751ce201afb190403.c62afb37c11cc275c176.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/88d32f391d16943d6e2917cd27730b89666a2230.dc828eb2625be1fce8b7.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/6239064a701385bad5e5e91933677b091c64a091.38ed8bf29df3bd186ea7.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/6e40f3a6e679897b0d799e52aa6422fa54c3c54c.c73055be93d635a83f13.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/ixSOG7NNdd6CD_NbHGjjr/pages/_app.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/f21c1b6897a962460d4d28e79a20e64c46666f1d.a03711f730679300c114.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/framework.cd01ec705a17e7f5eebf.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/e2f006642f2d9cfef08c198c32635a102be25cdf.dd55baf971dd9e121cd1.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/bca87a8d4dc1f65ee3a9f5aeeb95687af42d647f.83e8bd1057acb59113f6.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/c3b7fd538d0879f6ffea95092d6d22654b44c23f.34b92d2bdab43fd61689.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/cbb0f4a470b0d775e12cfec1285046a3f4e1ac7d.a26646011743bd8d6b62.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/runtime/webpack-3a23fae0fdb65ae7549e.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/76f82b6af90554bc385ebf3e19da9791e7e6219a.2b3fe1bc162c5341ded4.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/ixSOG7NNdd6CD_NbHGjjr/_ssgManifest.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://autobell.co.kr/_next/static/chunks/a54e5ce8fd4d3cb76a71d83e9a6acb236efcab82.cf21877def223df10664.js",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://static.glovis.net/css/swiper.min.css?20260513T0004",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://static.glovis.net/css/prism.css?20260513T0004",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://static.glovis.net/css/input-range.css?20260513T0004",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://static.glovis.net/css/rodal.css?20260513T0004",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://static.glovis.net/css/m-buy.css?20260513T0004",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "lighthouse": {
+        "performance": 44,
+        "accessibility": 87,
+        "bestPractices": 75,
+        "seo": 100,
+        "fcp": 10445.607,
+        "lcp": 18217.0605,
+        "cls": 0.042194,
+        "tbt": 463,
+        "si": 11532.504225669105,
+        "collected": true,
+        "mode": "full"
+      },
+      "axeViolations": [
+        {
+          "id": "aria-hidden-focus",
+          "impact": "serious",
+          "description": "ARIA hidden element must not be focusable or contain focusable elements",
+          "nodes": 8
+        },
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "description": "Elements must only use permitted ARIA attributes",
+          "nodes": 6
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 15
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "meta-viewport",
+          "impact": "moderate",
+          "description": "Zooming and scaling must not be disabled",
+          "nodes": 1
+        },
+        {
+          "id": "page-has-heading-one",
+          "impact": "moderate",
+          "description": "Page should contain a level-one heading",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 10
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [],
+      "screenshotPaths": {
+        "mobile": "screenshots/2c519289-dcb4-42f2-9b6b-87b1c1460bb5-mobile.jpg"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드·스크롤 후 스캔",
+          "urlAfter": "https://m.getcha.kr/home",
+          "linksFound": 1,
+          "domSummary": "화면 요소 약 649개, 클릭 후보 82개",
+          "candidateCount": 82,
+          "success": true
+        },
+        {
+          "action": "click",
+          "label": "홈",
+          "targetHint": "generic",
+          "score": 168,
+          "urlBefore": "https://m.getcha.kr/home",
+          "urlAfter": "https://m.getcha.kr/home",
+          "linksFound": 1,
+          "newLinks": 0,
+          "domDiff": "눈에 띄는 화면 변화는 없었습니다",
+          "domDelta": {
+            "visible": 0,
+            "overlays": 0,
+            "links": 0,
+            "interactive": 0
+          },
+          "apiCallCount": 0,
+          "routeChanged": false,
+          "success": false
+        },
+        {
+          "action": "click",
+          "label": "div · css-175oi2r r-1loqt21 r-1otgn73",
+          "targetHint": "generic",
+          "score": 132,
+          "urlBefore": "https://m.getcha.kr/home",
+          "urlAfter": "https://m.getcha.kr/home",
+          "linksFound": 1,
+          "newLinks": 0,
+          "domDiff": "눈에 띄는 화면 변화는 없었습니다",
+          "domDelta": {
+            "visible": 0,
+            "overlays": 0,
+            "links": 0,
+            "interactive": 0
+          },
+          "networkSummary": "서버 요청 1건",
+          "apiCallCount": 1,
+          "routeChanged": false,
+          "success": false
+        }
+      ],
+      "interactionFlow": "Home\n└─ 페이지 로드·스크롤 후 스캔 — 초기 스캔",
+      "interactionDiscovery": {
+        "profile": "homepage",
+        "candidatesFound": 48,
+        "clicksAttempted": 25,
+        "clicksRecorded": 0,
+        "linksDiscovered": 1,
+        "stoppedEarly": true,
+        "runtimeMs": 46718,
+        "skippedByReason": {
+          "no_change": 2,
+          "out_of_scope": 14,
+          "click_failed": 3,
+          "duplicate": 6
+        },
+        "meaningfulCount": 0
+      },
+      "crawledAt": "2026-05-18T02:20:17.277Z"
+    }
+  ],
+  "brokenLinks": [],
+  "summary": {
+    "healthScore": 50,
+    "avgLighthousePerformance": 44,
+    "avgAxeIssuesPerPage": 42,
+    "totalConsoleErrors": 1,
+    "totalFailedRequests": 80,
+    "mobileWarnings": [
+      "1개 페이지의 성능 점수가 50점 미만입니다."
+    ],
+    "categoryScores": {
+      "performance": 44,
+      "accessibility": 44,
+      "seo": 100,
+      "ux": 100
+    },
+    "statusLabel": "Warning",
+    "healthBreakdown": {
+      "formula": "종합 점수 = 카테고리 가중 평균(성능 30%·접근성 25%·사용성 25%·SEO 20%) − 추가 감점",
+      "weights": {
+        "performance": 0.3,
+        "accessibility": 0.25,
+        "ux": 0.25,
+        "seo": 0.2
+      },
+      "weightedBase": 69,
+      "penaltyTotal": 19,
+      "contributions": [
+        {
+          "category": "performance",
+          "label": "성능",
+          "score": 44,
+          "weight": 0.3,
+          "weightedPoints": 13.2
+        },
+        {
+          "category": "accessibility",
+          "label": "접근성",
+          "score": 44,
+          "weight": 0.25,
+          "weightedPoints": 11
+        },
+        {
+          "category": "ux",
+          "label": "사용성",
+          "score": 100,
+          "weight": 0.25,
+          "weightedPoints": 25
+        },
+        {
+          "category": "seo",
+          "label": "검색·공유",
+          "score": 100,
+          "weight": 0.2,
+          "weightedPoints": 20
+        }
+      ],
+      "penalties": [
+        {
+          "id": "accessibility_issues",
+          "label": "접근성 검사 이슈",
+          "points": 8,
+          "message": "페이지당 접근성 이슈가 평균 42건 있어 8점 감점되었습니다."
+        },
+        {
+          "id": "console_errors",
+          "label": "브라우저 오류",
+          "points": 1,
+          "message": "스크립트 오류 1건으로 1점 감점되었습니다."
+        },
+        {
+          "id": "failed_requests",
+          "label": "로딩 실패",
+          "points": 8,
+          "message": "이미지·API 등 로딩 실패 80건으로 8점 감점되었습니다."
+        },
+        {
+          "id": "low_performance_pages",
+          "label": "느린 페이지",
+          "points": 2,
+          "message": "성능 50점 미만 페이지 1개로 2점 감점되었습니다."
+        }
+      ],
+      "explanation": [
+        "종합 점수 = 성능(30%) + 접근성(25%) + 사용성(25%) + 검색·공유(20%) − 추가 감점",
+        "접근성 점수(44점)가 전체 점수를 가장 많이 낮추고 있습니다.",
+        "성능 점수 44점이 낮습니다. 첫 화면·이미지 로딩이 느리면 이탈이 늘어날 수 있습니다.",
+        "페이지당 접근성 이슈가 평균 42건 있어 8점 감점되었습니다.",
+        "스크립트 오류 1건으로 1점 감점되었습니다.",
+        "이미지·API 등 로딩 실패 80건으로 8점 감점되었습니다.",
+        "성능 50점 미만 페이지 1개로 2점 감점되었습니다."
+      ]
+    }
+  },
+  "crawlMeta": {
+    "interactions": [
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드·스크롤 후 스캔",
+        "urlAfter": "https://m.getcha.kr/home",
+        "linksFound": 1,
+        "domSummary": "화면 요소 약 655개, 클릭 후보 84개",
+        "candidateCount": 84,
+        "success": true
+      },
+      {
+        "action": "click",
+        "label": "앱 다운로드",
+        "targetHint": "generic",
+        "score": 212,
+        "urlBefore": "https://m.getcha.kr/home",
+        "urlAfter": "https://m.getcha.kr/home",
+        "linksFound": 1,
+        "newLinks": 0,
+        "domDiff": "눈에 띄는 화면 변화는 없었습니다",
+        "domDelta": {
+          "visible": 0,
+          "overlays": 0,
+          "links": 0,
+          "interactive": 0
+        },
+        "networkSummary": "서버 요청 2건",
+        "apiCallCount": 4,
+        "routeChanged": false,
+        "success": false
+      },
+      {
+        "action": "click",
+        "label": "홈",
+        "targetHint": "generic",
+        "score": 168,
+        "urlBefore": "https://m.getcha.kr/home",
+        "urlAfter": "https://m.getcha.kr/home",
+        "linksFound": 1,
+        "newLinks": 0,
+        "domDiff": "눈에 띄는 화면 변화는 없었습니다",
+        "domDelta": {
+          "visible": 0,
+          "overlays": 0,
+          "links": 0,
+          "interactive": 0
+        },
+        "networkSummary": "서버 요청 1건",
+        "apiCallCount": 1,
+        "routeChanged": false,
+        "success": false
+      },
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드·스크롤 후 스캔",
+        "urlAfter": "https://m.getcha.kr/home",
+        "linksFound": 1,
+        "domSummary": "화면 요소 약 649개, 클릭 후보 82개",
+        "candidateCount": 82,
+        "success": true
+      },
+      {
+        "action": "click",
+        "label": "홈",
+        "targetHint": "generic",
+        "score": 168,
+        "urlBefore": "https://m.getcha.kr/home",
+        "urlAfter": "https://m.getcha.kr/home",
+        "linksFound": 1,
+        "newLinks": 0,
+        "domDiff": "눈에 띄는 화면 변화는 없었습니다",
+        "domDelta": {
+          "visible": 0,
+          "overlays": 0,
+          "links": 0,
+          "interactive": 0
+        },
+        "apiCallCount": 0,
+        "routeChanged": false,
+        "success": false
+      },
+      {
+        "action": "click",
+        "label": "div · css-175oi2r r-1loqt21 r-1otgn73",
+        "targetHint": "generic",
+        "score": 132,
+        "urlBefore": "https://m.getcha.kr/home",
+        "urlAfter": "https://m.getcha.kr/home",
+        "linksFound": 1,
+        "newLinks": 0,
+        "domDiff": "눈에 띄는 화면 변화는 없었습니다",
+        "domDelta": {
+          "visible": 0,
+          "overlays": 0,
+          "links": 0,
+          "interactive": 0
+        },
+        "networkSummary": "서버 요청 1건",
+        "apiCallCount": 1,
+        "routeChanged": false,
+        "success": false
+      }
+    ],
+    "mode": "homepage_rich_subpage_light",
+    "seedScope": {
+      "origin": "https://m.getcha.kr",
+      "pathPrefix": "/home"
+    },
+    "discoveryStats": {
+      "candidatesFound": 48,
+      "clicksRecorded": 1,
+      "linksDiscovered": 1,
+      "profile": "homepage",
+      "clicksAttempted": 25,
+      "stoppedEarly": true,
+      "runtimeMs": 46718,
+      "skippedByReason": {
+        "no_change": 2,
+        "out_of_scope": 14,
+        "click_failed": 3,
+        "duplicate": 6
+      },
+      "meaningfulCount": 0
+    },
+    "interactionFlow": "Home\n└─ 페이지 로드·스크롤 후 스캔 — 초기 스캔"
+  },
+  "timing": {
+    "phases": {
+      "browser_launch": 0.208,
+      "quick_scan": 49.957,
+      "crawl": 14.085,
+      "page_analysis": 84.673
+    },
+    "pages": [
+      {
+        "url": "https://m.getcha.kr/home",
+        "phases": {
+          "initial_load": 2.772,
+          "hydration_wait": 0.866,
+          "interaction_crawl": 46.718,
+          "ui_signals_mobile": 0.206,
+          "screenshots": 1.11,
+          "axe": 2.024,
+          "lighthouse": 30.159
+        }
+      }
+    ],
+    "summary": [
+      "Page analysis (total): 84.7s",
+      "Quick scan: 50.0s",
+      "Interaction crawl (pages): 46.7s",
+      "Lighthouse (pages): 30.2s",
+      "URL crawl: 14.1s",
+      "Initial load (pages): 2.8s",
+      "Accessibility scan (pages): 2.0s",
+      "Screenshots (pages): 1.1s",
+      "Hydration wait (pages): 0.9s",
+      "Browser launch: 0.2s",
+      "ui_signals_mobile (pages): 0.2s"
+    ],
+    "totalSeconds": 148.923
+  }
+}

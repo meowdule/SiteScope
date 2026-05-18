@@ -1,6 +1,22 @@
 {
   "reportId": "c4191e47-4987-4fc0-b349-3fd1128e0143",
+  "updatedAt": "2026-05-18T02:20:17.282Z",
   "targetUrl": "https://m.getcha.kr/home",
-  "phase": "queued",
-  "updatedAt": "2026-05-18T02:16:57Z"
+  "phase": "complete",
+  "quick": {
+    "validUrl": true,
+    "dnsOk": true,
+    "dnsMessage": "DNS resolves.",
+    "httpStatus": 200,
+    "httpOk": true,
+    "finalUrl": "https://m.getcha.kr/home",
+    "redirectChain": [
+      "https://m.getcha.kr/home"
+    ],
+    "sslOk": true,
+    "sslMessage": "HTTPS in use.",
+    "responseTimeMs": 992,
+    "internalLinkCount": 1,
+    "screenshotRelativePath": "reports/c4191e47-4987-4fc0-b349-3fd1128e0143/screenshots/quick-home.jpg"
+  }
 }
