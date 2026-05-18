@@ -1,0 +1,5006 @@
+{
+  "reportId": "66e2bc94-c505-4127-9126-a80dd06d9fcd",
+  "targetUrl": "https://meowdule.github.io/SEO-TESTING-HTML/",
+  "createdAt": "2026-05-18T00:52:00.993Z",
+  "completedAt": "2026-05-18T00:52:00.993Z",
+  "quick": {
+    "validUrl": true,
+    "dnsOk": true,
+    "dnsMessage": "DNS resolves.",
+    "httpStatus": 200,
+    "httpOk": true,
+    "finalUrl": "https://meowdule.github.io/SEO-TESTING-HTML/",
+    "redirectChain": [
+      "https://meowdule.github.io/SEO-TESTING-HTML/"
+    ],
+    "sslOk": true,
+    "sslMessage": "HTTPS in use.",
+    "responseTimeMs": 87,
+    "internalLinkCount": 6,
+    "screenshotRelativePath": "reports/66e2bc94-c505-4127-9126-a80dd06d9fcd/screenshots/quick-home.png"
+  },
+  "pages": [
+    {
+      "url": "https://meowdule.github.io/SEO-TESTING-HTML",
+      "statusCode": 200,
+      "redirects": [
+        "https://meowdule.github.io/SEO-TESTING-HTML",
+        "https://meowdule.github.io/SEO-TESTING-HTML/"
+      ],
+      "consoleErrors": [],
+      "jsExceptions": [],
+      "failedRequests": [],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": null,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 3.6000000000349246,
+        "loadEvent": 3.800000000046566
+      },
+      "axeViolations": [
+        {
+          "id": "document-title",
+          "impact": "serious",
+          "description": "Documents must have <title> element to aid in navigation",
+          "nodes": 1
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "page-has-heading-one",
+          "impact": "moderate",
+          "description": "Page should contain a level-one heading",
+          "nodes": 1
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [],
+      "screenshotPaths": {
+        "mobile": "screenshots/e893adf6-d107-42f1-bd28-0ae0e88ebabf-mobile.png",
+        "tablet": "screenshots/52f7e251-21e8-452d-ad7d-9df154315f0e-tablet.png",
+        "desktop": "screenshots/b059be02-e8e8-47c1-b944-22f12942d743-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/",
+          "linksFound": 6
+        },
+        {
+          "action": "navigation",
+          "label": "SEO DEMO",
+          "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+          "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/",
+          "linksFound": 6,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:15:14.776Z"
+    },
+    {
+      "url": "https://meowdule.github.io/",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 36,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 17.100000000034925,
+        "loadEvent": 17.400000000023283,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/cfde732d-2402-408c-804b-c3e396733d76-mobile.png",
+        "tablet": "screenshots/4a408551-6917-4cdc-a505-f3daf3f5cd9e-tablet.png",
+        "desktop": "screenshots/89d96a99-9d8b-4eaf-a55c-921776920e0d-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 33,
+          "newLinks": 32
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 3,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        }
+      ],
+      "crawledAt": "2026-05-18T00:16:36.091Z"
+    },
+    {
+      "url": "https://meowdule.github.io/pages/plans",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/pages/plans"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode.",
+        "Framing 'https://accounts.google.com/' violates the following report-only Content Security Policy directive: \"frame-ancestors 'self'\". The violation has been logged, but no further action has been taken.\n"
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/pages/plans",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://accounts.google.com/gsi/button?theme=outline&size=large&shape=circle&logo_alignment=center&text=signup_with&width=300&is_fedcm_supported=true&client_id=49625052041-kgt0hghf445lmcmhijv46b715m2mpbct.apps.googleusercontent.com&iframe_id=gsi_422107_321045&cas=p58xttYvQi8gcYNhn4YxSP45ns0iQuxdLQbd9bu%2Bh7o&hl=en",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://csp.withgoogle.com/csp/frame-ancestors/dd7de8473bddc59c6b748810a67a39b1",
+          "failure": "net::ERR_BLOCKED_BY_ORB"
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6.099999999976717,
+        "loadEvent": 7.099999999976717,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/1b7f9062-fb23-4406-84c7-d4bac754d0f8-mobile.png",
+        "tablet": "screenshots/9ccde966-d244-44ba-9d49-7387a3049f20-tablet.png",
+        "desktop": "screenshots/a01611d1-cb37-4090-93e4-a260189af7a6-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/pages/plans",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/pages/plans",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 33,
+          "newLinks": 32
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/pages/plans",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/pages/plans",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/pages/plans",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:17:53.783Z"
+    },
+    {
+      "url": "https://meowdule.github.io/pages/contact",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/pages/contact"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/pages/contact",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://accounts.google.com/gsi/button?theme=outline&size=large&shape=circle&logo_alignment=center&text=signup_with&width=300&is_fedcm_supported=true&client_id=49625052041-kgt0hghf445lmcmhijv46b715m2mpbct.apps.googleusercontent.com&iframe_id=gsi_499878_271811&cas=jQeyUBK2EUn8%2FM7V7eLvGFdHTYT9KgD0wiGCcHQbLp0&hl=en",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6,
+        "loadEvent": 6.300000000046566,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/15bda85e-c6fd-417d-8625-90cb84bfee14-mobile.png",
+        "tablet": "screenshots/86a57878-913c-4e5f-8ff4-5a26e0de971a-tablet.png",
+        "desktop": "screenshots/b8f321b6-fb7f-473a-b68c-8a02cfb02fd9-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/pages/contact",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/pages/contact",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 33,
+          "newLinks": 32
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/pages/contact",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/pages/contact",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/pages/contact",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:19:11.555Z"
+    },
+    {
+      "url": "https://meowdule.github.io/auth/login",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/auth/login"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/auth/login",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6.800000000046566,
+        "loadEvent": 8,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/4b57c28f-92b9-4c4e-9fe7-a26f2107a2fa-mobile.png",
+        "tablet": "screenshots/4bf54975-1e63-40a3-acb2-ea28037b857b-tablet.png",
+        "desktop": "screenshots/669be558-9027-4f7e-8d34-c64f03a8a109-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/auth/login",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/auth/login",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 33,
+          "newLinks": 32
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/auth/login",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/auth/login",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/auth/login",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:20:29.759Z"
+    },
+    {
+      "url": "https://meowdule.github.io/pages/apply",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/pages/apply"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/pages/apply",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6.199999999953434,
+        "loadEvent": 7.099999999976717,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/4a27a47d-a728-48fc-85bd-9f271a88ea11-mobile.png",
+        "tablet": "screenshots/561dea7d-c088-46d6-aee7-a490cb884b96-tablet.png",
+        "desktop": "screenshots/02091679-6626-40d5-b4df-32ab876d5d0a-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/pages/apply",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/pages/apply",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 33,
+          "newLinks": 32
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/pages/apply",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/pages/apply",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/pages/apply",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:21:47.841Z"
+    },
+    {
+      "url": "about:blank",
+      "statusCode": null,
+      "redirects": [],
+      "consoleErrors": [],
+      "jsExceptions": [],
+      "failedRequests": [],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": null,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 2.800000000046566,
+        "loadEvent": 3
+      },
+      "axeViolations": [
+        {
+          "id": "document-title",
+          "impact": "serious",
+          "description": "Documents must have <title> element to aid in navigation",
+          "nodes": 1
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "page-has-heading-one",
+          "impact": "moderate",
+          "description": "Page should contain a level-one heading",
+          "nodes": 1
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [],
+      "screenshotPaths": {
+        "mobile": "screenshots/2e5eb241-7aa5-449a-9ca2-997007a055bc-mobile.png",
+        "tablet": "screenshots/5e690ca2-0624-4fe8-9305-00d6a5148e77-tablet.png",
+        "desktop": "screenshots/b0f2401c-10c9-478a-9c38-c540f7575f84-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "about:blank",
+          "linksFound": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:22:09.208Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://accounts.google.com/gsi/button?theme=outline&size=large&shape=circle&logo_alignment=center&text=signup_with&width=300&is_fedcm_supported=true&client_id=49625052041-kgt0hghf445lmcmhijv46b715m2mpbct.apps.googleusercontent.com&iframe_id=gsi_755302_82917&cas=y3UQk8%2Bmovx64%2Bn4eLUXhp9gU%2B%2BF7PYkZNtCOLF%2B6sA&hl=en",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 5.799999999930151,
+        "loadEvent": 6.099999999976717,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/b6f9e142-fb8f-4999-a455-d68cd2195e35-mobile.png",
+        "tablet": "screenshots/1e835297-450b-4283-a16c-edb9fa5f72e2-tablet.png",
+        "desktop": "screenshots/dfc95166-f85a-4378-b4f6-d6e2d8b11982-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:23:26.972Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6,
+        "loadEvent": 6.5,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/28c68059-e550-4699-a6be-5504b414ec56-mobile.png",
+        "tablet": "screenshots/9bc84581-2562-418b-a188-07d0f80be205-tablet.png",
+        "desktop": "screenshots/c9fb26b7-226a-43ce-ac60-9e41a92f1ff1-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:24:44.767Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/quickstart",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/quickstart"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/quickstart",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6,
+        "loadEvent": 6.399999999906868,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/3253a6ab-7bc2-4b5c-b754-9bf7a51e4723-mobile.png",
+        "tablet": "screenshots/55a16bf5-2819-4d1e-8f05-58544bc20856-tablet.png",
+        "desktop": "screenshots/e31aa640-38f3-4d3b-aac5-da7bc9939fde-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/quickstart",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/quickstart",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/quickstart",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/quickstart",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/quickstart",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:26:02.403Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/getting-started-with-github-pages/what-is-github-pages"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/what-is-github-pages",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://accounts.google.com/gsi/button?theme=outline&size=large&shape=circle&logo_alignment=center&text=signup_with&width=300&is_fedcm_supported=true&client_id=49625052041-kgt0hghf445lmcmhijv46b715m2mpbct.apps.googleusercontent.com&iframe_id=gsi_988495_488651&cas=VTar3CoVU%2B2Ip6IvF7JM%2BpuDRe9cldW3f9o1tIt271U&hl=en",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 5.899999999906868,
+        "loadEvent": 6.199999999953434,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/7514d168-7d2d-44be-a1aa-d6700e063b03-mobile.png",
+        "tablet": "screenshots/4723ea35-1ff0-48c6-9823-423ce31ac504-tablet.png",
+        "desktop": "screenshots/0181928b-9339-482b-b4b4-2ef038f2751b-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/what-is-github-pages",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/what-is-github-pages",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/what-is-github-pages",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/what-is-github-pages",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/what-is-github-pages",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:27:20.223Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-github-pages-site"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://accounts.google.com/gsi/button?theme=outline&size=large&shape=circle&logo_alignment=center&text=signup_with&width=300&is_fedcm_supported=true&fedcm_button_experiment_arm=0&client_id=49625052041-kgt0hghf445lmcmhijv46b715m2mpbct.apps.googleusercontent.com&iframe_id=gsi_66157_501054&cas=xj7HB45t4m%2FibMqnkQOS1LDz7b0DvJiOsUrL2VKhzb8&hl=en",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6.300000000046566,
+        "loadEvent": 7.300000000046566,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/b81d168b-b523-4e11-bf06-45ac9c745387-mobile.png",
+        "tablet": "screenshots/93ab8998-a4d2-4ecd-ab41-4f90417d9e66-tablet.png",
+        "desktop": "screenshots/0d6ad8e2-e2ad-444e-b6d3-a8858fd524d7-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:28:37.927Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/github-pages-limits",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/getting-started-with-github-pages/github-pages-limits"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/github-pages-limits",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://accounts.google.com/gsi/button?theme=outline&size=large&shape=circle&logo_alignment=center&text=signup_with&width=300&is_fedcm_supported=true&client_id=49625052041-kgt0hghf445lmcmhijv46b715m2mpbct.apps.googleusercontent.com&iframe_id=gsi_143965_791655&cas=OOnf%2BqbLHBkRjNQym1aspUD2tcuug5Zby0Wsv2%2BMEc4&hl=en",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6.099999999860302,
+        "loadEvent": 6.399999999906868,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/960414a8-5c1d-4824-984e-56003ada9e59-mobile.png",
+        "tablet": "screenshots/50ae2a48-e9d1-4725-a2ce-b96048b7d054-tablet.png",
+        "desktop": "screenshots/5e3bec00-1f59-40f6-8578-db91adbb2ddc-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/github-pages-limits",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/github-pages-limits",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/github-pages-limits",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/github-pages-limits",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/github-pages-limits",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:29:55.700Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 7.099999999860302,
+        "loadEvent": 8.300000000046566,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/b8611d68-f60f-4338-b4fc-458351f6e0c6-mobile.png",
+        "tablet": "screenshots/817b2eb5-d02f-4eab-9315-d59dbdc47b1c-tablet.png",
+        "desktop": "screenshots/489d39c6-3b2f-476a-bd20-10ea22633692-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:31:13.745Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6.300000000046566,
+        "loadEvent": 6.7000000001862645,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/2117c826-27f1-4612-8ca0-95d2a9a58aba-mobile.png",
+        "tablet": "screenshots/69bb6565-29f6-4776-8539-263c00a3a4f7-tablet.png",
+        "desktop": "screenshots/16501056-2d8d-49f7-97e0-c029af362ec5-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:32:32.189Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/deleting-a-github-pages-site",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/getting-started-with-github-pages/deleting-a-github-pages-site"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/deleting-a-github-pages-site",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6,
+        "loadEvent": 6.2999999998137355,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/24f83895-819a-4d95-ad49-4b9ffe641396-mobile.png",
+        "tablet": "screenshots/ebb6cd70-7f8f-4a56-b8dc-339e48048872-tablet.png",
+        "desktop": "screenshots/3f0b01ac-4109-43da-80b7-a16040df85ba-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/deleting-a-github-pages-site",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/deleting-a-github-pages-site",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/deleting-a-github-pages-site",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/deleting-a-github-pages-site",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/deleting-a-github-pages-site",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:33:50.038Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6.399999999906868,
+        "loadEvent": 6.699999999953434,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/c7c2b6c0-c6ec-4df2-a500-a8e404179843-mobile.png",
+        "tablet": "screenshots/78060965-de1a-40c7-a964-f12181661efd-tablet.png",
+        "desktop": "screenshots/942545e8-0aef-4555-9d52-a9e135995092-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:35:07.765Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://accounts.google.com/gsi/button?theme=outline&size=large&shape=circle&logo_alignment=center&text=signup_with&width=300&is_fedcm_supported=true&client_id=49625052041-kgt0hghf445lmcmhijv46b715m2mpbct.apps.googleusercontent.com&iframe_id=gsi_533831_329522&cas=HLu9vG2khBuL3q6cRKTsA36yxwOqpGhQFXpymXILOr4&hl=en",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6.2999999998137355,
+        "loadEvent": 6.7999999998137355,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/5e637739-6e51-4a0c-b4d2-7bc969163d25-mobile.png",
+        "tablet": "screenshots/63e4989f-d4c6-4d7c-ac77-d9d0e5eb86d9-tablet.png",
+        "desktop": "screenshots/057f1fc3-2c1e-4a56-9e30-4ea1dee64459-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:36:25.630Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 5.800000000046566,
+        "loadEvent": 6.300000000046566,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/e9fcf779-4bcb-440d-8518-8cf123ed0463-mobile.png",
+        "tablet": "screenshots/34749ed3-ed5d-4d02-8f61-2f0c8610c5c0-tablet.png",
+        "desktop": "screenshots/b0f3ca9f-2c11-47df-945c-0e0c6d9aefac-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:37:43.705Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-submodules-with-github-pages",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-submodules-with-github-pages"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-submodules-with-github-pages",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6.2000000001862645,
+        "loadEvent": 6.5,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/28bf9e8d-ec42-4a9f-8009-9e47c436ec1e-mobile.png",
+        "tablet": "screenshots/6acb789b-5d16-455a-af2c-3989f1773960-tablet.png",
+        "desktop": "screenshots/2562fb65-2faf-40a3-a987-f5ba6006f7f6-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-submodules-with-github-pages",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-submodules-with-github-pages",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-submodules-with-github-pages",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-submodules-with-github-pages",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-submodules-with-github-pages",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:39:01.944Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6.300000000046566,
+        "loadEvent": 6.699999999953434,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/e35415e8-5b2c-46cc-adc0-8afd607be307-mobile.png",
+        "tablet": "screenshots/c4b0a34c-edd4-4232-9dea-1c7fbfb38b6b-tablet.png",
+        "desktop": "screenshots/fffdc6f1-5d13-4735-ab21-3fab17139c6c-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:40:20.248Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6,
+        "loadEvent": 6.300000000046566,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/cd4bd03a-6058-40d2-8b7d-88a150b71d3e-mobile.png",
+        "tablet": "screenshots/ab1e2955-1920-41fd-bed7-028620650100-tablet.png",
+        "desktop": "screenshots/975457b4-a2d2-457b-bc9b-9a75cdafc250-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:41:38.395Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6,
+        "loadEvent": 6.399999999906868,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/c29fc31e-dc06-4895-8924-b6c8bf6c2dc8-mobile.png",
+        "tablet": "screenshots/6a3518a8-012b-48aa-885e-450cd4f2fb83-tablet.png",
+        "desktop": "screenshots/eea296ca-81f6-47b6-b496-c64d44c77ed4-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:42:56.445Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6,
+        "loadEvent": 6.5,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/61dc6fdb-3f93-4c2b-851e-d70f74255b2e-mobile.png",
+        "tablet": "screenshots/da63e35c-0cae-4ad5-93c6-48d2ecaffbe0-tablet.png",
+        "desktop": "screenshots/4baad883-74df-45f3-845a-a09887fef52a-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:44:14.299Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode.",
+        "Failed to load resource: the server responded with a status of 400 ()"
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6.099999999627471,
+        "loadEvent": 6.5,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/4c8aae94-e5cb-473b-bf57-5e89bc6e5413-mobile.png",
+        "tablet": "screenshots/e24914e4-ac03-42ad-ae32-996acd45cfa0-tablet.png",
+        "desktop": "screenshots/1a58e92f-40ff-403e-bbc2-cc73e644a9d1-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:45:31.922Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6.400000000372529,
+        "loadEvent": 6.7000000001862645,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/b79a596d-b48a-4cf3-9a8e-eeb86205bdbe-mobile.png",
+        "tablet": "screenshots/aea4a54f-9cf8-4ecd-998c-3ba71ddc4e55-tablet.png",
+        "desktop": "screenshots/65a459c2-75c3-4e8b-86aa-024b3431ec30-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:46:49.721Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6.300000000279397,
+        "loadEvent": 7.2000000001862645,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/fb25bb17-a074-41a6-ba8f-303282b5ed87-mobile.png",
+        "tablet": "screenshots/f01f16b4-e631-4a92-825b-d189ed2ed145-tablet.png",
+        "desktop": "screenshots/1c50bb4e-dca2-45ec-adc7-d472560c40bc-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:48:07.589Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-jekyll-build-errors-for-github-pages-sites",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-jekyll-build-errors-for-github-pages-sites"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-jekyll-build-errors-for-github-pages-sites",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6.100000000093132,
+        "loadEvent": 6.399999999906868,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/280705b2-df08-470a-b68e-f80264c7241e-mobile.png",
+        "tablet": "screenshots/720def1c-c609-44e5-9538-4522cb404c29-tablet.png",
+        "desktop": "screenshots/f6a99e91-b9dd-4914-814f-10366203852a-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-jekyll-build-errors-for-github-pages-sites",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-jekyll-build-errors-for-github-pages-sites",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-jekyll-build-errors-for-github-pages-sites",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-jekyll-build-errors-for-github-pages-sites",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-jekyll-build-errors-for-github-pages-sites",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:49:25.584Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 6.899999999906868,
+        "loadEvent": 7.300000000279397,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/0785e958-2b42-4f16-9fd4-7705b84e7eb6-mobile.png",
+        "tablet": "screenshots/32b09322-2477-419a-8831-6dad5ec8f333-tablet.png",
+        "desktop": "screenshots/77d1afa8-f765-4ca3-b7ab-8c8f7e3781f4-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:50:43.346Z"
+    },
+    {
+      "url": "https://meowdule.github.io/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://accounts.google.com/gsi/button?theme=outline&size=large&shape=circle&logo_alignment=center&text=signup_with&width=300&is_fedcm_supported=true&client_id=49625052041-kgt0hghf445lmcmhijv46b715m2mpbct.apps.googleusercontent.com&iframe_id=gsi_469292_914455&cas=JQnL%2BQg1iRk2pcmwl%2BUqt7ERGcbMaj0P%2FU%2BLRjiuuXU&hl=en",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": null,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 12,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "domContentLoaded": 5.899999999906868,
+        "loadEvent": 6.300000000279397,
+        "lighthouseError": "Lighthouse could not complete (often on heavy SPA pages). Showing basic load timings instead."
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "modal-0",
+          "type": "modal_or_drawer",
+          "message": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+          "viewport": "desktop",
+          "severity": "info",
+          "title": "팝업·모달·드로어",
+          "friendlyMessage": "클릭 후 추가 화면(팝업·바텀시트 등)이 열렸습니다.",
+          "userImpact": "숨겨진 메뉴·쿠폰·동의창 등 실제 이용 흐름에 포함될 수 있습니다.",
+          "category": "ux"
+        },
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/274634bd-204b-4023-a631-f01b9d31cb99-mobile.png",
+        "tablet": "screenshots/6b36914f-9f8e-424a-b1ce-380ff7eb8e12-tablet.png",
+        "desktop": "screenshots/86dab202-08a0-40f7-a502-59a147ba57c1-desktop.png"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드 후 스캔",
+          "urlAfter": "https://meowdule.github.io/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+          "linksFound": 2
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "urlBefore": "https://meowdule.github.io/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 32,
+          "newLinks": 31
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "urlBefore": "https://meowdule.github.io/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "urlBefore": "https://meowdule.github.io/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 36,
+          "newLinks": 35
+        },
+        {
+          "action": "navigation",
+          "label": "요소 4",
+          "urlBefore": "https://meowdule.github.io/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0
+        }
+      ],
+      "crawledAt": "2026-05-18T00:52:00.992Z"
+    }
+  ],
+  "brokenLinks": [
+    {
+      "from": "https://meowdule.github.io/SEO-TESTING-HTML",
+      "to": "https://meowdule.github.io/blank",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/pages/plans",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/pages/plans",
+      "to": "https://meowdule.github.io/pages/plans",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/pages/contact",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/pages/contact",
+      "to": "https://meowdule.github.io/pages/contact",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/auth/login",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/auth/login",
+      "to": "https://meowdule.github.io/auth/login",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/pages/apply",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/pages/apply",
+      "to": "https://meowdule.github.io/pages/apply",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en",
+      "to": "https://meowdule.github.io/en",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages",
+      "to": "https://meowdule.github.io/en/pages",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/quickstart",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/quickstart",
+      "to": "https://meowdule.github.io/en/pages/quickstart",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "to": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/what-is-github-pages",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+      "to": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-github-pages-site",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/github-pages-limits",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/github-pages-limits",
+      "to": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/github-pages-limits",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "to": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+      "to": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/deleting-a-github-pages-site",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/deleting-a-github-pages-site",
+      "to": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/deleting-a-github-pages-site",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site",
+      "to": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/unpublishing-a-github-pages-site",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site",
+      "to": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+      "to": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-submodules-with-github-pages",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-submodules-with-github-pages",
+      "to": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/using-submodules-with-github-pages",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites",
+      "to": "https://meowdule.github.io/en/pages/getting-started-with-github-pages/troubleshooting-404-errors-for-github-pages-sites",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll",
+      "to": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll",
+      "to": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll",
+      "to": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll",
+      "to": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll",
+      "to": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/setting-a-markdown-processor-for-your-github-pages-site-using-jekyll",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll",
+      "to": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-jekyll-build-errors-for-github-pages-sites",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-jekyll-build-errors-for-github-pages-sites",
+      "to": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/about-jekyll-build-errors-for-github-pages-sites",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites",
+      "to": "https://meowdule.github.io/en/pages/setting-up-a-github-pages-site-with-jekyll/troubleshooting-jekyll-build-errors-for-github-pages-sites",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+      "to": "https://meowdule.github.io/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages",
+      "reason": "HTTP 404"
+    }
+  ],
+  "summary": {
+    "healthScore": 13,
+    "avgLighthousePerformance": null,
+    "avgAxeIssuesPerPage": 11.5,
+    "totalConsoleErrors": 113,
+    "totalFailedRequests": 92,
+    "mobileWarnings": [
+      "모바일 화면에서 옆으로 스크롤해야 하는 구간이 있습니다.",
+      "30개 페이지에서 Lighthouse 전체 점수를 가져오지 못해 기본 로딩 시간만 표시했습니다. (SPA 사이트에서 흔함)"
+    ],
+    "categoryScores": {
+      "performance": null,
+      "accessibility": null,
+      "seo": null,
+      "ux": 0
+    },
+    "statusLabel": "Critical"
+  },
+  "crawlMeta": {
+    "interactions": [
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드 후 스캔",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "linksFound": 6
+      },
+      {
+        "action": "navigation",
+        "label": "SEO DEMO",
+        "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/",
+        "linksFound": 6,
+        "newLinks": 0
+      },
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드 후 스캔",
+        "urlAfter": "https://meowdule.github.io/",
+        "linksFound": 1
+      },
+      {
+        "action": "navigation",
+        "label": "read the full documentation",
+        "urlBefore": "https://meowdule.github.io/",
+        "urlAfter": "https://docs.github.com/en/pages",
+        "linksFound": 33,
+        "newLinks": 32
+      },
+      {
+        "action": "navigation",
+        "label": "GitHub Status",
+        "urlBefore": "https://meowdule.github.io/",
+        "urlAfter": "https://www.githubstatus.com/",
+        "linksFound": 3,
+        "newLinks": 2
+      },
+      {
+        "action": "navigation",
+        "label": "@githubstatus",
+        "urlBefore": "https://meowdule.github.io/",
+        "urlAfter": "https://x.com/githubstatus",
+        "linksFound": 36,
+        "newLinks": 35
+      },
+      {
+        "action": "ui_state",
+        "label": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+        "urlAfter": "https://meowdule.github.io/"
+      },
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드 후 스캔",
+        "urlAfter": "https://meowdule.github.io/pages/plans",
+        "linksFound": 2
+      },
+      {
+        "action": "navigation",
+        "label": "read the full documentation",
+        "urlBefore": "https://meowdule.github.io/pages/plans",
+        "urlAfter": "https://docs.github.com/en/pages",
+        "linksFound": 33,
+        "newLinks": 32
+      },
+      {
+        "action": "navigation",
+        "label": "GitHub Status",
+        "urlBefore": "https://meowdule.github.io/pages/plans",
+        "urlAfter": "https://www.githubstatus.com/",
+        "linksFound": 4,
+        "newLinks": 2
+      },
+      {
+        "action": "navigation",
+        "label": "@githubstatus",
+        "urlBefore": "https://meowdule.github.io/pages/plans",
+        "urlAfter": "https://x.com/githubstatus",
+        "linksFound": 36,
+        "newLinks": 35
+      },
+      {
+        "action": "navigation",
+        "label": "요소 4",
+        "urlBefore": "https://meowdule.github.io/pages/plans",
+        "urlAfter": "https://meowdule.github.io/",
+        "linksFound": 1,
+        "newLinks": 0
+      },
+      {
+        "action": "ui_state",
+        "label": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+        "urlAfter": "https://meowdule.github.io/pages/plans"
+      },
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드 후 스캔",
+        "urlAfter": "https://meowdule.github.io/pages/contact",
+        "linksFound": 2
+      },
+      {
+        "action": "navigation",
+        "label": "read the full documentation",
+        "urlBefore": "https://meowdule.github.io/pages/contact",
+        "urlAfter": "https://docs.github.com/en/pages",
+        "linksFound": 33,
+        "newLinks": 32
+      },
+      {
+        "action": "navigation",
+        "label": "GitHub Status",
+        "urlBefore": "https://meowdule.github.io/pages/contact",
+        "urlAfter": "https://www.githubstatus.com/",
+        "linksFound": 4,
+        "newLinks": 2
+      },
+      {
+        "action": "navigation",
+        "label": "@githubstatus",
+        "urlBefore": "https://meowdule.github.io/pages/contact",
+        "urlAfter": "https://x.com/githubstatus",
+        "linksFound": 36,
+        "newLinks": 35
+      },
+      {
+        "action": "navigation",
+        "label": "요소 4",
+        "urlBefore": "https://meowdule.github.io/pages/contact",
+        "urlAfter": "https://meowdule.github.io/",
+        "linksFound": 1,
+        "newLinks": 0
+      },
+      {
+        "action": "ui_state",
+        "label": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+        "urlAfter": "https://meowdule.github.io/pages/contact"
+      },
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드 후 스캔",
+        "urlAfter": "https://meowdule.github.io/auth/login",
+        "linksFound": 2
+      },
+      {
+        "action": "navigation",
+        "label": "read the full documentation",
+        "urlBefore": "https://meowdule.github.io/auth/login",
+        "urlAfter": "https://docs.github.com/en/pages",
+        "linksFound": 33,
+        "newLinks": 32
+      },
+      {
+        "action": "navigation",
+        "label": "GitHub Status",
+        "urlBefore": "https://meowdule.github.io/auth/login",
+        "urlAfter": "https://www.githubstatus.com/",
+        "linksFound": 4,
+        "newLinks": 2
+      },
+      {
+        "action": "navigation",
+        "label": "@githubstatus",
+        "urlBefore": "https://meowdule.github.io/auth/login",
+        "urlAfter": "https://x.com/githubstatus",
+        "linksFound": 36,
+        "newLinks": 35
+      },
+      {
+        "action": "navigation",
+        "label": "요소 4",
+        "urlBefore": "https://meowdule.github.io/auth/login",
+        "urlAfter": "https://meowdule.github.io/",
+        "linksFound": 1,
+        "newLinks": 0
+      },
+      {
+        "action": "ui_state",
+        "label": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+        "urlAfter": "https://meowdule.github.io/auth/login"
+      },
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드 후 스캔",
+        "urlAfter": "https://meowdule.github.io/pages/apply",
+        "linksFound": 2
+      },
+      {
+        "action": "navigation",
+        "label": "read the full documentation",
+        "urlBefore": "https://meowdule.github.io/pages/apply",
+        "urlAfter": "https://docs.github.com/en/pages",
+        "linksFound": 33,
+        "newLinks": 32
+      },
+      {
+        "action": "navigation",
+        "label": "GitHub Status",
+        "urlBefore": "https://meowdule.github.io/pages/apply",
+        "urlAfter": "https://www.githubstatus.com/",
+        "linksFound": 4,
+        "newLinks": 2
+      },
+      {
+        "action": "navigation",
+        "label": "@githubstatus",
+        "urlBefore": "https://meowdule.github.io/pages/apply",
+        "urlAfter": "https://x.com/githubstatus",
+        "linksFound": 36,
+        "newLinks": 35
+      },
+      {
+        "action": "navigation",
+        "label": "요소 4",
+        "urlBefore": "https://meowdule.github.io/pages/apply",
+        "urlAfter": "https://meowdule.github.io/",
+        "linksFound": 1,
+        "newLinks": 0
+      },
+      {
+        "action": "ui_state",
+        "label": "‘GitHub Status’ 클릭 후 팝업·모달·드로어가 나타났을 수 있습니다.",
+        "urlAfter": "https://meowdule.github.io/pages/apply"
+      },
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드 후 스캔",
+        "urlAfter": "about:blank",
+        "linksFound": 0
+      }
+    ],
+    "mode": "interaction"
+  }
+}
