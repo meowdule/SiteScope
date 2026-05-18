@@ -1,6 +1,22 @@
 {
   "reportId": "a3f7ce57-32eb-4ac1-9e57-d4ef5b4cf731",
+  "updatedAt": "2026-05-18T04:05:46.022Z",
   "targetUrl": "https://meowdule.github.io/SEO-TESTING-HTML/",
-  "phase": "queued",
-  "updatedAt": "2026-05-18T04:03:35Z"
+  "phase": "complete",
+  "quick": {
+    "validUrl": true,
+    "dnsOk": true,
+    "dnsMessage": "DNS resolves.",
+    "httpStatus": 200,
+    "httpOk": true,
+    "finalUrl": "https://meowdule.github.io/SEO-TESTING-HTML/",
+    "redirectChain": [
+      "https://meowdule.github.io/SEO-TESTING-HTML/"
+    ],
+    "sslOk": true,
+    "sslMessage": "HTTPS in use.",
+    "responseTimeMs": 75,
+    "internalLinkCount": 9,
+    "screenshotRelativePath": "reports/a3f7ce57-32eb-4ac1-9e57-d4ef5b4cf731/screenshots/quick-home.jpg"
+  }
 }
