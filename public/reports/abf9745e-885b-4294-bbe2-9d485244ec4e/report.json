@@ -1,0 +1,3159 @@
+{
+  "reportId": "abf9745e-885b-4294-bbe2-9d485244ec4e",
+  "targetUrl": "https://meowdule.github.io/SEO-TESTING-HTML/",
+  "createdAt": "2026-05-18T01:20:20.710Z",
+  "completedAt": "2026-05-18T01:20:20.710Z",
+  "quick": {
+    "validUrl": true,
+    "dnsOk": true,
+    "dnsMessage": "DNS resolves.",
+    "httpStatus": 200,
+    "httpOk": true,
+    "finalUrl": "https://meowdule.github.io/SEO-TESTING-HTML/",
+    "redirectChain": [
+      "https://meowdule.github.io/SEO-TESTING-HTML/"
+    ],
+    "sslOk": true,
+    "sslMessage": "HTTPS in use.",
+    "responseTimeMs": 136,
+    "internalLinkCount": 9,
+    "screenshotRelativePath": "reports/abf9745e-885b-4294-bbe2-9d485244ec4e/screenshots/quick-home.jpg"
+  },
+  "pages": [
+    {
+      "url": "https://meowdule.github.io/SEO-TESTING-HTML",
+      "statusCode": 200,
+      "redirects": [
+        "https://meowdule.github.io/SEO-TESTING-HTML",
+        "https://meowdule.github.io/SEO-TESTING-HTML/"
+      ],
+      "consoleErrors": [],
+      "jsExceptions": [],
+      "failedRequests": [],
+      "lighthouse": {
+        "performance": 85,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": null,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "mode": "fallback",
+        "domContentLoaded": 3.599999999976717,
+        "loadEvent": 3.7999999999883585
+      },
+      "axeViolations": [
+        {
+          "id": "document-title",
+          "impact": "serious",
+          "description": "Documents must have <title> element to aid in navigation",
+          "nodes": 1
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "page-has-heading-one",
+          "impact": "moderate",
+          "description": "Page should contain a level-one heading",
+          "nodes": 1
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [],
+      "screenshotPaths": {
+        "mobile": "screenshots/64c5d74b-a308-45fe-ad4e-4d2a83a4388d-mobile.jpg"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드·스크롤 후 스캔",
+          "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/",
+          "linksFound": 6,
+          "domSummary": "화면 요소 약 84개, 클릭 후보 13개",
+          "candidateCount": 13,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "체험하기",
+          "targetHint": "cta",
+          "score": 269,
+          "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+          "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/auth/login",
+          "linksFound": 6,
+          "newLinks": 3,
+          "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+          "domDelta": {
+            "visible": -46,
+            "overlays": 0,
+            "links": -16,
+            "interactive": -6
+          },
+          "apiCallCount": 0,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "지금 신청하기",
+          "targetHint": "cta",
+          "score": 247,
+          "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+          "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/pages/apply",
+          "linksFound": 3,
+          "newLinks": 0,
+          "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+          "domDelta": {
+            "visible": -49,
+            "overlays": 0,
+            "links": -22,
+            "interactive": -9
+          },
+          "apiCallCount": 0,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "구매 플랜 조회",
+          "targetHint": "cta",
+          "score": 247,
+          "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+          "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/pages/plans",
+          "linksFound": 6,
+          "newLinks": 0,
+          "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+          "domDelta": {
+            "visible": -16,
+            "overlays": 0,
+            "links": -13,
+            "interactive": -6
+          },
+          "apiCallCount": 0,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "플랜",
+          "targetHint": "generic",
+          "score": 234,
+          "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+          "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/pages/plans",
+          "linksFound": 6,
+          "newLinks": 0,
+          "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+          "domDelta": {
+            "visible": -16,
+            "overlays": 0,
+            "links": -13,
+            "interactive": -6
+          },
+          "apiCallCount": 0,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "문의",
+          "targetHint": "generic",
+          "score": 234,
+          "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+          "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/pages/contact",
+          "linksFound": 3,
+          "newLinks": 0,
+          "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+          "domDelta": {
+            "visible": -51,
+            "overlays": 0,
+            "links": -22,
+            "interactive": -9
+          },
+          "apiCallCount": 0,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "로그인하고 보드로 이동",
+          "targetHint": "cta",
+          "score": 221,
+          "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+          "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/auth/login",
+          "linksFound": 6,
+          "newLinks": 0,
+          "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+          "domDelta": {
+            "visible": -46,
+            "overlays": 0,
+            "links": -16,
+            "interactive": -6
+          },
+          "apiCallCount": 0,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "홈",
+          "targetHint": "generic",
+          "score": 220,
+          "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+          "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/pages/apply",
+          "linksFound": 3,
+          "newLinks": 0,
+          "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+          "domDelta": {
+            "visible": -49,
+            "overlays": 0,
+            "links": -22,
+            "interactive": -9
+          },
+          "apiCallCount": 0,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "문의하기",
+          "targetHint": "generic",
+          "score": 212,
+          "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+          "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/pages/contact",
+          "linksFound": 3,
+          "newLinks": 0,
+          "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+          "domDelta": {
+            "visible": -51,
+            "overlays": 0,
+            "links": -22,
+            "interactive": -9
+          },
+          "apiCallCount": 0,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "체험하기",
+          "targetHint": "generic",
+          "score": 212,
+          "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+          "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/auth/login",
+          "linksFound": 6,
+          "newLinks": 0,
+          "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+          "domDelta": {
+            "visible": -46,
+            "overlays": 0,
+            "links": -16,
+            "interactive": -6
+          },
+          "apiCallCount": 0,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "SEO DEMO",
+          "targetHint": "generic",
+          "score": 208,
+          "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+          "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/",
+          "linksFound": 6,
+          "newLinks": 0,
+          "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+          "domDelta": {
+            "visible": 0,
+            "overlays": 0,
+            "links": 0,
+            "interactive": 0
+          },
+          "apiCallCount": 0,
+          "routeChanged": true,
+          "success": true
+        }
+      ],
+      "interactionFlow": "Home\n├─ 페이지 로드·스크롤 후 스캔 — 초기 스캔\n├─ 체험하기 [cta] — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  ├─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n│  └─ 새 경로 +3\n├─ 지금 신청하기 [cta] — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n├─ 구매 플랜 조회 [cta] — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n├─ 플랜 — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n├─ 문의 — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n├─ 로그인하고 보드로 이동 [cta] — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n├─ 홈 — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n├─ 문의하기 — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n├─ 체험하기 — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n└─ SEO DEMO — 이동\n   ├─ 경로 → /SEO-TESTING-HTML/\n   └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+      "interactionDiscovery": {
+        "profile": "homepage",
+        "candidatesFound": 38,
+        "clicksAttempted": 22,
+        "clicksRecorded": 10,
+        "linksDiscovered": 0,
+        "stoppedEarly": false,
+        "runtimeMs": 16710,
+        "skippedByReason": {
+          "not_visible": 12
+        },
+        "meaningfulCount": 10
+      },
+      "crawledAt": "2026-05-18T01:19:25.125Z"
+    },
+    {
+      "url": "https://meowdule.github.io/",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        }
+      ],
+      "lighthouse": {
+        "performance": 85,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 20,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "mode": "fallback",
+        "domContentLoaded": 9.10000000000582,
+        "loadEvent": 9.39999999999418
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/8cc5ec19-6ccd-4f3d-ad54-5bcebe4f736a-mobile.jpg"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드·스크롤 후 스캔",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "domSummary": "화면 요소 약 12개, 클릭 후보 4개",
+          "candidateCount": 4,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "targetHint": "generic",
+          "score": 126,
+          "urlBefore": "https://meowdule.github.io/",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 33,
+          "newLinks": 32,
+          "domDiff": "화면 주소가 변경되었습니다 (/ → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+          "domDelta": {
+            "visible": 216,
+            "overlays": 0,
+            "links": 22,
+            "interactive": 31
+          },
+          "spaNavigation": "replaceState",
+          "networkSummary": "서버 요청 4건",
+          "apiCallCount": 8,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "click",
+          "label": "a · logo logo-img-1x",
+          "targetHint": "generic",
+          "score": 124,
+          "urlBefore": "https://meowdule.github.io/",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0,
+          "domDiff": "눈에 띄는 화면 변화는 없었습니다",
+          "domDelta": {
+            "visible": 0,
+            "overlays": 0,
+            "links": 0,
+            "interactive": 0
+          },
+          "apiCallCount": 0,
+          "routeChanged": false,
+          "success": false
+        }
+      ],
+      "interactionFlow": "Page\n├─ 페이지 로드·스크롤 후 스캔 — 초기 스캔\n└─ read the full documentation — 이동\n   ├─ SPA 경로 변경 (replaceState)\n   ├─ 경로 → /en/pages\n   ├─ 화면 주소가 변경되었습니다 (/ → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다\n   ├─ 서버 요청 4건\n   ├─ 보이는 요소 +216\n   └─ 새 경로 +32",
+      "crawledAt": "2026-05-18T01:19:12.672Z"
+    },
+    {
+      "url": "https://meowdule.github.io/pages/plans",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/pages/plans"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()"
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/pages/plans",
+          "status": 404
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        }
+      ],
+      "lighthouse": {
+        "performance": 85,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 28,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "mode": "fallback",
+        "domContentLoaded": 17.29999999998836,
+        "loadEvent": 18.70000000001164
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/49e80c8b-f71e-4f11-91e5-ec965f7e07c6-mobile.jpg"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드·스크롤 후 스캔",
+          "urlAfter": "https://meowdule.github.io/pages/plans",
+          "linksFound": 2,
+          "domSummary": "화면 요소 약 12개, 클릭 후보 4개",
+          "candidateCount": 4,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "targetHint": "generic",
+          "score": 126,
+          "urlBefore": "https://meowdule.github.io/pages/plans",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 33,
+          "newLinks": 32,
+          "domDiff": "화면 주소가 변경되었습니다 (/pages/plans → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+          "domDelta": {
+            "visible": 216,
+            "overlays": 0,
+            "links": 22,
+            "interactive": 31
+          },
+          "spaNavigation": "replaceState",
+          "networkSummary": "서버 요청 4건",
+          "apiCallCount": 8,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "a · logo logo-img-1x",
+          "targetHint": "generic",
+          "score": 124,
+          "urlBefore": "https://meowdule.github.io/pages/plans",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0,
+          "domDiff": "화면 주소가 변경되었습니다 (/pages/plans → /)",
+          "domDelta": {
+            "visible": 0,
+            "overlays": 0,
+            "links": 0,
+            "interactive": 0
+          },
+          "apiCallCount": 0,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "targetHint": "generic",
+          "score": 112,
+          "urlBefore": "https://meowdule.github.io/pages/plans",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2,
+          "domDiff": "화면 주소가 변경되었습니다 (/pages/plans → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+          "domDelta": {
+            "visible": 1191,
+            "overlays": 0,
+            "links": 10,
+            "interactive": 1020
+          },
+          "networkSummary": "서버 요청 1건",
+          "apiCallCount": 1,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "targetHint": "generic",
+          "score": 112,
+          "urlBefore": "https://meowdule.github.io/pages/plans",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 10,
+          "newLinks": 9,
+          "domDiff": "화면 주소가 변경되었습니다 (/pages/plans → /githubstatus) · 새로 보이는 화면 요소가 약 273개 증가했습니다 · 클릭 가능한 링크·경로가 12개 늘었습니다",
+          "domDelta": {
+            "visible": 273,
+            "overlays": 0,
+            "links": 12,
+            "interactive": 37
+          },
+          "spaNavigation": "replaceState",
+          "networkSummary": "서버 요청 5건",
+          "apiCallCount": 5,
+          "routeChanged": true,
+          "success": true
+        }
+      ],
+      "interactionFlow": "Page\n├─ 페이지 로드·스크롤 후 스캔 — 초기 스캔\n├─ read the full documentation — 이동\n│  ├─ SPA 경로 변경 (replaceState)\n│  ├─ 경로 → /en/pages\n│  ├─ 화면 주소가 변경되었습니다 (/pages/plans → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다\n│  ├─ 서버 요청 4건\n│  ├─ 보이는 요소 +216\n│  └─ 새 경로 +32\n├─ a · logo logo-img-1x — 이동\n│  ├─ 경로 → /\n│  └─ 화면 주소가 변경되었습니다 (/pages/plans → /)\n├─ GitHub Status — 이동\n│  ├─ 경로 → /\n│  ├─ 화면 주소가 변경되었습니다 (/pages/plans → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다\n│  ├─ 서버 요청 1건\n│  ├─ 보이는 요소 +1191\n│  └─ 새 경로 +2\n└─ @githubstatus — 이동\n   ├─ SPA 경로 변경 (replaceState)\n   ├─ 경로 → /githubstatus\n   ├─ 화면 주소가 변경되었습니다 (/pages/plans → /githubstatus) · 새로 보이는 화면 요소가 약 273개 증가했습니다 · 클릭 가능한 링크·경로가 12개 늘었습니다\n   ├─ 서버 요청 5건\n   ├─ 보이는 요소 +273\n   └─ 새 경로 +9",
+      "crawledAt": "2026-05-18T01:19:38.044Z"
+    },
+    {
+      "url": "https://meowdule.github.io/pages/contact",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/pages/contact"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/pages/contact",
+          "status": 404
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        },
+        {
+          "url": "https://accounts.google.com/gsi/button?theme=outline&size=large&shape=circle&logo_alignment=center&text=signup_with&width=300&is_fedcm_supported=true&client_id=49625052041-kgt0hghf445lmcmhijv46b715m2mpbct.apps.googleusercontent.com&iframe_id=gsi_177531_703685&cas=NRPY8MSbPGsyKJMyiahwIrw0RNoCUiL0fxxtv5GQ1hc&hl=en",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "lighthouse": {
+        "performance": 85,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 28,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "mode": "fallback",
+        "domContentLoaded": 21.900000000023283,
+        "loadEvent": 23.300000000046566
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/852e61c8-7248-4318-a642-0e878394a93b-mobile.jpg"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드·스크롤 후 스캔",
+          "urlAfter": "https://meowdule.github.io/pages/contact",
+          "linksFound": 2,
+          "domSummary": "화면 요소 약 12개, 클릭 후보 4개",
+          "candidateCount": 4,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "targetHint": "generic",
+          "score": 126,
+          "urlBefore": "https://meowdule.github.io/pages/contact",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 33,
+          "newLinks": 32,
+          "domDiff": "화면 주소가 변경되었습니다 (/pages/contact → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+          "domDelta": {
+            "visible": 216,
+            "overlays": 0,
+            "links": 22,
+            "interactive": 31
+          },
+          "spaNavigation": "replaceState",
+          "networkSummary": "서버 요청 4건",
+          "apiCallCount": 8,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "a · logo logo-img-1x",
+          "targetHint": "generic",
+          "score": 124,
+          "urlBefore": "https://meowdule.github.io/pages/contact",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0,
+          "domDiff": "화면 주소가 변경되었습니다 (/pages/contact → /)",
+          "domDelta": {
+            "visible": 0,
+            "overlays": 0,
+            "links": 0,
+            "interactive": 0
+          },
+          "apiCallCount": 0,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "targetHint": "generic",
+          "score": 112,
+          "urlBefore": "https://meowdule.github.io/pages/contact",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2,
+          "domDiff": "화면 주소가 변경되었습니다 (/pages/contact → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+          "domDelta": {
+            "visible": 1191,
+            "overlays": 0,
+            "links": 10,
+            "interactive": 1020
+          },
+          "networkSummary": "서버 요청 1건",
+          "apiCallCount": 1,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "targetHint": "generic",
+          "score": 112,
+          "urlBefore": "https://meowdule.github.io/pages/contact",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 22,
+          "newLinks": 21,
+          "domDiff": "화면 주소가 변경되었습니다 (/pages/contact → /githubstatus) · 새로 보이는 화면 요소가 약 1248개 증가했습니다 · 클릭 가능한 링크·경로가 52개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+          "domDelta": {
+            "visible": 1248,
+            "overlays": 0,
+            "links": 52,
+            "interactive": 185
+          },
+          "spaNavigation": "replaceState",
+          "networkSummary": "서버 요청 7건",
+          "apiCallCount": 8,
+          "routeChanged": true,
+          "success": true
+        }
+      ],
+      "interactionFlow": "Page\n├─ 페이지 로드·스크롤 후 스캔 — 초기 스캔\n├─ read the full documentation — 이동\n│  ├─ SPA 경로 변경 (replaceState)\n│  ├─ 경로 → /en/pages\n│  ├─ 화면 주소가 변경되었습니다 (/pages/contact → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다\n│  ├─ 서버 요청 4건\n│  ├─ 보이는 요소 +216\n│  └─ 새 경로 +32\n├─ a · logo logo-img-1x — 이동\n│  ├─ 경로 → /\n│  └─ 화면 주소가 변경되었습니다 (/pages/contact → /)\n├─ GitHub Status — 이동\n│  ├─ 경로 → /\n│  ├─ 화면 주소가 변경되었습니다 (/pages/contact → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다\n│  ├─ 서버 요청 1건\n│  ├─ 보이는 요소 +1191\n│  └─ 새 경로 +2\n└─ @githubstatus — 이동\n   ├─ SPA 경로 변경 (replaceState)\n   ├─ 경로 → /githubstatus\n   ├─ 화면 주소가 변경되었습니다 (/pages/contact → /githubstatus) · 새로 보이는 화면 요소가 약 1248개 증가했습니다 · 클릭 가능한 링크·경로가 52개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다\n   ├─ 서버 요청 7건\n   ├─ 보이는 요소 +1248\n   └─ 새 경로 +21",
+      "crawledAt": "2026-05-18T01:19:40.697Z"
+    },
+    {
+      "url": "https://meowdule.github.io/auth/login",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/auth/login"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()"
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/auth/login",
+          "status": 404
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        }
+      ],
+      "lighthouse": {
+        "performance": 85,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 40,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "mode": "fallback",
+        "domContentLoaded": 29.900000000023283,
+        "loadEvent": 30.900000000023283
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/e8286254-f92e-4e92-bce4-e4fc9f5a1884-mobile.jpg"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드·스크롤 후 스캔",
+          "urlAfter": "https://meowdule.github.io/auth/login",
+          "linksFound": 2,
+          "domSummary": "화면 요소 약 12개, 클릭 후보 4개",
+          "candidateCount": 4,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "targetHint": "generic",
+          "score": 126,
+          "urlBefore": "https://meowdule.github.io/auth/login",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 33,
+          "newLinks": 32,
+          "domDiff": "화면 주소가 변경되었습니다 (/auth/login → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+          "domDelta": {
+            "visible": 216,
+            "overlays": 0,
+            "links": 22,
+            "interactive": 31
+          },
+          "spaNavigation": "replaceState",
+          "networkSummary": "서버 요청 4건",
+          "apiCallCount": 8,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "a · logo logo-img-1x",
+          "targetHint": "generic",
+          "score": 124,
+          "urlBefore": "https://meowdule.github.io/auth/login",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0,
+          "domDiff": "화면 주소가 변경되었습니다 (/auth/login → /)",
+          "domDelta": {
+            "visible": 0,
+            "overlays": 0,
+            "links": 0,
+            "interactive": 0
+          },
+          "apiCallCount": 0,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "targetHint": "generic",
+          "score": 112,
+          "urlBefore": "https://meowdule.github.io/auth/login",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2,
+          "domDiff": "화면 주소가 변경되었습니다 (/auth/login → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+          "domDelta": {
+            "visible": 1191,
+            "overlays": 0,
+            "links": 10,
+            "interactive": 1020
+          },
+          "networkSummary": "서버 요청 1건",
+          "apiCallCount": 1,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "targetHint": "generic",
+          "score": 112,
+          "urlBefore": "https://meowdule.github.io/auth/login",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 10,
+          "newLinks": 9,
+          "domDiff": "화면 주소가 변경되었습니다 (/auth/login → /githubstatus) · 새로 보이는 화면 요소가 약 308개 증가했습니다 · 클릭 가능한 링크·경로가 16개 늘었습니다",
+          "domDelta": {
+            "visible": 308,
+            "overlays": 0,
+            "links": 16,
+            "interactive": 43
+          },
+          "spaNavigation": "replaceState",
+          "networkSummary": "서버 요청 6건",
+          "apiCallCount": 6,
+          "routeChanged": true,
+          "success": true
+        }
+      ],
+      "interactionFlow": "Page\n├─ 페이지 로드·스크롤 후 스캔 — 초기 스캔\n├─ read the full documentation — 이동\n│  ├─ SPA 경로 변경 (replaceState)\n│  ├─ 경로 → /en/pages\n│  ├─ 화면 주소가 변경되었습니다 (/auth/login → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다\n│  ├─ 서버 요청 4건\n│  ├─ 보이는 요소 +216\n│  └─ 새 경로 +32\n├─ a · logo logo-img-1x — 이동\n│  ├─ 경로 → /\n│  └─ 화면 주소가 변경되었습니다 (/auth/login → /)\n├─ GitHub Status — 이동\n│  ├─ 경로 → /\n│  ├─ 화면 주소가 변경되었습니다 (/auth/login → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다\n│  ├─ 서버 요청 1건\n│  ├─ 보이는 요소 +1191\n│  └─ 새 경로 +2\n└─ @githubstatus — 이동\n   ├─ SPA 경로 변경 (replaceState)\n   ├─ 경로 → /githubstatus\n   ├─ 화면 주소가 변경되었습니다 (/auth/login → /githubstatus) · 새로 보이는 화면 요소가 약 308개 증가했습니다 · 클릭 가능한 링크·경로가 16개 늘었습니다\n   ├─ 서버 요청 6건\n   ├─ 보이는 요소 +308\n   └─ 새 경로 +9",
+      "crawledAt": "2026-05-18T01:19:52.697Z"
+    },
+    {
+      "url": "https://meowdule.github.io/pages/apply",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/pages/apply"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()"
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/pages/apply",
+          "status": 404
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        }
+      ],
+      "lighthouse": {
+        "performance": 85,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 20,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "mode": "fallback",
+        "domContentLoaded": 14.200000000011642,
+        "loadEvent": 15.600000000034925
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/35566306-11d2-4b8c-9f45-6e109cb750e7-mobile.jpg"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드·스크롤 후 스캔",
+          "urlAfter": "https://meowdule.github.io/pages/apply",
+          "linksFound": 2,
+          "domSummary": "화면 요소 약 12개, 클릭 후보 4개",
+          "candidateCount": 4,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "targetHint": "generic",
+          "score": 126,
+          "urlBefore": "https://meowdule.github.io/pages/apply",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 33,
+          "newLinks": 32,
+          "domDiff": "화면 주소가 변경되었습니다 (/pages/apply → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+          "domDelta": {
+            "visible": 216,
+            "overlays": 0,
+            "links": 22,
+            "interactive": 31
+          },
+          "spaNavigation": "replaceState",
+          "networkSummary": "서버 요청 4건",
+          "apiCallCount": 8,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "a · logo logo-img-1x",
+          "targetHint": "generic",
+          "score": 124,
+          "urlBefore": "https://meowdule.github.io/pages/apply",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0,
+          "domDiff": "화면 주소가 변경되었습니다 (/pages/apply → /)",
+          "domDelta": {
+            "visible": 0,
+            "overlays": 0,
+            "links": 0,
+            "interactive": 0
+          },
+          "apiCallCount": 0,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "targetHint": "generic",
+          "score": 112,
+          "urlBefore": "https://meowdule.github.io/pages/apply",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2,
+          "domDiff": "화면 주소가 변경되었습니다 (/pages/apply → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+          "domDelta": {
+            "visible": 1191,
+            "overlays": 0,
+            "links": 10,
+            "interactive": 1020
+          },
+          "networkSummary": "서버 요청 1건",
+          "apiCallCount": 1,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "targetHint": "generic",
+          "score": 112,
+          "urlBefore": "https://meowdule.github.io/pages/apply",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 10,
+          "newLinks": 9,
+          "domDiff": "화면 주소가 변경되었습니다 (/pages/apply → /githubstatus) · 새로 보이는 화면 요소가 약 308개 증가했습니다 · 클릭 가능한 링크·경로가 16개 늘었습니다",
+          "domDelta": {
+            "visible": 308,
+            "overlays": 0,
+            "links": 16,
+            "interactive": 43
+          },
+          "spaNavigation": "replaceState",
+          "networkSummary": "서버 요청 6건",
+          "apiCallCount": 6,
+          "routeChanged": true,
+          "success": true
+        }
+      ],
+      "interactionFlow": "Page\n├─ 페이지 로드·스크롤 후 스캔 — 초기 스캔\n├─ read the full documentation — 이동\n│  ├─ SPA 경로 변경 (replaceState)\n│  ├─ 경로 → /en/pages\n│  ├─ 화면 주소가 변경되었습니다 (/pages/apply → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다\n│  ├─ 서버 요청 4건\n│  ├─ 보이는 요소 +216\n│  └─ 새 경로 +32\n├─ a · logo logo-img-1x — 이동\n│  ├─ 경로 → /\n│  └─ 화면 주소가 변경되었습니다 (/pages/apply → /)\n├─ GitHub Status — 이동\n│  ├─ 경로 → /\n│  ├─ 화면 주소가 변경되었습니다 (/pages/apply → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다\n│  ├─ 서버 요청 1건\n│  ├─ 보이는 요소 +1191\n│  └─ 새 경로 +2\n└─ @githubstatus — 이동\n   ├─ SPA 경로 변경 (replaceState)\n   ├─ 경로 → /githubstatus\n   ├─ 화면 주소가 변경되었습니다 (/pages/apply → /githubstatus) · 새로 보이는 화면 요소가 약 308개 증가했습니다 · 클릭 가능한 링크·경로가 16개 늘었습니다\n   ├─ 서버 요청 6건\n   ├─ 보이는 요소 +308\n   └─ 새 경로 +9",
+      "crawledAt": "2026-05-18T01:19:54.174Z"
+    },
+    {
+      "url": "https://meowdule.github.io/auth/find-id",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/auth/find-id"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()"
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/auth/find-id",
+          "status": 404
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        }
+      ],
+      "lighthouse": {
+        "performance": 85,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 20,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "mode": "fallback",
+        "domContentLoaded": 10.799999999988358,
+        "loadEvent": 11.600000000034925
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/a3807f64-2ec3-44d2-9116-44dccfbcc838-mobile.jpg"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드·스크롤 후 스캔",
+          "urlAfter": "https://meowdule.github.io/auth/find-id",
+          "linksFound": 2,
+          "domSummary": "화면 요소 약 12개, 클릭 후보 4개",
+          "candidateCount": 4,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "targetHint": "generic",
+          "score": 126,
+          "urlBefore": "https://meowdule.github.io/auth/find-id",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 33,
+          "newLinks": 32,
+          "domDiff": "화면 주소가 변경되었습니다 (/auth/find-id → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+          "domDelta": {
+            "visible": 216,
+            "overlays": 0,
+            "links": 22,
+            "interactive": 31
+          },
+          "spaNavigation": "replaceState",
+          "networkSummary": "서버 요청 4건",
+          "apiCallCount": 8,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "a · logo logo-img-1x",
+          "targetHint": "generic",
+          "score": 124,
+          "urlBefore": "https://meowdule.github.io/auth/find-id",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0,
+          "domDiff": "화면 주소가 변경되었습니다 (/auth/find-id → /)",
+          "domDelta": {
+            "visible": 0,
+            "overlays": 0,
+            "links": 0,
+            "interactive": 0
+          },
+          "apiCallCount": 0,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "targetHint": "generic",
+          "score": 112,
+          "urlBefore": "https://meowdule.github.io/auth/find-id",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2,
+          "domDiff": "화면 주소가 변경되었습니다 (/auth/find-id → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+          "domDelta": {
+            "visible": 1191,
+            "overlays": 0,
+            "links": 10,
+            "interactive": 1020
+          },
+          "networkSummary": "서버 요청 1건",
+          "apiCallCount": 1,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "targetHint": "generic",
+          "score": 112,
+          "urlBefore": "https://meowdule.github.io/auth/find-id",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 10,
+          "newLinks": 9,
+          "domDiff": "화면 주소가 변경되었습니다 (/auth/find-id → /githubstatus) · 새로 보이는 화면 요소가 약 308개 증가했습니다 · 클릭 가능한 링크·경로가 16개 늘었습니다",
+          "domDelta": {
+            "visible": 308,
+            "overlays": 0,
+            "links": 16,
+            "interactive": 43
+          },
+          "spaNavigation": "replaceState",
+          "networkSummary": "서버 요청 6건",
+          "apiCallCount": 6,
+          "routeChanged": true,
+          "success": true
+        }
+      ],
+      "interactionFlow": "Page\n├─ 페이지 로드·스크롤 후 스캔 — 초기 스캔\n├─ read the full documentation — 이동\n│  ├─ SPA 경로 변경 (replaceState)\n│  ├─ 경로 → /en/pages\n│  ├─ 화면 주소가 변경되었습니다 (/auth/find-id → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다\n│  ├─ 서버 요청 4건\n│  ├─ 보이는 요소 +216\n│  └─ 새 경로 +32\n├─ a · logo logo-img-1x — 이동\n│  ├─ 경로 → /\n│  └─ 화면 주소가 변경되었습니다 (/auth/find-id → /)\n├─ GitHub Status — 이동\n│  ├─ 경로 → /\n│  ├─ 화면 주소가 변경되었습니다 (/auth/find-id → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다\n│  ├─ 서버 요청 1건\n│  ├─ 보이는 요소 +1191\n│  └─ 새 경로 +2\n└─ @githubstatus — 이동\n   ├─ SPA 경로 변경 (replaceState)\n   ├─ 경로 → /githubstatus\n   ├─ 화면 주소가 변경되었습니다 (/auth/find-id → /githubstatus) · 새로 보이는 화면 요소가 약 308개 증가했습니다 · 클릭 가능한 링크·경로가 16개 늘었습니다\n   ├─ 서버 요청 6건\n   ├─ 보이는 요소 +308\n   └─ 새 경로 +9",
+      "crawledAt": "2026-05-18T01:20:06.793Z"
+    },
+    {
+      "url": "https://meowdule.github.io/auth/find-password",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/auth/find-password"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()"
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/auth/find-password",
+          "status": 404
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        }
+      ],
+      "lighthouse": {
+        "performance": 85,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 24,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "mode": "fallback",
+        "domContentLoaded": 14.900000000023283,
+        "loadEvent": 15.799999999988358
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/8077223e-87bd-4af2-9cc3-e1bf3088d0ba-mobile.jpg"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드·스크롤 후 스캔",
+          "urlAfter": "https://meowdule.github.io/auth/find-password",
+          "linksFound": 2,
+          "domSummary": "화면 요소 약 12개, 클릭 후보 4개",
+          "candidateCount": 4,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "targetHint": "generic",
+          "score": 126,
+          "urlBefore": "https://meowdule.github.io/auth/find-password",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 33,
+          "newLinks": 32,
+          "domDiff": "화면 주소가 변경되었습니다 (/auth/find-password → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+          "domDelta": {
+            "visible": 216,
+            "overlays": 0,
+            "links": 22,
+            "interactive": 31
+          },
+          "spaNavigation": "replaceState",
+          "networkSummary": "서버 요청 4건",
+          "apiCallCount": 8,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "a · logo logo-img-1x",
+          "targetHint": "generic",
+          "score": 124,
+          "urlBefore": "https://meowdule.github.io/auth/find-password",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0,
+          "domDiff": "화면 주소가 변경되었습니다 (/auth/find-password → /)",
+          "domDelta": {
+            "visible": 0,
+            "overlays": 0,
+            "links": 0,
+            "interactive": 0
+          },
+          "apiCallCount": 0,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "targetHint": "generic",
+          "score": 112,
+          "urlBefore": "https://meowdule.github.io/auth/find-password",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2,
+          "domDiff": "화면 주소가 변경되었습니다 (/auth/find-password → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+          "domDelta": {
+            "visible": 1191,
+            "overlays": 0,
+            "links": 10,
+            "interactive": 1020
+          },
+          "networkSummary": "서버 요청 1건",
+          "apiCallCount": 1,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "targetHint": "generic",
+          "score": 112,
+          "urlBefore": "https://meowdule.github.io/auth/find-password",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 10,
+          "newLinks": 9,
+          "domDiff": "화면 주소가 변경되었습니다 (/auth/find-password → /githubstatus) · 새로 보이는 화면 요소가 약 231개 증가했습니다 · 클릭 가능한 링크·경로가 7개 늘었습니다",
+          "domDelta": {
+            "visible": 231,
+            "overlays": 0,
+            "links": 7,
+            "interactive": 31
+          },
+          "spaNavigation": "replaceState",
+          "networkSummary": "서버 요청 5건",
+          "apiCallCount": 5,
+          "routeChanged": true,
+          "success": true
+        }
+      ],
+      "interactionFlow": "Page\n├─ 페이지 로드·스크롤 후 스캔 — 초기 스캔\n├─ read the full documentation — 이동\n│  ├─ SPA 경로 변경 (replaceState)\n│  ├─ 경로 → /en/pages\n│  ├─ 화면 주소가 변경되었습니다 (/auth/find-password → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다\n│  ├─ 서버 요청 4건\n│  ├─ 보이는 요소 +216\n│  └─ 새 경로 +32\n├─ a · logo logo-img-1x — 이동\n│  ├─ 경로 → /\n│  └─ 화면 주소가 변경되었습니다 (/auth/find-password → /)\n├─ GitHub Status — 이동\n│  ├─ 경로 → /\n│  ├─ 화면 주소가 변경되었습니다 (/auth/find-password → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다\n│  ├─ 서버 요청 1건\n│  ├─ 보이는 요소 +1191\n│  └─ 새 경로 +2\n└─ @githubstatus — 이동\n   ├─ SPA 경로 변경 (replaceState)\n   ├─ 경로 → /githubstatus\n   ├─ 화면 주소가 변경되었습니다 (/auth/find-password → /githubstatus) · 새로 보이는 화면 요소가 약 231개 증가했습니다 · 클릭 가능한 링크·경로가 7개 늘었습니다\n   ├─ 서버 요청 5건\n   ├─ 보이는 요소 +231\n   └─ 새 경로 +9",
+      "crawledAt": "2026-05-18T01:20:07.931Z"
+    },
+    {
+      "url": "https://meowdule.github.io/auth/signup",
+      "statusCode": 404,
+      "redirects": [
+        "https://meowdule.github.io/auth/signup"
+      ],
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Unrecognized Content-Security-Policy directive 'prefetch-src'.",
+        "Failed to load resource: the server responded with a status of 400 ()",
+        "[GSI_LOGGER]: FedCM get() rejects with TypeError: Failed to execute 'get' on 'CredentialsContainer': Failed to read the 'identity' property from 'CredentialRequestOptions': Failed to read the 'mode' property from 'IdentityCredentialRequestOptions': The provided value 'widget' is not a valid enum value of type IdentityCredentialRequestOptionsMode."
+      ],
+      "jsExceptions": [],
+      "failedRequests": [
+        {
+          "url": "https://meowdule.github.io/auth/signup",
+          "status": 404
+        },
+        {
+          "url": "https://meowdule.github.io/",
+          "status": 404
+        },
+        {
+          "url": "https://api.x.com/1.1/onboarding/referrer.json",
+          "status": 400
+        }
+      ],
+      "lighthouse": {
+        "performance": 85,
+        "accessibility": null,
+        "bestPractices": null,
+        "seo": null,
+        "fcp": 36,
+        "lcp": null,
+        "cls": null,
+        "tbt": null,
+        "si": null,
+        "collected": false,
+        "fallback": true,
+        "mode": "fallback",
+        "domContentLoaded": 22.899999999965075,
+        "loadEvent": 24
+      },
+      "axeViolations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": 4
+        },
+        {
+          "id": "html-has-lang",
+          "impact": "serious",
+          "description": "<html> element must have a lang attribute",
+          "nodes": 1
+        },
+        {
+          "id": "landmark-one-main",
+          "impact": "moderate",
+          "description": "Document should have one main landmark",
+          "nodes": 1
+        },
+        {
+          "id": "link-in-text-block",
+          "impact": "serious",
+          "description": "Links must be distinguishable without relying on color",
+          "nodes": 1
+        },
+        {
+          "id": "link-name",
+          "impact": "serious",
+          "description": "Links must have discernible text",
+          "nodes": 1
+        },
+        {
+          "id": "region",
+          "impact": "moderate",
+          "description": "All page content should be contained by landmarks",
+          "nodes": 4
+        }
+      ],
+      "brokenImages": [],
+      "uiIssues": [
+        {
+          "id": "hscroll-mobile",
+          "type": "horizontal_scroll",
+          "message": "Document scroll width exceeds viewport width.",
+          "viewport": "mobile",
+          "severity": "warn",
+          "title": "가로 스크롤 발생",
+          "friendlyMessage": "화면보다 콘텐츠가 더 넓어 옆으로 밀어야 볼 수 있는 구간이 있습니다.",
+          "userImpact": "모바일 사용자가 콘텐츠를 놓치거나, 버튼을 잘못 누를 수 있습니다.",
+          "category": "ux"
+        }
+      ],
+      "screenshotPaths": {
+        "mobile": "screenshots/13b32054-2eb4-4904-adea-fc38ac7adc2a-mobile.jpg"
+      },
+      "interactionLog": [
+        {
+          "action": "initial_scan",
+          "label": "페이지 로드·스크롤 후 스캔",
+          "urlAfter": "https://meowdule.github.io/auth/signup",
+          "linksFound": 2,
+          "domSummary": "화면 요소 약 12개, 클릭 후보 4개",
+          "candidateCount": 4,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "read the full documentation",
+          "targetHint": "generic",
+          "score": 126,
+          "urlBefore": "https://meowdule.github.io/auth/signup",
+          "urlAfter": "https://docs.github.com/en/pages",
+          "linksFound": 33,
+          "newLinks": 32,
+          "domDiff": "화면 주소가 변경되었습니다 (/auth/signup → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+          "domDelta": {
+            "visible": 216,
+            "overlays": 0,
+            "links": 22,
+            "interactive": 31
+          },
+          "spaNavigation": "replaceState",
+          "networkSummary": "서버 요청 4건",
+          "apiCallCount": 8,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "a · logo logo-img-1x",
+          "targetHint": "generic",
+          "score": 124,
+          "urlBefore": "https://meowdule.github.io/auth/signup",
+          "urlAfter": "https://meowdule.github.io/",
+          "linksFound": 1,
+          "newLinks": 0,
+          "domDiff": "화면 주소가 변경되었습니다 (/auth/signup → /)",
+          "domDelta": {
+            "visible": 0,
+            "overlays": 0,
+            "links": 0,
+            "interactive": 0
+          },
+          "apiCallCount": 0,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "GitHub Status",
+          "targetHint": "generic",
+          "score": 112,
+          "urlBefore": "https://meowdule.github.io/auth/signup",
+          "urlAfter": "https://www.githubstatus.com/",
+          "linksFound": 4,
+          "newLinks": 2,
+          "domDiff": "화면 주소가 변경되었습니다 (/auth/signup → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+          "domDelta": {
+            "visible": 1191,
+            "overlays": 0,
+            "links": 10,
+            "interactive": 1020
+          },
+          "networkSummary": "서버 요청 1건",
+          "apiCallCount": 1,
+          "routeChanged": true,
+          "success": true
+        },
+        {
+          "action": "navigation",
+          "label": "@githubstatus",
+          "targetHint": "generic",
+          "score": 112,
+          "urlBefore": "https://meowdule.github.io/auth/signup",
+          "urlAfter": "https://x.com/githubstatus",
+          "linksFound": 10,
+          "newLinks": 9,
+          "domDiff": "화면 주소가 변경되었습니다 (/auth/signup → /githubstatus) · 새로 보이는 화면 요소가 약 318개 증가했습니다 · 클릭 가능한 링크·경로가 16개 늘었습니다",
+          "domDelta": {
+            "visible": 318,
+            "overlays": 0,
+            "links": 16,
+            "interactive": 44
+          },
+          "spaNavigation": "replaceState",
+          "networkSummary": "서버 요청 8건",
+          "apiCallCount": 8,
+          "routeChanged": true,
+          "success": true
+        }
+      ],
+      "interactionFlow": "Page\n├─ 페이지 로드·스크롤 후 스캔 — 초기 스캔\n├─ read the full documentation — 이동\n│  ├─ SPA 경로 변경 (replaceState)\n│  ├─ 경로 → /en/pages\n│  ├─ 화면 주소가 변경되었습니다 (/auth/signup → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다\n│  ├─ 서버 요청 4건\n│  ├─ 보이는 요소 +216\n│  └─ 새 경로 +32\n├─ a · logo logo-img-1x — 이동\n│  ├─ 경로 → /\n│  └─ 화면 주소가 변경되었습니다 (/auth/signup → /)\n├─ GitHub Status — 이동\n│  ├─ 경로 → /\n│  ├─ 화면 주소가 변경되었습니다 (/auth/signup → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다\n│  ├─ 서버 요청 1건\n│  ├─ 보이는 요소 +1191\n│  └─ 새 경로 +2\n└─ @githubstatus — 이동\n   ├─ SPA 경로 변경 (replaceState)\n   ├─ 경로 → /githubstatus\n   ├─ 화면 주소가 변경되었습니다 (/auth/signup → /githubstatus) · 새로 보이는 화면 요소가 약 318개 증가했습니다 · 클릭 가능한 링크·경로가 16개 늘었습니다\n   ├─ 서버 요청 8건\n   ├─ 보이는 요소 +318\n   └─ 새 경로 +9",
+      "crawledAt": "2026-05-18T01:20:20.709Z"
+    }
+  ],
+  "brokenLinks": [
+    {
+      "from": "https://meowdule.github.io/SEO-TESTING-HTML",
+      "to": "https://meowdule.github.io/blank",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/pages/plans",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/pages/plans",
+      "to": "https://meowdule.github.io/pages/plans",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/pages/contact",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/pages/contact",
+      "to": "https://meowdule.github.io/pages/contact",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/auth/login",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/auth/login",
+      "to": "https://meowdule.github.io/auth/login",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/pages/apply",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/pages/apply",
+      "to": "https://meowdule.github.io/pages/apply",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/auth/find-id",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/auth/find-id",
+      "to": "https://meowdule.github.io/auth/find-id",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/auth/find-password",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/auth/find-password",
+      "to": "https://meowdule.github.io/auth/find-password",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/auth/signup",
+      "to": "https://meowdule.github.io/",
+      "reason": "HTTP 404"
+    },
+    {
+      "from": "https://meowdule.github.io/auth/signup",
+      "to": "https://meowdule.github.io/auth/signup",
+      "reason": "HTTP 404"
+    }
+  ],
+  "summary": {
+    "healthScore": 42,
+    "avgLighthousePerformance": 85,
+    "avgAxeIssuesPerPage": 11.1,
+    "totalConsoleErrors": 25,
+    "totalFailedRequests": 23,
+    "mobileWarnings": [
+      "모바일 화면에서 옆으로 스크롤해야 하는 구간이 있습니다.",
+      "9개 페이지에서 상세 성능 점수를 가져오지 못해 로딩 시간 기준으로 추정했습니다."
+    ],
+    "categoryScores": {
+      "performance": 85,
+      "accessibility": 44,
+      "seo": null,
+      "ux": 68
+    },
+    "statusLabel": "Critical",
+    "healthBreakdown": {
+      "formula": "종합 점수 = 카테고리 가중 평균(성능 30%·접근성 25%·사용성 25%·SEO 20%) − 추가 감점",
+      "weights": {
+        "performance": 0.3,
+        "accessibility": 0.25,
+        "ux": 0.25,
+        "seo": 0.2
+      },
+      "weightedBase": 67,
+      "penaltyTotal": 25,
+      "contributions": [
+        {
+          "category": "performance",
+          "label": "성능",
+          "score": 85,
+          "weight": 0.3,
+          "weightedPoints": 25.5
+        },
+        {
+          "category": "accessibility",
+          "label": "접근성",
+          "score": 44,
+          "weight": 0.25,
+          "weightedPoints": 11
+        },
+        {
+          "category": "ux",
+          "label": "사용성",
+          "score": 68,
+          "weight": 0.25,
+          "weightedPoints": 17
+        }
+      ],
+      "penalties": [
+        {
+          "id": "accessibility_issues",
+          "label": "접근성 검사 이슈",
+          "points": 8,
+          "message": "페이지당 접근성 이슈가 평균 11.1건 있어 8점 감점되었습니다."
+        },
+        {
+          "id": "console_errors",
+          "label": "브라우저 오류",
+          "points": 10,
+          "message": "스크립트 오류 25건으로 10점 감점되었습니다."
+        },
+        {
+          "id": "failed_requests",
+          "label": "로딩 실패",
+          "points": 7,
+          "message": "이미지·API 등 로딩 실패 23건으로 7점 감점되었습니다."
+        },
+        {
+          "id": "ux_issues",
+          "label": "화면·레이아웃 문제",
+          "points": 3,
+          "message": "사용성 관련 화면 이슈가 많아 3점 추가 감점되었습니다."
+        }
+      ],
+      "explanation": [
+        "종합 점수 = 성능(30%) + 접근성(25%) + 사용성(25%) + 검색·공유(20%) − 추가 감점",
+        "접근성 점수(44점)가 전체 점수를 가장 많이 낮추고 있습니다.",
+        "페이지당 접근성 이슈가 평균 11.1건 있어 8점 감점되었습니다.",
+        "스크립트 오류 25건으로 10점 감점되었습니다.",
+        "이미지·API 등 로딩 실패 23건으로 7점 감점되었습니다.",
+        "사용성 관련 화면 이슈가 많아 3점 추가 감점되었습니다."
+      ]
+    }
+  },
+  "crawlMeta": {
+    "interactions": [
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드·스크롤 후 스캔",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "linksFound": 6,
+        "domSummary": "화면 요소 약 84개, 클릭 후보 13개",
+        "candidateCount": 13,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "체험하기",
+        "targetHint": "cta",
+        "score": 269,
+        "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/auth/login",
+        "linksFound": 6,
+        "newLinks": 3,
+        "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+        "domDelta": {
+          "visible": -46,
+          "overlays": 0,
+          "links": -16,
+          "interactive": -6
+        },
+        "spaNavigation": "pushState",
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "지금 신청하기",
+        "targetHint": "cta",
+        "score": 247,
+        "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/pages/apply",
+        "linksFound": 3,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+        "domDelta": {
+          "visible": -49,
+          "overlays": 0,
+          "links": -22,
+          "interactive": -9
+        },
+        "spaNavigation": "pushState",
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "구매 플랜 조회",
+        "targetHint": "cta",
+        "score": 247,
+        "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/pages/plans",
+        "linksFound": 6,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+        "domDelta": {
+          "visible": -16,
+          "overlays": 0,
+          "links": -13,
+          "interactive": -6
+        },
+        "spaNavigation": "pushState",
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "플랜",
+        "targetHint": "generic",
+        "score": 234,
+        "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/pages/plans",
+        "linksFound": 6,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+        "domDelta": {
+          "visible": -16,
+          "overlays": 0,
+          "links": -13,
+          "interactive": -6
+        },
+        "spaNavigation": "pushState",
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드·스크롤 후 스캔",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "linksFound": 6,
+        "domSummary": "화면 요소 약 84개, 클릭 후보 13개",
+        "candidateCount": 13,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "체험하기",
+        "targetHint": "cta",
+        "score": 269,
+        "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/auth/login",
+        "linksFound": 6,
+        "newLinks": 3,
+        "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+        "domDelta": {
+          "visible": -46,
+          "overlays": 0,
+          "links": -16,
+          "interactive": -6
+        },
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "지금 신청하기",
+        "targetHint": "cta",
+        "score": 247,
+        "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/pages/apply",
+        "linksFound": 3,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+        "domDelta": {
+          "visible": -49,
+          "overlays": 0,
+          "links": -22,
+          "interactive": -9
+        },
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "구매 플랜 조회",
+        "targetHint": "cta",
+        "score": 247,
+        "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/pages/plans",
+        "linksFound": 6,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+        "domDelta": {
+          "visible": -16,
+          "overlays": 0,
+          "links": -13,
+          "interactive": -6
+        },
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "플랜",
+        "targetHint": "generic",
+        "score": 234,
+        "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/pages/plans",
+        "linksFound": 6,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+        "domDelta": {
+          "visible": -16,
+          "overlays": 0,
+          "links": -13,
+          "interactive": -6
+        },
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "문의",
+        "targetHint": "generic",
+        "score": 234,
+        "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/pages/contact",
+        "linksFound": 3,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+        "domDelta": {
+          "visible": -51,
+          "overlays": 0,
+          "links": -22,
+          "interactive": -9
+        },
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "로그인하고 보드로 이동",
+        "targetHint": "cta",
+        "score": 221,
+        "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/auth/login",
+        "linksFound": 6,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+        "domDelta": {
+          "visible": -46,
+          "overlays": 0,
+          "links": -16,
+          "interactive": -6
+        },
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "홈",
+        "targetHint": "generic",
+        "score": 220,
+        "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/pages/apply",
+        "linksFound": 3,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+        "domDelta": {
+          "visible": -49,
+          "overlays": 0,
+          "links": -22,
+          "interactive": -9
+        },
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "문의하기",
+        "targetHint": "generic",
+        "score": 212,
+        "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/pages/contact",
+        "linksFound": 3,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+        "domDelta": {
+          "visible": -51,
+          "overlays": 0,
+          "links": -22,
+          "interactive": -9
+        },
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "체험하기",
+        "targetHint": "generic",
+        "score": 212,
+        "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/auth/login",
+        "linksFound": 6,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+        "domDelta": {
+          "visible": -46,
+          "overlays": 0,
+          "links": -16,
+          "interactive": -6
+        },
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "SEO DEMO",
+        "targetHint": "generic",
+        "score": 208,
+        "urlBefore": "https://meowdule.github.io/SEO-TESTING-HTML/",
+        "urlAfter": "https://meowdule.github.io/SEO-TESTING-HTML/#/",
+        "linksFound": 6,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)",
+        "domDelta": {
+          "visible": 0,
+          "overlays": 0,
+          "links": 0,
+          "interactive": 0
+        },
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드·스크롤 후 스캔",
+        "urlAfter": "https://meowdule.github.io/",
+        "linksFound": 1,
+        "domSummary": "화면 요소 약 12개, 클릭 후보 4개",
+        "candidateCount": 4,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "read the full documentation",
+        "targetHint": "generic",
+        "score": 126,
+        "urlBefore": "https://meowdule.github.io/",
+        "urlAfter": "https://docs.github.com/en/pages",
+        "linksFound": 33,
+        "newLinks": 32,
+        "domDiff": "화면 주소가 변경되었습니다 (/ → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+        "domDelta": {
+          "visible": 216,
+          "overlays": 0,
+          "links": 22,
+          "interactive": 31
+        },
+        "spaNavigation": "replaceState",
+        "networkSummary": "서버 요청 4건",
+        "apiCallCount": 8,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "click",
+        "label": "a · logo logo-img-1x",
+        "targetHint": "generic",
+        "score": 124,
+        "urlBefore": "https://meowdule.github.io/",
+        "urlAfter": "https://meowdule.github.io/",
+        "linksFound": 1,
+        "newLinks": 0,
+        "domDiff": "눈에 띄는 화면 변화는 없었습니다",
+        "domDelta": {
+          "visible": 0,
+          "overlays": 0,
+          "links": 0,
+          "interactive": 0
+        },
+        "apiCallCount": 0,
+        "routeChanged": false,
+        "success": false
+      },
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드·스크롤 후 스캔",
+        "urlAfter": "https://meowdule.github.io/pages/plans",
+        "linksFound": 2,
+        "domSummary": "화면 요소 약 12개, 클릭 후보 4개",
+        "candidateCount": 4,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "read the full documentation",
+        "targetHint": "generic",
+        "score": 126,
+        "urlBefore": "https://meowdule.github.io/pages/plans",
+        "urlAfter": "https://docs.github.com/en/pages",
+        "linksFound": 33,
+        "newLinks": 32,
+        "domDiff": "화면 주소가 변경되었습니다 (/pages/plans → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+        "domDelta": {
+          "visible": 216,
+          "overlays": 0,
+          "links": 22,
+          "interactive": 31
+        },
+        "spaNavigation": "replaceState",
+        "networkSummary": "서버 요청 4건",
+        "apiCallCount": 8,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "a · logo logo-img-1x",
+        "targetHint": "generic",
+        "score": 124,
+        "urlBefore": "https://meowdule.github.io/pages/plans",
+        "urlAfter": "https://meowdule.github.io/",
+        "linksFound": 1,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/pages/plans → /)",
+        "domDelta": {
+          "visible": 0,
+          "overlays": 0,
+          "links": 0,
+          "interactive": 0
+        },
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "GitHub Status",
+        "targetHint": "generic",
+        "score": 112,
+        "urlBefore": "https://meowdule.github.io/pages/plans",
+        "urlAfter": "https://www.githubstatus.com/",
+        "linksFound": 4,
+        "newLinks": 2,
+        "domDiff": "화면 주소가 변경되었습니다 (/pages/plans → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+        "domDelta": {
+          "visible": 1191,
+          "overlays": 0,
+          "links": 10,
+          "interactive": 1020
+        },
+        "networkSummary": "서버 요청 1건",
+        "apiCallCount": 1,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "@githubstatus",
+        "targetHint": "generic",
+        "score": 112,
+        "urlBefore": "https://meowdule.github.io/pages/plans",
+        "urlAfter": "https://x.com/githubstatus",
+        "linksFound": 10,
+        "newLinks": 9,
+        "domDiff": "화면 주소가 변경되었습니다 (/pages/plans → /githubstatus) · 새로 보이는 화면 요소가 약 273개 증가했습니다 · 클릭 가능한 링크·경로가 12개 늘었습니다",
+        "domDelta": {
+          "visible": 273,
+          "overlays": 0,
+          "links": 12,
+          "interactive": 37
+        },
+        "spaNavigation": "replaceState",
+        "networkSummary": "서버 요청 5건",
+        "apiCallCount": 5,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드·스크롤 후 스캔",
+        "urlAfter": "https://meowdule.github.io/pages/contact",
+        "linksFound": 2,
+        "domSummary": "화면 요소 약 12개, 클릭 후보 4개",
+        "candidateCount": 4,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "read the full documentation",
+        "targetHint": "generic",
+        "score": 126,
+        "urlBefore": "https://meowdule.github.io/pages/contact",
+        "urlAfter": "https://docs.github.com/en/pages",
+        "linksFound": 33,
+        "newLinks": 32,
+        "domDiff": "화면 주소가 변경되었습니다 (/pages/contact → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+        "domDelta": {
+          "visible": 216,
+          "overlays": 0,
+          "links": 22,
+          "interactive": 31
+        },
+        "spaNavigation": "replaceState",
+        "networkSummary": "서버 요청 4건",
+        "apiCallCount": 8,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "a · logo logo-img-1x",
+        "targetHint": "generic",
+        "score": 124,
+        "urlBefore": "https://meowdule.github.io/pages/contact",
+        "urlAfter": "https://meowdule.github.io/",
+        "linksFound": 1,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/pages/contact → /)",
+        "domDelta": {
+          "visible": 0,
+          "overlays": 0,
+          "links": 0,
+          "interactive": 0
+        },
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "GitHub Status",
+        "targetHint": "generic",
+        "score": 112,
+        "urlBefore": "https://meowdule.github.io/pages/contact",
+        "urlAfter": "https://www.githubstatus.com/",
+        "linksFound": 4,
+        "newLinks": 2,
+        "domDiff": "화면 주소가 변경되었습니다 (/pages/contact → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+        "domDelta": {
+          "visible": 1191,
+          "overlays": 0,
+          "links": 10,
+          "interactive": 1020
+        },
+        "networkSummary": "서버 요청 1건",
+        "apiCallCount": 1,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "@githubstatus",
+        "targetHint": "generic",
+        "score": 112,
+        "urlBefore": "https://meowdule.github.io/pages/contact",
+        "urlAfter": "https://x.com/githubstatus",
+        "linksFound": 22,
+        "newLinks": 21,
+        "domDiff": "화면 주소가 변경되었습니다 (/pages/contact → /githubstatus) · 새로 보이는 화면 요소가 약 1248개 증가했습니다 · 클릭 가능한 링크·경로가 52개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+        "domDelta": {
+          "visible": 1248,
+          "overlays": 0,
+          "links": 52,
+          "interactive": 185
+        },
+        "spaNavigation": "replaceState",
+        "networkSummary": "서버 요청 7건",
+        "apiCallCount": 8,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드·스크롤 후 스캔",
+        "urlAfter": "https://meowdule.github.io/auth/login",
+        "linksFound": 2,
+        "domSummary": "화면 요소 약 12개, 클릭 후보 4개",
+        "candidateCount": 4,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "read the full documentation",
+        "targetHint": "generic",
+        "score": 126,
+        "urlBefore": "https://meowdule.github.io/auth/login",
+        "urlAfter": "https://docs.github.com/en/pages",
+        "linksFound": 33,
+        "newLinks": 32,
+        "domDiff": "화면 주소가 변경되었습니다 (/auth/login → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+        "domDelta": {
+          "visible": 216,
+          "overlays": 0,
+          "links": 22,
+          "interactive": 31
+        },
+        "spaNavigation": "replaceState",
+        "networkSummary": "서버 요청 4건",
+        "apiCallCount": 8,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "a · logo logo-img-1x",
+        "targetHint": "generic",
+        "score": 124,
+        "urlBefore": "https://meowdule.github.io/auth/login",
+        "urlAfter": "https://meowdule.github.io/",
+        "linksFound": 1,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/auth/login → /)",
+        "domDelta": {
+          "visible": 0,
+          "overlays": 0,
+          "links": 0,
+          "interactive": 0
+        },
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "GitHub Status",
+        "targetHint": "generic",
+        "score": 112,
+        "urlBefore": "https://meowdule.github.io/auth/login",
+        "urlAfter": "https://www.githubstatus.com/",
+        "linksFound": 4,
+        "newLinks": 2,
+        "domDiff": "화면 주소가 변경되었습니다 (/auth/login → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+        "domDelta": {
+          "visible": 1191,
+          "overlays": 0,
+          "links": 10,
+          "interactive": 1020
+        },
+        "networkSummary": "서버 요청 1건",
+        "apiCallCount": 1,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "@githubstatus",
+        "targetHint": "generic",
+        "score": 112,
+        "urlBefore": "https://meowdule.github.io/auth/login",
+        "urlAfter": "https://x.com/githubstatus",
+        "linksFound": 10,
+        "newLinks": 9,
+        "domDiff": "화면 주소가 변경되었습니다 (/auth/login → /githubstatus) · 새로 보이는 화면 요소가 약 308개 증가했습니다 · 클릭 가능한 링크·경로가 16개 늘었습니다",
+        "domDelta": {
+          "visible": 308,
+          "overlays": 0,
+          "links": 16,
+          "interactive": 43
+        },
+        "spaNavigation": "replaceState",
+        "networkSummary": "서버 요청 6건",
+        "apiCallCount": 6,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드·스크롤 후 스캔",
+        "urlAfter": "https://meowdule.github.io/pages/apply",
+        "linksFound": 2,
+        "domSummary": "화면 요소 약 12개, 클릭 후보 4개",
+        "candidateCount": 4,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "read the full documentation",
+        "targetHint": "generic",
+        "score": 126,
+        "urlBefore": "https://meowdule.github.io/pages/apply",
+        "urlAfter": "https://docs.github.com/en/pages",
+        "linksFound": 33,
+        "newLinks": 32,
+        "domDiff": "화면 주소가 변경되었습니다 (/pages/apply → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+        "domDelta": {
+          "visible": 216,
+          "overlays": 0,
+          "links": 22,
+          "interactive": 31
+        },
+        "spaNavigation": "replaceState",
+        "networkSummary": "서버 요청 4건",
+        "apiCallCount": 8,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "a · logo logo-img-1x",
+        "targetHint": "generic",
+        "score": 124,
+        "urlBefore": "https://meowdule.github.io/pages/apply",
+        "urlAfter": "https://meowdule.github.io/",
+        "linksFound": 1,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/pages/apply → /)",
+        "domDelta": {
+          "visible": 0,
+          "overlays": 0,
+          "links": 0,
+          "interactive": 0
+        },
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "GitHub Status",
+        "targetHint": "generic",
+        "score": 112,
+        "urlBefore": "https://meowdule.github.io/pages/apply",
+        "urlAfter": "https://www.githubstatus.com/",
+        "linksFound": 4,
+        "newLinks": 2,
+        "domDiff": "화면 주소가 변경되었습니다 (/pages/apply → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+        "domDelta": {
+          "visible": 1191,
+          "overlays": 0,
+          "links": 10,
+          "interactive": 1020
+        },
+        "networkSummary": "서버 요청 1건",
+        "apiCallCount": 1,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "@githubstatus",
+        "targetHint": "generic",
+        "score": 112,
+        "urlBefore": "https://meowdule.github.io/pages/apply",
+        "urlAfter": "https://x.com/githubstatus",
+        "linksFound": 10,
+        "newLinks": 9,
+        "domDiff": "화면 주소가 변경되었습니다 (/pages/apply → /githubstatus) · 새로 보이는 화면 요소가 약 308개 증가했습니다 · 클릭 가능한 링크·경로가 16개 늘었습니다",
+        "domDelta": {
+          "visible": 308,
+          "overlays": 0,
+          "links": 16,
+          "interactive": 43
+        },
+        "spaNavigation": "replaceState",
+        "networkSummary": "서버 요청 6건",
+        "apiCallCount": 6,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드·스크롤 후 스캔",
+        "urlAfter": "https://meowdule.github.io/auth/find-id",
+        "linksFound": 2,
+        "domSummary": "화면 요소 약 12개, 클릭 후보 4개",
+        "candidateCount": 4,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "read the full documentation",
+        "targetHint": "generic",
+        "score": 126,
+        "urlBefore": "https://meowdule.github.io/auth/find-id",
+        "urlAfter": "https://docs.github.com/en/pages",
+        "linksFound": 33,
+        "newLinks": 32,
+        "domDiff": "화면 주소가 변경되었습니다 (/auth/find-id → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+        "domDelta": {
+          "visible": 216,
+          "overlays": 0,
+          "links": 22,
+          "interactive": 31
+        },
+        "spaNavigation": "replaceState",
+        "networkSummary": "서버 요청 4건",
+        "apiCallCount": 8,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "a · logo logo-img-1x",
+        "targetHint": "generic",
+        "score": 124,
+        "urlBefore": "https://meowdule.github.io/auth/find-id",
+        "urlAfter": "https://meowdule.github.io/",
+        "linksFound": 1,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/auth/find-id → /)",
+        "domDelta": {
+          "visible": 0,
+          "overlays": 0,
+          "links": 0,
+          "interactive": 0
+        },
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "GitHub Status",
+        "targetHint": "generic",
+        "score": 112,
+        "urlBefore": "https://meowdule.github.io/auth/find-id",
+        "urlAfter": "https://www.githubstatus.com/",
+        "linksFound": 4,
+        "newLinks": 2,
+        "domDiff": "화면 주소가 변경되었습니다 (/auth/find-id → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+        "domDelta": {
+          "visible": 1191,
+          "overlays": 0,
+          "links": 10,
+          "interactive": 1020
+        },
+        "networkSummary": "서버 요청 1건",
+        "apiCallCount": 1,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "@githubstatus",
+        "targetHint": "generic",
+        "score": 112,
+        "urlBefore": "https://meowdule.github.io/auth/find-id",
+        "urlAfter": "https://x.com/githubstatus",
+        "linksFound": 10,
+        "newLinks": 9,
+        "domDiff": "화면 주소가 변경되었습니다 (/auth/find-id → /githubstatus) · 새로 보이는 화면 요소가 약 308개 증가했습니다 · 클릭 가능한 링크·경로가 16개 늘었습니다",
+        "domDelta": {
+          "visible": 308,
+          "overlays": 0,
+          "links": 16,
+          "interactive": 43
+        },
+        "spaNavigation": "replaceState",
+        "networkSummary": "서버 요청 6건",
+        "apiCallCount": 6,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드·스크롤 후 스캔",
+        "urlAfter": "https://meowdule.github.io/auth/find-password",
+        "linksFound": 2,
+        "domSummary": "화면 요소 약 12개, 클릭 후보 4개",
+        "candidateCount": 4,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "read the full documentation",
+        "targetHint": "generic",
+        "score": 126,
+        "urlBefore": "https://meowdule.github.io/auth/find-password",
+        "urlAfter": "https://docs.github.com/en/pages",
+        "linksFound": 33,
+        "newLinks": 32,
+        "domDiff": "화면 주소가 변경되었습니다 (/auth/find-password → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+        "domDelta": {
+          "visible": 216,
+          "overlays": 0,
+          "links": 22,
+          "interactive": 31
+        },
+        "spaNavigation": "replaceState",
+        "networkSummary": "서버 요청 4건",
+        "apiCallCount": 8,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "a · logo logo-img-1x",
+        "targetHint": "generic",
+        "score": 124,
+        "urlBefore": "https://meowdule.github.io/auth/find-password",
+        "urlAfter": "https://meowdule.github.io/",
+        "linksFound": 1,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/auth/find-password → /)",
+        "domDelta": {
+          "visible": 0,
+          "overlays": 0,
+          "links": 0,
+          "interactive": 0
+        },
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "GitHub Status",
+        "targetHint": "generic",
+        "score": 112,
+        "urlBefore": "https://meowdule.github.io/auth/find-password",
+        "urlAfter": "https://www.githubstatus.com/",
+        "linksFound": 4,
+        "newLinks": 2,
+        "domDiff": "화면 주소가 변경되었습니다 (/auth/find-password → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+        "domDelta": {
+          "visible": 1191,
+          "overlays": 0,
+          "links": 10,
+          "interactive": 1020
+        },
+        "networkSummary": "서버 요청 1건",
+        "apiCallCount": 1,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "@githubstatus",
+        "targetHint": "generic",
+        "score": 112,
+        "urlBefore": "https://meowdule.github.io/auth/find-password",
+        "urlAfter": "https://x.com/githubstatus",
+        "linksFound": 10,
+        "newLinks": 9,
+        "domDiff": "화면 주소가 변경되었습니다 (/auth/find-password → /githubstatus) · 새로 보이는 화면 요소가 약 231개 증가했습니다 · 클릭 가능한 링크·경로가 7개 늘었습니다",
+        "domDelta": {
+          "visible": 231,
+          "overlays": 0,
+          "links": 7,
+          "interactive": 31
+        },
+        "spaNavigation": "replaceState",
+        "networkSummary": "서버 요청 5건",
+        "apiCallCount": 5,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "initial_scan",
+        "label": "페이지 로드·스크롤 후 스캔",
+        "urlAfter": "https://meowdule.github.io/auth/signup",
+        "linksFound": 2,
+        "domSummary": "화면 요소 약 12개, 클릭 후보 4개",
+        "candidateCount": 4,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "read the full documentation",
+        "targetHint": "generic",
+        "score": 126,
+        "urlBefore": "https://meowdule.github.io/auth/signup",
+        "urlAfter": "https://docs.github.com/en/pages",
+        "linksFound": 33,
+        "newLinks": 32,
+        "domDiff": "화면 주소가 변경되었습니다 (/auth/signup → /en/pages) · 새로 보이는 화면 요소가 약 216개 증가했습니다 · 클릭 가능한 링크·경로가 22개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+        "domDelta": {
+          "visible": 216,
+          "overlays": 0,
+          "links": 22,
+          "interactive": 31
+        },
+        "spaNavigation": "replaceState",
+        "networkSummary": "서버 요청 4건",
+        "apiCallCount": 8,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "a · logo logo-img-1x",
+        "targetHint": "generic",
+        "score": 124,
+        "urlBefore": "https://meowdule.github.io/auth/signup",
+        "urlAfter": "https://meowdule.github.io/",
+        "linksFound": 1,
+        "newLinks": 0,
+        "domDiff": "화면 주소가 변경되었습니다 (/auth/signup → /)",
+        "domDelta": {
+          "visible": 0,
+          "overlays": 0,
+          "links": 0,
+          "interactive": 0
+        },
+        "apiCallCount": 0,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "GitHub Status",
+        "targetHint": "generic",
+        "score": 112,
+        "urlBefore": "https://meowdule.github.io/auth/signup",
+        "urlAfter": "https://www.githubstatus.com/",
+        "linksFound": 4,
+        "newLinks": 2,
+        "domDiff": "화면 주소가 변경되었습니다 (/auth/signup → /) · 새로 보이는 화면 요소가 약 1191개 증가했습니다 · 클릭 가능한 링크·경로가 10개 늘었습니다 · 아래로 스크롤할 콘텐츠가 늘어났습니다",
+        "domDelta": {
+          "visible": 1191,
+          "overlays": 0,
+          "links": 10,
+          "interactive": 1020
+        },
+        "networkSummary": "서버 요청 1건",
+        "apiCallCount": 1,
+        "routeChanged": true,
+        "success": true
+      },
+      {
+        "action": "navigation",
+        "label": "@githubstatus",
+        "targetHint": "generic",
+        "score": 112,
+        "urlBefore": "https://meowdule.github.io/auth/signup",
+        "urlAfter": "https://x.com/githubstatus",
+        "linksFound": 10,
+        "newLinks": 9,
+        "domDiff": "화면 주소가 변경되었습니다 (/auth/signup → /githubstatus) · 새로 보이는 화면 요소가 약 318개 증가했습니다 · 클릭 가능한 링크·경로가 16개 늘었습니다",
+        "domDelta": {
+          "visible": 318,
+          "overlays": 0,
+          "links": 16,
+          "interactive": 44
+        },
+        "spaNavigation": "replaceState",
+        "networkSummary": "서버 요청 8건",
+        "apiCallCount": 8,
+        "routeChanged": true,
+        "success": true
+      }
+    ],
+    "mode": "homepage_rich_subpage_light",
+    "discoveryStats": {
+      "candidatesFound": 38,
+      "clicksRecorded": 58,
+      "linksDiscovered": 0,
+      "profile": "homepage",
+      "clicksAttempted": 22,
+      "stoppedEarly": false,
+      "runtimeMs": 16710,
+      "skippedByReason": {
+        "not_visible": 12
+      },
+      "meaningfulCount": 10
+    },
+    "interactionFlow": "Home\n├─ 페이지 로드·스크롤 후 스캔 — 초기 스캔\n├─ 체험하기 [cta] — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  ├─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n│  └─ 새 경로 +3\n├─ 지금 신청하기 [cta] — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n├─ 구매 플랜 조회 [cta] — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n├─ 플랜 — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n├─ 문의 — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n├─ 로그인하고 보드로 이동 [cta] — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n├─ 홈 — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n├─ 문의하기 — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n├─ 체험하기 — 이동\n│  ├─ 경로 → /SEO-TESTING-HTML/\n│  └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)\n└─ SEO DEMO — 이동\n   ├─ 경로 → /SEO-TESTING-HTML/\n   └─ 화면 주소가 변경되었습니다 (/SEO-TESTING-HTML/ → /SEO-TESTING-HTML/)"
+  },
+  "timing": {
+    "phases": {
+      "browser_launch": 1.556,
+      "quick_scan": 17.957,
+      "crawl": 14.76,
+      "page_analysis": 74.962
+    },
+    "pages": [
+      {
+        "url": "https://meowdule.github.io/",
+        "phases": {
+          "initial_load": 0.018,
+          "hydration_wait": 0.622,
+          "interaction_crawl": 4.004,
+          "ui_signals_mobile": 0.204,
+          "screenshots": 0.827,
+          "axe": 1.091,
+          "lighthouse": 0.001
+        }
+      },
+      {
+        "url": "https://meowdule.github.io/SEO-TESTING-HTML",
+        "phases": {
+          "initial_load": 0.072,
+          "hydration_wait": 0.618,
+          "interaction_crawl": 16.709,
+          "ui_signals_mobile": 0.203,
+          "screenshots": 0.836,
+          "axe": 0.998,
+          "lighthouse": 0.002
+        }
+      },
+      {
+        "url": "https://meowdule.github.io/pages/plans",
+        "phases": {
+          "initial_load": 0.018,
+          "hydration_wait": 0.609,
+          "interaction_crawl": 10.155,
+          "ui_signals_mobile": 0.204,
+          "screenshots": 0.879,
+          "axe": 1.194,
+          "lighthouse": 0.002
+        }
+      },
+      {
+        "url": "https://meowdule.github.io/pages/contact",
+        "phases": {
+          "initial_load": 0.098,
+          "hydration_wait": 0.61,
+          "interaction_crawl": 12.921,
+          "ui_signals_mobile": 0.203,
+          "screenshots": 0.827,
+          "axe": 1.059,
+          "lighthouse": 0.002
+        }
+      },
+      {
+        "url": "https://meowdule.github.io/auth/login",
+        "phases": {
+          "initial_load": 0.019,
+          "hydration_wait": 0.617,
+          "interaction_crawl": 9.19,
+          "ui_signals_mobile": 0.203,
+          "screenshots": 0.828,
+          "axe": 1.12,
+          "lighthouse": 0.002
+        }
+      },
+      {
+        "url": "https://meowdule.github.io/pages/apply",
+        "phases": {
+          "initial_load": 0.107,
+          "hydration_wait": 0.627,
+          "interaction_crawl": 10.689,
+          "ui_signals_mobile": 0.203,
+          "screenshots": 0.827,
+          "axe": 1.07,
+          "lighthouse": 0.002
+        }
+      },
+      {
+        "url": "https://meowdule.github.io/auth/find-id",
+        "phases": {
+          "initial_load": 0.104,
+          "hydration_wait": 0.609,
+          "interaction_crawl": 9.873,
+          "ui_signals_mobile": 0.203,
+          "screenshots": 0.826,
+          "axe": 1.056,
+          "lighthouse": 0.002
+        }
+      },
+      {
+        "url": "https://meowdule.github.io/auth/find-password",
+        "phases": {
+          "initial_load": 0.129,
+          "hydration_wait": 0.618,
+          "interaction_crawl": 11.054,
+          "ui_signals_mobile": 0.203,
+          "screenshots": 0.829,
+          "axe": 1.058,
+          "lighthouse": 0.002
+        }
+      },
+      {
+        "url": "https://meowdule.github.io/auth/signup",
+        "phases": {
+          "initial_load": 0.099,
+          "hydration_wait": 0.626,
+          "interaction_crawl": 10.021,
+          "ui_signals_mobile": 0.203,
+          "screenshots": 0.828,
+          "axe": 1.057,
+          "lighthouse": 0.002
+        }
+      }
+    ],
+    "summary": [
+      "Interaction crawl (pages): 94.6s",
+      "Page analysis (total): 75.0s",
+      "Quick scan: 18.0s",
+      "URL crawl: 14.8s",
+      "Accessibility scan (pages): 9.7s",
+      "Screenshots (pages): 7.5s",
+      "Hydration wait (pages): 5.6s",
+      "ui_signals_mobile (pages): 1.8s",
+      "Browser launch: 1.6s",
+      "Initial load (pages): 0.7s"
+    ],
+    "totalSeconds": 109.235
+  }
+}
