@@ -1,3 +1,18 @@
+/** True when page URL is the same entry as start (post-redirect tolerant on pathname). */
+export function isHomepageUrl(pageUrl, startUrl) {
+  const a = normalizeUrl(pageUrl, startUrl);
+  const b = normalizeUrl(startUrl, startUrl);
+  if (!a || !b) return false;
+  if (a === b) return true;
+  try {
+    const pa = new URL(a);
+    const pb = new URL(b);
+    return pa.origin === pb.origin && pa.pathname === pb.pathname;
+  } catch {
+    return false;
+  }
+}
+
 export function normalizeUrl(href, baseUrl) {
   try {
     const u = new URL(href, baseUrl);

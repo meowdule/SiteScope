@@ -14,12 +14,12 @@ function visibleRatio(rect, vw, vh) {
   return inter / area;
 }
 
-export async function collectUiSignals(page, viewport) {
+export async function collectUiSignals(page, viewport, { fast = false } = {}) {
   await page.setViewportSize({
     width: viewport.width,
     height: viewport.height,
   });
-  await new Promise((r) => setTimeout(r, 600));
+  await new Promise((r) => setTimeout(r, fast ? 200 : 400));
 
   const raw = await page.evaluate(
     ({ vw, vh, viewportName }) => {

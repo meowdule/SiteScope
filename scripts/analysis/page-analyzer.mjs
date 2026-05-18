@@ -2,12 +2,22 @@ import path from "node:path";
 import crypto from "node:crypto";
 import fs from "node:fs/promises";
 import { AxeBuilder } from "@axe-core/playwright";
-import { VIEWPORTS, collectUiSignals } from "./ui-detect.mjs";
-import { runLighthouseOnPage } from "./lighthouse-runner.mjs";
+import { collectUiSignals } from "./ui-detect.mjs";
+import {
+  runLighthouseOnPage,
+  collectPerfFallback,
+} from "./lighthouse-runner.mjs";
 import { waitForSpaReady } from "./spa-wait.mjs";
 import { explorePageInteractions } from "./interaction-crawl.mjs";
 import { extractAllLinks } from "./link-extract.mjs";
 import { enrichUiIssue } from "./issue-labels.mjs";
+import { ANALYSIS_CONFIG } from "./analysis-config.mjs";
+import { isHomepageUrl } from "./url-utils.mjs";
+import {
+  captureViewportScreenshot,
+  screenshotViewports,
+} from "./screenshot.mjs";
+import { createPageTimer } from "./timing.mjs";
 
 function redirectChainFromResponse(response) {
   const chain = [];
@@ -28,7 +38,14 @@ export async function analyzePage({
   url,
   reportsAbsDir,
   startUrl,
+  runFullLighthouse = false,
+  isHomepage = false,
+  analysisTimer = null,
 }) {
+  const pageTimer = analysisTimer
+    ? createPageTimer(analysisTimer, url)
+    : null;
+
   const consoleErrors = [];
   const jsExceptions = [];
   const failedRequests = [];
@@ -43,9 +60,7 @@ export async function analyzePage({
   const page = await context.newPage();
 
   page.on("console", (msg) => {
-    if (msg.type() === "error") {
-      consoleErrors.push(msg.text());
-    }
+    if (msg.type() === "error") consoleErrors.push(msg.text());
   });
   page.on("pageerror", (err) => {
     jsExceptions.push(err.message || String(err));
@@ -59,18 +74,18 @@ export async function analyzePage({
   });
   page.on("response", (res) => {
     const st = res.status();
-    if (st >= 400) {
-      failedRequests.push({ url: res.url(), status: st });
-    }
+    if (st >= 400) failedRequests.push({ url: res.url(), status: st });
   });
 
   let statusCode = null;
   let redirects = [];
   let gotoOk = false;
+
+  pageTimer?.start("initial_load");
   try {
     const response = await page.goto(url, {
       waitUntil: "domcontentloaded",
-      timeout: 90000,
+      timeout: 45_000,
     });
     statusCode = response?.status() ?? null;
     redirects = redirectChainFromResponse(response);
@@ -78,19 +93,32 @@ export async function analyzePage({
   } catch (e) {
     jsExceptions.push(e instanceof Error ? e.message : String(e));
   }
+  pageTimer?.end("initial_load");
 
   const screenshotPaths = {};
   const uiIssues = [];
   const interactionLog = [];
+  let interactionFlow = "";
+  let interactionDiscovery;
   const shotDir = path.join(reportsAbsDir, "screenshots");
+  const homepage =
+    isHomepage || isHomepageUrl(gotoOk ? url : startUrl, startUrl);
   await fs.mkdir(shotDir, { recursive: true });
 
   if (gotoOk) {
-    await waitForSpaReady(page);
+    pageTimer?.start("hydration_wait");
+    await waitForSpaReady(page, { fast: ANALYSIS_CONFIG.fast });
+    pageTimer?.end("hydration_wait");
+
+    pageTimer?.start("interaction_crawl");
     const explored = await explorePageInteractions(page, page.url(), startUrl, {
-      maxInteractions: 8,
+      profile: homepage ? "homepage" : "subpage",
     });
+    pageTimer?.end("interaction_crawl");
+
     interactionLog.push(...explored.interactions);
+    interactionFlow = explored.interactionFlow || "";
+    if (homepage) interactionDiscovery = explored.discoveryStats;
     for (const ch of explored.uiStateChanges || []) {
       uiIssues.push(
         enrichUiIssue({
@@ -103,26 +131,34 @@ export async function analyzePage({
       );
     }
 
-    for (const vp of VIEWPORTS) {
+    pageTimer?.start("screenshots");
+    const viewports = screenshotViewports();
+    for (const vp of viewports) {
       await page.setViewportSize({ width: vp.width, height: vp.height });
-      await waitForSpaReady(page, { short: true });
+      await waitForSpaReady(page, { short: true, fast: true });
 
-      const file = `${crypto.randomUUID()}-${vp.name}.png`;
+      const file = `${crypto.randomUUID()}-${vp.name}.jpg`;
       const abs = path.join(shotDir, file);
-      await page.screenshot({ path: abs, fullPage: false });
+      await captureViewportScreenshot(page, abs);
       screenshotPaths[vp.name] = `screenshots/${file}`;
 
-      const sig = await collectUiSignals(page, vp);
+      pageTimer?.start(`ui_signals_${vp.name}`);
+      const sig = await collectUiSignals(page, vp, { fast: ANALYSIS_CONFIG.fast });
+      pageTimer?.end(`ui_signals_${vp.name}`);
       uiIssues.push(...sig);
     }
+    pageTimer?.end("screenshots");
   }
 
   let axeViolations = [];
   if (gotoOk) {
+    pageTimer?.start("axe");
     try {
       await page.setViewportSize({ width: 1440, height: 900 });
-      await waitForSpaReady(page, { short: true });
-      const results = await new AxeBuilder({ page }).analyze();
+      await waitForSpaReady(page, { short: true, fast: true });
+      const results = await new AxeBuilder({ page })
+        .options({ resultTypes: ["violations"] })
+        .analyze();
       axeViolations = (results.violations || []).map((v) => ({
         id: v.id,
         impact: v.impact,
@@ -132,11 +168,24 @@ export async function analyzePage({
     } catch {
       axeViolations = [];
     }
+    pageTimer?.end("axe");
   }
 
   let lighthouse = null;
   if (gotoOk) {
-    lighthouse = await runLighthouseOnPage(page, { timeoutMs: 150000 });
+    pageTimer?.start("lighthouse");
+    const lhMode = runFullLighthouse ? "full" : ANALYSIS_CONFIG.lighthouse.skipOnSubpages ? "skip" : "light";
+    if (lhMode === "skip") {
+      lighthouse = await collectPerfFallback(page);
+    } else {
+      lighthouse = await runLighthouseOnPage(page, {
+        mode: lhMode,
+        timeoutMs: runFullLighthouse
+          ? ANALYSIS_CONFIG.lighthouse.fullTimeoutMs
+          : ANALYSIS_CONFIG.lighthouse.lightweightTimeoutMs,
+      });
+    }
+    pageTimer?.end("lighthouse");
   }
 
   const brokenImages = gotoOk
@@ -172,7 +221,9 @@ export async function analyzePage({
     uiIssues: dedupeUi(uiIssues),
     screenshotPaths,
     brokenLinks,
-    interactionLog: interactionLog.slice(0, 30),
+    interactionLog: interactionLog.slice(0, 40),
+    interactionFlow: interactionFlow || undefined,
+    interactionDiscovery,
     crawledAt: new Date().toISOString(),
   };
 }
@@ -180,9 +231,10 @@ export async function analyzePage({
 async function probeInternalLinksFromExtract(page, pageUrl, startUrl) {
   const hrefs = await extractAllLinks(page, pageUrl, startUrl);
   const broken = [];
-  for (const href of hrefs.slice(0, 24)) {
+  const limit = ANALYSIS_CONFIG.brokenLinkProbeLimit;
+  for (const href of hrefs.slice(0, limit)) {
     try {
-      const r = await page.request.head(href, { timeout: 12000 });
+      const r = await page.request.head(href, { timeout: 8000 });
       if (r.status() >= 400) {
         broken.push({ from: pageUrl, to: href, reason: `HTTP ${r.status()}` });
       }

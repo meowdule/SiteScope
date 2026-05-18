@@ -1,6 +1,8 @@
 import { normalizeUrl } from "./url-utils.mjs";
 import { waitForSpaReady } from "./spa-wait.mjs";
 import { explorePageInteractions } from "./interaction-crawl.mjs";
+import { SPA_HOOKS_INIT } from "./spa-hooks.mjs";
+import { ANALYSIS_CONFIG } from "./analysis-config.mjs";
 
 export { extractAllLinks } from "./link-extract.mjs";
 
@@ -9,7 +11,6 @@ export async function discoverUrls({
   startUrl,
   maxPages = 30,
   maxDepth = 2,
-  interactionMode = true,
 }) {
   const startNorm = normalizeUrl(startUrl, startUrl);
   if (!startNorm) throw new Error("Invalid start URL");
@@ -20,14 +21,20 @@ export async function discoverUrls({
   const queue = [{ url: startNorm, depth: 0 }];
   enqueued.add(startNorm);
   const ordered = [];
-  const crawlMeta = { interactions: [], mode: interactionMode ? "interaction" : "static" };
+  const crawlMeta = {
+    interactions: [],
+    mode: "hybrid_crawl",
+    discoveryStats: { candidatesFound: 0, clicksRecorded: 0, linksDiscovered: 0 },
+    interactionFlow: "",
+  };
 
   const context = await browser.newContext({
-    viewport: { width: 1440, height: 900 },
+    viewport: { width: 390, height: 844 },
     ignoreHTTPSErrors: true,
     userAgent:
-      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 SiteScope/0.1",
+      "Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 Chrome/124.0.0.0 Mobile Safari/537.36 SiteScope/0.1",
   });
+  await context.addInitScript(SPA_HOOKS_INIT);
 
   const spaRoutes = new Set();
 
@@ -55,22 +62,26 @@ export async function discoverUrls({
 
       const page = await context.newPage();
       try {
-        await page.goto(url, { waitUntil: "domcontentloaded", timeout: 90000 });
-        await waitForSpaReady(page);
+        await page.goto(url, { waitUntil: "domcontentloaded", timeout: 45_000 });
+        await waitForSpaReady(page, { fast: true });
 
         let links = [];
-        if (interactionMode) {
+        const isHome = depth === 0 && url === startNorm;
+
+        if (isHome && ANALYSIS_CONFIG.crawl.homepageHybridInteraction) {
           const explored = await explorePageInteractions(page, url, startUrl, {
-            maxInteractions: 10,
+            profile: "crawlSeed",
           });
           links = explored.links;
-          crawlMeta.interactions.push(...explored.interactions);
-          for (const ch of explored.uiStateChanges || []) {
-            crawlMeta.interactions.push({
-              action: "ui_state",
-              label: ch.message,
-              urlAfter: page.url(),
-            });
+          crawlMeta.interactions.push(...explored.interactions.slice(0, 12));
+          if (explored.interactionFlow) {
+            crawlMeta.interactionFlow = explored.interactionFlow;
+          }
+          if (explored.discoveryStats) {
+            crawlMeta.discoveryStats.candidatesFound +=
+              explored.discoveryStats.candidatesFound || 0;
+            crawlMeta.discoveryStats.clicksRecorded +=
+              explored.discoveryStats.clicksRecorded || 0;
           }
         } else {
           const { extractAllLinks } = await import("./link-extract.mjs");
@@ -80,6 +91,11 @@ export async function discoverUrls({
         for (const route of spaRoutes) {
           links.push(route);
         }
+
+        crawlMeta.discoveryStats.linksDiscovered = Math.max(
+          crawlMeta.discoveryStats.linksDiscovered,
+          links.length,
+        );
 
         for (const link of links) {
           const n = normalizeUrl(link, url);

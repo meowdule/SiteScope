@@ -61,6 +61,39 @@ export type InteractionEvent = {
   urlAfter?: string;
   linksFound?: number;
   newLinks?: number;
+  domDiff?: string;
+  domSummary?: string;
+  networkSummary?: string;
+  spaNavigation?: string;
+  targetHint?: string;
+  score?: number;
+  success?: boolean;
+  candidateCount?: number;
+};
+
+export type HealthPenalty = {
+  id: string;
+  label: string;
+  points: number;
+  message: string;
+};
+
+export type HealthContribution = {
+  category: string;
+  label: string;
+  score: number;
+  weight: number;
+  weightedPoints: number;
+};
+
+export type HealthBreakdown = {
+  formula: string;
+  weights: Record<string, number>;
+  weightedBase: number;
+  penaltyTotal: number;
+  contributions: HealthContribution[];
+  penalties: HealthPenalty[];
+  explanation: string[];
 };
 
 export type PageReport = {
@@ -89,6 +122,16 @@ export type PageReport = {
   uiIssues: UiIssue[];
   screenshotPaths: Partial<Record<ViewportName, string>>;
   interactionLog?: InteractionEvent[];
+  interactionFlow?: string;
+  interactionDiscovery?: {
+    profile?: string;
+    candidatesFound?: number;
+    clicksAttempted?: number;
+    clicksRecorded?: number;
+    skippedByReason?: Record<string, number>;
+    meaningfulCount?: number;
+    runtimeMs?: number;
+  };
   crawledAt: string;
 };
 
@@ -99,6 +142,13 @@ export type CategoryScores = {
   seo: number | null;
 };
 
+export type TimingReport = {
+  phases: Record<string, number>;
+  pages?: { url: string; phases: Record<string, number> }[];
+  summary: string[];
+  totalSeconds?: number;
+};
+
 export type ReportJson = {
   reportId: string;
   targetUrl: string;
@@ -107,9 +157,22 @@ export type ReportJson = {
   quick: QuickCheckResult;
   pages: PageReport[];
   brokenLinks: { from: string; to: string; reason: string }[];
+  timing?: TimingReport;
   crawlMeta?: {
     mode?: string;
     interactions?: InteractionEvent[];
+    interactionFlow?: string;
+    discoveryStats?: {
+      candidatesFound?: number;
+      clicksRecorded?: number;
+      linksDiscovered?: number;
+      profile?: string;
+      skippedByReason?: Record<string, number>;
+    };
+    debug?: {
+      skipped?: { label?: string; reason: string }[];
+      skippedByReason?: Record<string, number>;
+    };
   };
   summary: {
     healthScore: number;
@@ -120,5 +183,6 @@ export type ReportJson = {
     mobileWarnings: string[];
     categoryScores?: CategoryScores;
     statusLabel?: "Good" | "Warning" | "Critical";
+    healthBreakdown?: HealthBreakdown;
   };
 };

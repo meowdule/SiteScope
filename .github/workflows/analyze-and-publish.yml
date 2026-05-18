@@ -25,6 +25,8 @@ env:
   NEXT_PUBLIC_GITHUB_REPO: ${{ vars.NEXT_PUBLIC_GITHUB_REPO || github.repository }}
   NEXT_PUBLIC_BASE_PATH: ${{ vars.NEXT_PUBLIC_BASE_PATH || format('/{0}', github.event.repository.name) }}
   NEXT_PUBLIC_QUEUE_DISPATCH_TOKEN: ${{ secrets.QUEUE_DISPATCH_TOKEN }}
+  SITE_SCOPE_FAST: "1"
+  SITE_SCOPE_MAX_PAGES: "12"
 
 jobs:
   build:

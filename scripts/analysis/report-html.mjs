@@ -65,14 +65,14 @@ export function renderReportHtml(report) {
       reportId,
     )}</span></p>
     <div class="grid">
-      <div class="tile"><p>Health score</p><strong>${summary.healthScore}</strong></div>
-      <div class="tile"><p>Avg Lighthouse performance</p><strong>${
+      <div class="tile"><p>종합 건강 점수</p><strong>${summary.healthScore}</strong></div>
+      <div class="tile"><p>성능</p><strong>${
         summary.avgLighthousePerformance ?? "—"
       }</strong></div>
       <div class="tile"><p>Avg accessibility issues (nodes / page)</p><strong>${
         summary.avgAxeIssuesPerPage
       }</strong></div>
-      <div class="tile"><p>Console errors (total)</p><strong>${
+      <div class="tile"><p>스크립트 오류</p><strong>${
         summary.totalConsoleErrors
       }</strong></div>
     </div>

@@ -53,7 +53,8 @@ export function ReportDashboard({ reportId }: Props) {
     );
   }
 
-  const { summary, pages, quick, targetUrl, brokenLinks, crawlMeta } = report;
+  const { summary, pages, quick, targetUrl, brokenLinks, crawlMeta, timing } =
+    report;
   const cats = summary.categoryScores;
 
   return (
@@ -74,12 +75,38 @@ export function ReportDashboard({ reportId }: Props) {
         <p className="mt-2 font-mono text-xs text-slate-500">{reportId}</p>
       </header>
 
-      <section className="mt-8 flex flex-wrap items-center gap-4">
+      <section className="mt-8 flex flex-wrap items-start gap-6">
         <DonutChart value={summary.healthScore} label="종합 건강 점수" size={112} />
-        {summary.statusLabel && <StatusBadge status={summary.statusLabel} />}
-        {crawlMeta?.mode === "interaction" && (
+        <div className="min-w-[240px] flex-1">
+          {summary.statusLabel && <StatusBadge status={summary.statusLabel} />}
+          {summary.healthBreakdown && (
+            <div className="mt-3 space-y-2 text-sm text-slate-300">
+              <p className="text-xs text-slate-500">
+                {summary.healthBreakdown.formula}
+              </p>
+              <ul className="list-inside list-disc space-y-1 text-xs text-slate-400">
+                {summary.healthBreakdown.explanation.slice(0, 4).map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
+              </ul>
+              {summary.healthBreakdown.penalties.length > 0 && (
+                <div className="mt-2 rounded-lg border border-amber-500/30 bg-amber-500/10 px-3 py-2 text-xs text-amber-100">
+                  추가 감점 −{summary.healthBreakdown.penaltyTotal}점
+                  <ul className="mt-1 list-inside list-disc text-amber-50/90">
+                    {summary.healthBreakdown.penalties.map((p) => (
+                      <li key={p.id}>{p.message}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+        {(crawlMeta?.mode?.includes("interaction") ||
+          crawlMeta?.mode?.includes("homepage") ||
+          crawlMeta?.mode === "hybrid_crawl") && (
           <span className="rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs text-accent">
-            Interaction Crawl 모드
+            홈 중심 사용자 흐름 탐색
           </span>
         )}
       </section>
@@ -89,11 +116,24 @@ export function ReportDashboard({ reportId }: Props) {
           <div className="rounded-xl border border-surface-border bg-surface-raised p-5">
             <h2 className="text-sm font-semibold text-white">카테고리별 점수</h2>
             <div className="mt-4 grid gap-4">
-              <ProgressBar value={cats.performance} label="성능 (Performance)" />
-              <ProgressBar value={cats.accessibility} label="접근성 (Accessibility)" />
-              <ProgressBar value={cats.ux} label="사용성 (UX)" />
-              <ProgressBar value={cats.seo} label="검색·공유 (SEO)" />
+              <ProgressBar value={cats.performance} label="성능 · 로딩 속도" />
+              <ProgressBar value={cats.accessibility} label="접근성 · 모두가 쓰기 쉬운지" />
+              <ProgressBar value={cats.ux} label="사용성 · 화면·버튼 배치" />
+              <ProgressBar value={cats.seo} label="검색·공유 · 검색·미리보기" />
             </div>
+            {summary.healthBreakdown?.contributions && (
+              <div className="mt-4 border-t border-surface-border pt-4 text-xs text-slate-500">
+                <p className="font-medium text-slate-400">가중치 반영</p>
+                <ul className="mt-2 space-y-1">
+                  {summary.healthBreakdown.contributions.map((c) => (
+                    <li key={c.category}>
+                      {c.label} {c.score}점 × {Math.round(c.weight * 100)}% →{" "}
+                      {c.weightedPoints}점
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-2">
             <DonutChart value={cats.performance} label="성능" />
@@ -107,22 +147,104 @@ export function ReportDashboard({ reportId }: Props) {
       <section className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <MetricTile label="탐색한 페이지" value={String(pages.length)} />
         <MetricTile
-          label="홈페이지 내부 링크"
+          label="발견한 내부 경로"
           value={
-            quick.internalLinkCount != null
-              ? String(quick.internalLinkCount)
-              : "—"
+            crawlMeta?.discoveryStats?.linksDiscovered != null
+              ? String(crawlMeta.discoveryStats.linksDiscovered)
+              : quick.internalLinkCount != null
+                ? String(quick.internalLinkCount)
+                : "—"
           }
         />
         <MetricTile
-          label="접근성 이슈 (페이지당)"
-          value={String(summary.avgAxeIssuesPerPage)}
+          label="클릭·탭 시도"
+          value={
+            crawlMeta?.discoveryStats?.clicksRecorded != null
+              ? String(crawlMeta.discoveryStats.clicksRecorded)
+              : crawlMeta?.interactions?.length != null
+                ? String(crawlMeta.interactions.length)
+                : "—"
+          }
         />
         <MetricTile
-          label="콘솔 오류"
-          value={String(summary.totalConsoleErrors)}
+          label="클릭 후보 (탐색)"
+          value={
+            crawlMeta?.discoveryStats?.candidatesFound != null
+              ? String(crawlMeta.discoveryStats.candidatesFound)
+              : "—"
+          }
         />
       </section>
+
+      {crawlMeta?.discoveryStats?.skippedByReason &&
+        Object.keys(crawlMeta.discoveryStats.skippedByReason).length > 0 && (
+          <section className="mt-4 rounded-lg border border-surface-border/60 bg-surface/40 px-4 py-3 text-xs text-slate-400">
+            <span className="text-slate-300">탐색 스킵 요약: </span>
+            {Object.entries(crawlMeta.discoveryStats.skippedByReason).map(
+              ([k, v]) => (
+                <span key={k} className="mr-3">
+                  {k} {v}
+                </span>
+              ),
+            )}
+          </section>
+        )}
+
+      {crawlMeta?.interactionFlow && (
+        <section className="mt-8 rounded-xl border border-accent/20 bg-accent/5 p-5">
+          <h2 className="text-sm font-semibold text-white">사용자 흐름 (홈)</h2>
+          <p className="mt-1 text-xs text-slate-500">
+            사람이 눌러볼 만한 요소를 우선 탐색한 결과입니다.
+          </p>
+          <pre className="mt-4 max-h-80 overflow-auto whitespace-pre-wrap font-mono text-xs leading-relaxed text-slate-200">
+            {crawlMeta.interactionFlow}
+          </pre>
+        </section>
+      )}
+
+      {(crawlMeta?.interactions?.length ?? 0) > 0 && (
+        <section className="mt-8 rounded-xl border border-surface-border bg-surface-raised p-5">
+          <h2 className="text-sm font-semibold text-white">탐색 상세 로그</h2>
+          <p className="mt-1 text-xs text-slate-500">
+            의미 있는 변화가 있었던 클릭·스크롤만 트리에 반영됩니다.
+          </p>
+          <ul className="mt-4 max-h-64 space-y-2 overflow-y-auto text-sm text-slate-300">
+            {crawlMeta!.interactions!.slice(0, 20).map((ev, idx) => (
+              <li
+                key={idx}
+                className="rounded-lg border border-surface-border/60 px-3 py-2"
+              >
+                <span className="text-xs uppercase text-accent">{ev.action}</span>
+                <p className="font-medium">{ev.label}</p>
+                {ev.domDiff && (
+                  <p className="mt-1 text-xs text-slate-400">{ev.domDiff}</p>
+                )}
+                {ev.networkSummary && (
+                  <p className="text-xs text-slate-500">{ev.networkSummary}</p>
+                )}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {timing?.summary && timing.summary.length > 0 && (
+        <section className="mt-8 rounded-xl border border-surface-border bg-surface-raised p-5">
+          <h2 className="text-sm font-semibold text-white">분석 소요 시간</h2>
+          <p className="mt-1 text-xs text-slate-500">
+            GitHub Actions 병목 파악용 (총{" "}
+            {timing.totalSeconds != null
+              ? `${timing.totalSeconds.toFixed(1)}초`
+              : "—"}
+            )
+          </p>
+          <ul className="mt-3 space-y-1 font-mono text-xs text-slate-300">
+            {timing.summary.map((line) => (
+              <li key={line}>{line}</li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {summary.mobileWarnings.length > 0 && (
         <section className="mt-8 rounded-xl border border-amber-500/30 bg-amber-500/10 p-5">
@@ -185,10 +307,10 @@ export function ReportDashboard({ reportId }: Props) {
             <tr className="border-b border-surface-border text-slate-400">
               <th className="py-2 pr-4">URL</th>
               <th className="py-2 pr-4">Status</th>
-              <th className="py-2 pr-4">LH perf</th>
-              <th className="py-2 pr-4">Axe</th>
-              <th className="py-2 pr-4">Console</th>
-              <th className="py-2">Failed net</th>
+              <th className="py-2 pr-4">성능</th>
+              <th className="py-2 pr-4">접근성 이슈</th>
+              <th className="py-2 pr-4">스크립트 오류</th>
+              <th className="py-2">로딩 실패</th>
             </tr>
           </thead>
           <tbody>
@@ -290,18 +412,34 @@ export function ReportDashboard({ reportId }: Props) {
             {p.lighthouse?.lighthouseError && (
               <p className="mt-3 text-xs text-amber-200">{p.lighthouse.lighthouseError}</p>
             )}
+            {p.interactionFlow && (
+              <details className="mt-3" open={pages[0]?.url === p.url}>
+                <summary className="cursor-pointer text-xs text-accent">
+                  사용자 흐름 트리
+                </summary>
+                <pre className="mt-2 max-h-48 overflow-auto whitespace-pre-wrap rounded border border-surface-border/60 bg-black/30 p-2 font-mono text-xs text-slate-300">
+                  {p.interactionFlow}
+                </pre>
+              </details>
+            )}
             {(p.interactionLog?.length ?? 0) > 0 && (
               <details className="mt-3">
                 <summary className="cursor-pointer text-xs text-slate-400">
                   인터랙션 탐색 로그 ({p.interactionLog!.length})
                 </summary>
-                <ul className="mt-2 space-y-1 text-xs text-slate-400">
-                  {p.interactionLog!.slice(0, 8).map((ev, idx) => (
-                    <li key={idx}>
-                      {ev.label} — {ev.action}
-                      {ev.newLinks != null && ev.newLinks > 0
-                        ? ` (+${ev.newLinks} 링크)`
-                        : ""}
+                <ul className="mt-2 space-y-2 text-xs text-slate-400">
+                  {p.interactionLog!.slice(0, 12).map((ev, idx) => (
+                    <li
+                      key={idx}
+                      className="rounded border border-surface-border/50 px-2 py-1.5"
+                    >
+                      <span className="text-accent">{ev.action}</span> · {ev.label}
+                      {ev.domDiff && (
+                        <p className="mt-0.5 text-slate-500">{ev.domDiff}</p>
+                      )}
+                      {ev.newLinks != null && ev.newLinks > 0 && (
+                        <p className="text-slate-500">새 경로 +{ev.newLinks}</p>
+                      )}
                     </li>
                   ))}
                 </ul>
